@@ -1,0 +1,1948 @@
+{
+  "name": "Distribuerade Styrsystem",
+  "icon": "🏭",
+  "version": "1.0",
+  "categories": [
+    {
+      "name": "SCADA",
+      "color": "#4f46e5",
+      "icon": "🏭"
+    },
+    {
+      "name": "RTU",
+      "color": "#7c3aed",
+      "icon": "📡"
+    },
+    {
+      "name": "DCS",
+      "color": "#10b981",
+      "icon": "⚙️"
+    },
+    {
+      "name": "PROFIBUS",
+      "color": "#f59e0b",
+      "icon": "🔌"
+    },
+    {
+      "name": "BAS",
+      "color": "#ef4444",
+      "icon": "🏠"
+    }
+  ],
+  "quiz": [
+    {
+      "c": "SCADA",
+      "q": "Vad betyder förkortningen SCADA?",
+      "o": [
+        "Supervisory Control And Data Acquisition",
+        "System Control And Data Analysis",
+        "Supervisory Command And Data Acquisition",
+        "System Command And Data Analysis"
+      ],
+      "a": 0,
+      "e": "SCADA: Supervisory Control And Data Acquisition – system för övervakning och styrning av storskaliga processer."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilken SCADA-nivå innehåller sensorer och ställdon ute i fält?",
+      "o": [
+        "Nivå 1",
+        "Nivå 0",
+        "Nivå 2",
+        "Nivå 3"
+      ],
+      "a": 1,
+      "e": "Nivå 0: sensorer (flödes- och temperatursensorer) och ställdon (motorer, ventiler, strömbrytare) ute i fält."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilken nivå i SCADA består av I/O-moduler, PLC:er och RTU:er?",
+      "o": [
+        "Nivå 0",
+        "Nivå 1",
+        "Nivå 2",
+        "Nivå 3"
+      ],
+      "a": 1,
+      "e": "Nivå 1: I/O-moduler och samhörande elektronik – mikrokontrollers, PLC:er och RTU:er som tar emot/skickar signaler."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilken nivå i SCADA består av övervakningsdatorer och HMI?",
+      "o": [
+        "Nivå 1",
+        "Nivå 3",
+        "Nivå 2",
+        "Nivå 4"
+      ],
+      "a": 2,
+      "e": "Nivå 2: övervakningsdatorer med SCADA-mjukvara och HMI. Samlar information, hanterar larm och historik."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad innehåller SCADA nivå 3?",
+      "o": [
+        "Fältets sensorer",
+        "Övervakningsdatorer",
+        "Styrning och övervakning – driftcentraler och kontrollrum",
+        "Produktionsplanering"
+      ],
+      "a": 2,
+      "e": "Nivå 3: styrning och övervakning – driftcentraler och kontrollrum med operatörer. Behöver inte alltid vara direkt styrning."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är SCADA nivå 4?",
+      "o": [
+        "HMI-gränssnitt",
+        "I/O-moduler",
+        "Sensorer i fält",
+        "Produktionsplanering – planerat underhåll och schemaläggning"
+      ],
+      "a": 3,
+      "e": "Nivå 4: produktionsplanering – planerat underhåll och schemaläggning längre fram i tid."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilka är de fyra huvudkomponenterna i ett SCADA-system?",
+      "o": [
+        "Sensorer, ställdon, kablar, HMI",
+        "RTU/PLC, kommunikationsinfrastruktur, övervakningsdatorer, HMI",
+        "PLC, DCS, RTU, BAS",
+        "Ethernet, PROFIBUS, Modbus, OPC"
+      ],
+      "a": 1,
+      "e": "SCADA: styrsystemskomponenter (RTU/PLC), kommunikationsinfrastruktur, övervaknings-/huvuddatorer och HMI."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är HMI:ns primära funktion i SCADA?",
+      "o": [
+        "Lagra data i databas",
+        "Konfigurera nätverket",
+        "Ge operatören gränssnitt för övervakning och styrning i realtid",
+        "Hantera nätverkstrafik"
+      ],
+      "a": 2,
+      "e": "HMI presenterar processdata i realtid via diagram, hanterar larm och historik, och möjliggör styrkommandon via mus och tangentbord."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är en tagdatabas i SCADA?",
+      "o": [
+        "En backupdatabas för loggning",
+        "Dataelement kopplade till specifika instrument, sensorer eller ställdon",
+        "En nätverkslogg",
+        "En konfigurationsfil för PLC:er"
+      ],
+      "a": 1,
+      "e": "Tagdatabasen innehåller dataelement (tags) kopplade till specifika enheter i processen – grunden för datainsamling och larmhantering."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är en skuggserver i SCADA?",
+      "o": [
+        "En extra bildskärm för operatören",
+        "Redundant server som tar över vid serverfel och ger kontinuerlig drift",
+        "En säkerhetskopia av GSD-filer",
+        "En extra RTU i fält"
+      ],
+      "a": 1,
+      "e": "Redundant konfigurerade servrar (skuggservrar/shadow servers) ger kontinuerlig kontroll och övervakning vid serverfel eller avbrott."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad utmärker SCADA gen 1 – monolitisk?",
+      "o": [
+        "Molnbaserad drift och öppna protokoll",
+        "Stora minidatorer, inga gemensamma nät, proprietära protokoll, reservstordator",
+        "LAN-baserad kommunikation",
+        "Standardiserade protokoll"
+      ],
+      "a": 1,
+      "e": "Gen 1 monolitisk: stora minidatorer utan gemensamma nätverk, strängt proprietära protokoll och reservstordator kopplad till alla RTU:er."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad utmärker SCADA gen 2 – distribuerad?",
+      "o": [
+        "Molndrift",
+        "Flera stationer i LAN, nästan realtid, men fortfarande proprietära protokoll",
+        "Standardiserade öppna protokoll",
+        "Satellitbaserad kommunikation"
+      ],
+      "a": 1,
+      "e": "Gen 2: information distribueras mellan flera LAN-kopplade stationer i nästan realtid. Protokollen var fortfarande proprietära och säkerheten förbisågs."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är PCN och vilken SCADA-generation använde det?",
+      "o": [
+        "Process Control Node – gen 1",
+        "Process Control Network – gen 3 nätverksbaserad SCADA",
+        "Process Command Network – gen 2",
+        "Process Control Notation – gen 4"
+      ],
+      "a": 1,
+      "e": "PCN (Process Control Network) används i gen 3 (nätverksbaserad SCADA) – systemet sprids över flera geografiskt avlägsna LAN-nätverk."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad introducerade SCADA gen 4 – IoT/Moln?",
+      "o": [
+        "Proprietära protokoll",
+        "Skalbarhet, TLS-säkerhet, realtidsrapportering och komplexa styralgoritmer via molntjänster",
+        "Ren LAN-kommunikation",
+        "Reservstordatorer"
+      ],
+      "a": 1,
+      "e": "Gen 4: molntillgänglighet minskar infrastrukturkostnader. Ger realtidsrapportering, skalbarhet, komplexa styralgoritmer och TLS-säkerhet via öppna protokoll."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilken är den enklaste felrättande metoden i SCADA-kommunikation?",
+      "o": [
+        "CRC",
+        "Hamming-kod",
+        "Paritetsbit",
+        "Checksumma"
+      ],
+      "a": 2,
+      "e": "Paritetsbit: en extra bit läggs till så summan alltid är udda. Stämmer det inte begärs omsändning. CRC är mer tillförlitlig men komplexare."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad innebär CRC-felkontroll?",
+      "o": [
+        "En extra paritetsbit i slutet",
+        "Meddelandet divideras med ett 16-gradspolynom – resten läggs till datablocket",
+        "Meddelandet sänds dubbelt",
+        "En checksumma av alla bytes"
+      ],
+      "a": 1,
+      "e": "CRC (Cyclic Redundancy Check): varje meddelande divideras med ett 16-gradspolynom och resten av divisionen läggs till slutet av datablocket."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är telemetri i SCADA?",
+      "o": [
+        "Trådlös kommunikation mellan PLC:er",
+        "Fjärrövervakning – avläsning och överföring av mätdata från avlägsna platser",
+        "En typ av larmhantering",
+        "En konfigurationsprotokoll"
+      ],
+      "a": 1,
+      "e": "Telemetri: avläsning och överföring av mätdata från avlägsna platser till ett centralt övervakningssystem."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilka kommunikationsmetoder används traditionellt i SCADA?",
+      "o": [
+        "Enbart Ethernet",
+        "Kombination av radio- och ledningsbundna anslutningar (SONET/SDH, satellit)",
+        "Enbart trådlöst",
+        "Enbart proprietära protokoll"
+      ],
+      "a": 1,
+      "e": "SCADA: traditionellt kombination av radio- och ledningsbundna anslutningar. SONET/SDH i stora system. Satellitbaserad kommunikation ökar pga säkerhetskrav."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilka är standardiserade SCADA-kommunikationsprotokoll?",
+      "o": [
+        "Modbus RTU och Conitel",
+        "IEC 60870-5, IEC 61850 och DNP3",
+        "RP-570 och Profibus",
+        "VSAT och SONET"
+      ],
+      "a": 1,
+      "e": "Standardiserade protokoll erkänns av alla SCADA-leverantörer: IEC 60870-5, IEC 61850 och DNP3. Äldre proprietära: Modbus RTU, RP-570, Profibus, Conitel."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är OPC i SCADA-sammanhang?",
+      "o": [
+        "En typ av sensor",
+        "OLE for Process Control – standard för kommunikation mellan hårdvaror och mjukvaror i industriella nätverk",
+        "En PROFIBUS-profil",
+        "En redundanslösning"
+      ],
+      "a": 1,
+      "e": "OPC (OLE for Process Control): de facto-standard för kommunikation mellan enheter som ursprungligen inte avsågs för industriella nätverk (SCADA)."
+    },
+    {
+      "c": "SCADA",
+      "q": "Varför är moderna SCADA-system mer sårbara mot cyberattacker?",
+      "o": [
+        "Systemen är äldre och slitna",
+        "De öppnades mot internet och TCP/IP ersatte proprietära protokoll – nya attackvektorer uppstod",
+        "Operatörerna är sämre utbildade",
+        "Systemen är alltid trådlösa"
+      ],
+      "a": 1,
+      "e": "Industriella nätverk var fysiskt isolerade när tekniken uppstod. I tidigt 2000-tal öppnades de mot internet och TCP/IP ersatte proprietära protokoll – en uppsjö av nya attackvektorer uppstod."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vilka fem programspråk ingår i IEC 61131-3?",
+      "o": [
+        "C, Java, Python, Basic, Fortran",
+        "IL, LD, FBD, ST, SFC",
+        "PROFIBUS DP, PA, PROFIsafe, PROFIdrive, I&M",
+        "GSD, EDD, DTM, TCI, OPC"
+      ],
+      "a": 1,
+      "e": "IEC 61131-3: Instruktionslista (IL), Ladderdiagram (LD), Funktionsblocksdiagram (FBD), Strukturerad text (ST), Sequential Function Charts (SFC)."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är en PAC?",
+      "o": [
+        "En typ av fältbuss",
+        "Programmable Automation Controller – kombinerar PC-baserat styrsystem med PLC-funktion",
+        "En säkerhetsstandard",
+        "En typ av HMI"
+      ],
+      "a": 1,
+      "e": "PAC (Programmable Automation Controller): kombinerar PC-baserat styrsystem med PLC-funktion. Används i SCADA för att tillhandahålla RTU- eller PLC-funktion."
+    },
+    {
+      "c": "SCADA",
+      "q": "Vad är historikfunktionen i HMI?",
+      "o": [
+        "En larmfunktion",
+        "Ackumulerar tidsmärkta data (mätvärden, händelser, larm) i databas för uppföljning och felsökning",
+        "En konfigurationsverktyg",
+        "En nätverkslogg"
+      ],
+      "a": 1,
+      "e": "Historikfunktionen i HMI ackumulerar tidsmärkta data i form av mätvärden, händelser och larm i en databas. Används vid uppföljning och felsökning."
+    },
+    {
+      "c": "SCADA",
+      "q": "Sedan ca 1998 erbjuder PLC-tillverkare vad?",
+      "o": [
+        "Enbart trådlösa lösningar",
+        "Integrerade HMI/SCADA-system med öppna och icke-proprietära kommunikationsprotokoll",
+        "Enbart proprietära system",
+        "Enbart molnbaserade lösningar"
+      ],
+      "a": 1,
+      "e": "Sedan ca 1998 erbjuder nästan alla större PLC-tillverkare integrerade HMI/SCADA-system med öppna kommunikationsprotokoll – tekniker kan konfigurera HMI:n utan skräddarsydd programmering."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är en RTU primärt till för?",
+      "o": [
+        "Programmera PLC:er",
+        "Avläsa processdata (telemetri) och ta emot/utföra styrkommandon",
+        "Hantera HMI-gränssnitt",
+        "Konfigurera nätverksprotokoll"
+      ],
+      "a": 1,
+      "e": "RTU (Remote Terminal Unit): avläser sensorer (telemetri) och skickar data uppåt, tar emot kommandon från SCADA och styr ställdon i fält."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad skyddar RTU:ens utgångsenhet mot?",
+      "o": [
+        "Nätverksattacker",
+        "Farlig processmiljö: temperatur, fukt, transienter, överspänning, ESD, EMI",
+        "Felaktig programmering",
+        "Strömavbrott"
+      ],
+      "a": 1,
+      "e": "Utgångsenhetens huvudfunktion: skydda RTU:ens känsliga elektronik mot processens farliga miljö (temperatur, fukt, rök, transienter, överspänning, ESD, EMI)."
+    },
+    {
+      "c": "RTU",
+      "q": "Vilken spänning är vanligast för RTU-strömförsörjning?",
+      "o": [
+        "12V DC",
+        "24V DC",
+        "48V DC",
+        "230V AC"
+      ],
+      "a": 1,
+      "e": "24V DC är vanligast. Förekommer allt mellan 24–250V. RTU:er på ställverk har batteribackup vid strömavbrott."
+    },
+    {
+      "c": "RTU",
+      "q": "Hur noggrann måste RTU:ens tidsmärkning vara?",
+      "o": [
+        "1 sekund",
+        "100 millisekunder",
+        "1 millisekund",
+        "10 millisekunder"
+      ],
+      "a": 2,
+      "e": "Effektiv tidsmärkning kräver under 1 ms precision. Kräver noggrann klocka och processor med avbrottsmekanism."
+    },
+    {
+      "c": "RTU",
+      "q": "Hur synkroniseras tid i moderna RTU:er för bäst precision?",
+      "o": [
+        "Manuellt av operatören",
+        "Via GPS – nästan perfekt synkronisering",
+        "Via NTP från internet",
+        "Via PROFIBUS-mastern"
+      ],
+      "a": 1,
+      "e": "GPS-synkronisering ger nästan perfekt precision (<1 ms). Synk från huvuddator: minst 6–8 ms avvikelse."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad indikerar en signal under 4 mA i en 4–20 mA strömloop?",
+      "o": [
+        "0% av mätområdet",
+        "100% av mätområdet",
+        "Fel på mätutrustningen",
+        "Enheten är i viloläge"
+      ],
+      "a": 2,
+      "e": "Signal under 4 mA indikerar fel på mätutrustningen. 4 mA = 0%, 20 mA = 100% av mätområdet."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är dödband i RTU-kommunikation?",
+      "o": [
+        "En säkerhetszon runt anläggningen",
+        "Intervall inom vilket analoga mätvärden inte skickas – minskar kommunikationsbelastningen",
+        "En fördröjning vid uppstart",
+        "En felkod"
+      ],
+      "a": 1,
+      "e": "Dödband: analoga mätningar skickas bara om de förändras utanför ett definierat intervall. Minskar kommunikationsbelastningen i SCADA-systemen."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är skillnaden mellan RTU och PLC?",
+      "o": [
+        "RTU är alltid dyrare",
+        "RTU: avlägsna/obemannade platser, trådlöst, proprietära verktyg. PLC: lokal styrning, trådbundet, IEC 61131-3",
+        "PLC kan inte kommunicera med SCADA",
+        "RTU kör IEC 61131-3"
+      ],
+      "a": 1,
+      "e": "RTU: avlägsna/obemannade platser, trådlös kommunikation, proprietära programmeringsverktyg. PLC: lokal styrning i fabriker/kraftverk, trådbundet, IEC 61131-3."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är 'check before operate'-tekniken som uppfanns 1923?",
+      "o": [
+        "En testmetod för mjukvara",
+        "En förregling som säkerställer att ett kommando är säkert och giltigt innan det verkställs",
+        "En diagnostikmetod",
+        "En typ av nätverksprotokoll"
+      ],
+      "a": 1,
+      "e": "1923: check before operate – en förregling som kontrollerar om ett kommando är säkert/giltigt innan det faktiskt verkställs. Fortfarande relevant idag."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är en transducer i RTU-sammanhang?",
+      "o": [
+        "En typ av minnesenhet",
+        "Omvandlar processvärden till elektriska signaler och skyddar RTU:ens ingångar mot farliga spänningar",
+        "En kommunikationsprotokoll",
+        "En typ av antenn"
+      ],
+      "a": 1,
+      "e": "Transducer omvandlar processvärden (tryck, temperatur, flöde) till elektriska signaler (t.ex. 4–20 mA) och skyddar RTU:ens känsliga ingångar."
+    },
+    {
+      "c": "RTU",
+      "q": "Vilken enhet i RTU hanterar A/D-omvandling och tidsmärkning?",
+      "o": [
+        "Kommunikationsenheten",
+        "Strömförsörjningsenheten",
+        "Utgångsenheten",
+        "Internenheten"
+      ],
+      "a": 3,
+      "e": "Internenheten (interna systemet): den centrala process- och kontrollenheten som hanterar A/D-omvandling, tidsmärkning, mätvärdesinsamling, val och exekvering."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är IED och varför används det allt mer?",
+      "o": [
+        "En typ av HMI",
+        "Intelligent Electronic Device – mikroprocessorbaserad enhet inom elkraft som skickar all data digitalt",
+        "En PROFIBUS-variant",
+        "En typ av fältbuss"
+      ],
+      "a": 1,
+      "e": "IED (Intelligent Electronic Device): mikroprocessorbaserade styrenheter inom elkraft som skickar all data digitalt – grunden för ett 'intelligent kraftsystem', minskar behovet av RTU:er."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är digitala ingångar i en RTU?",
+      "o": [
+        "Kontinuerliga signaler inom ett spänningsintervall",
+        "Tvålägesdata (på/av) – strömbrytare öppen/stängd, indikeras med spänning >0 eller 0 V",
+        "Signaler som kräver A/D-omvandling",
+        "Signaler från analoga sensorer"
+      ],
+      "a": 1,
+      "e": "Digitala ingångar: tvålägesdata på/av. Isolerad spännings-/strömkälla: >0V = på, 0V = av. Ex: strömbrytare, ventilposition."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är analoga utgångar i en RTU?",
+      "o": [
+        "Enkla på/av-reläsignaler",
+        "mA-signal proportionell mot ett digitalt kommando – används för variabla processenheter",
+        "Digitala styrsignaler",
+        "Spänningssignaler för display"
+      ],
+      "a": 1,
+      "e": "Analoga utgångar: ovanligare, men används för variabla processenheter (vätskenivå, motorhastighet). mA-signal proportionell mot det digitala kommandot."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är multiportskommunikation i en RTU?",
+      "o": [
+        "Flera fysiska portar för strömförsörjning",
+        "RTU:en kommunicerar med fler huvuddatorer och angränsande RTU:er/IED:er i olika protokoll",
+        "En redundanslösning",
+        "Trådlös kommunikation"
+      ],
+      "a": 1,
+      "e": "Moderna RTU:er med multiportskommunikation kan kommunicera med fler än en huvuddator uppåt, och med angränsande RTU:er och IED:er i en rad olika protokoll."
+    },
+    {
+      "c": "RTU",
+      "q": "Vilka RTU-tillämpningar kräver enbart fjärrövervakning (ingen styrning)?",
+      "o": [
+        "Hydrografi och elnät",
+        "Olja/gas (oljeplattformar), pumpstationer, väderstationer, flygtrafikutrustning",
+        "Utomhuslarm och gasnät",
+        "Reningsverk och vattenmagasin"
+      ],
+      "a": 1,
+      "e": "Enbart fjärrövervakning: obemannade oljeplattformar/oljekällor, pumpstationer, väderstationer, flygtrafikutrustning (navigeringssystem)."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad skedde med RTU:er på 1980-talet?",
+      "o": [
+        "Trådlös kommunikation infördes",
+        "Mikroprocessorbaserad logik infördes – ökad flexibilitet och nya möjligheter i drift och prestanda",
+        "GPS-synkronisering introducerades",
+        "Ethernet-anslutning introducerades"
+      ],
+      "a": 1,
+      "e": "På 1980-talet infördes mikroprocessorbaserad logik i RTU:erna, vilket ökade flexibiliteten i övervakningssystemen och gav nya möjligheter inom drift och prestanda."
+    },
+    {
+      "c": "RTU",
+      "q": "Hur skyddar sig RTU:er installerade på ställverk mot strömavbrott?",
+      "o": [
+        "De har inbyggd solcell",
+        "Batteribackup ger strömförsörjning vid avbrott",
+        "De stängs av kontrollerat",
+        "De kopplar om till 230V AC"
+      ],
+      "a": 1,
+      "e": "RTU:er på ställverk får strömförsörjning från batterier vid strömavbrott. Stöd för flera spänningsnivåer gör systemet mer pålitligt."
+    },
+    {
+      "c": "RTU",
+      "q": "Varför används IED allt mer inom elkraft istället för RTU?",
+      "o": [
+        "IED är billigare",
+        "IED skickar all data digitalt – grunden för ett 'intelligent kraftsystem'",
+        "IED är enklare att installera",
+        "IED stöder trådlös kommunikation"
+      ],
+      "a": 1,
+      "e": "IED:er (Intelligent Electronic Devices) skickar all data i digital form, vilket utgör grunden för ett 'intelligent kraftsystem' och minskar behovet av traditionella RTU:er."
+    },
+    {
+      "c": "RTU",
+      "q": "Vad är RTU:ens kommunikationsenhets huvuduppgift?",
+      "o": [
+        "Skydda mot EMI",
+        "Gränssnitt mot SCADA – tar emot kommandon, tolkar protokoll, initierar åtgärder, skickar bekräftelse",
+        "Hantera strömförsörjning",
+        "Utföra A/D-omvandling"
+      ],
+      "a": 1,
+      "e": "Kommunikationsenheten: gränssnitt mot SCADA-nätverk. Tar emot kommandon från huvuddator, tolkar protokoll, initierar åtgärder och skickar bekräftelse tillbaka."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är ett DCS primärt?",
+      "o": [
+        "Ett geografiskt utspritt SCADA-system",
+        "Datoriserat styrsystem med autonoma styrenheter distribuerade i systemet utan central operatörskontroll",
+        "En typ av PLC",
+        "Ett kommunikationsprotokoll"
+      ],
+      "a": 1,
+      "e": "DCS (Distributed Control System): autonoma styrenheter distribuerade i hela systemet utan central operatörskontroll. Hög tillförlitlighet via distribuerad bearbetning."
+    },
+    {
+      "c": "DCS",
+      "q": "Varför är DCS mer tillförlitligt än centraliserade system?",
+      "o": [
+        "Det är billigare",
+        "Processorfel påverkar bara en del av processen, inte hela anläggningen",
+        "Det kräver ingen programmering",
+        "Det är trådlöst"
+      ],
+      "a": 1,
+      "e": "Nyckelattribut: distribution av styrbehandling runt noder. Om en processor misslyckas påverkas bara en del av processen – inte hela anläggningen."
+    },
+    {
+      "c": "DCS",
+      "q": "Vilka nivåer utgör traditionell DCS-kärna?",
+      "o": [
+        "Nivå 3 och 4",
+        "Nivå 0 och 1",
+        "Nivå 1 och 2",
+        "Nivå 2 och 3"
+      ],
+      "a": 2,
+      "e": "Nivå 1 (I/O-moduler och distribuerade processorer) och nivå 2 (övervakningsdatorer och operatörsskärmar) utgör den traditionella DCS-kärnan."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är skillnaden DCS vs SCADA?",
+      "o": [
+        "DCS har inget HMI",
+        "DCS: kontinuerliga processanläggningar, hög tillförlitlighet, ej geografiskt avlägset. SCADA: geografiskt spridda system, fjärrstyrning",
+        "DCS stöder inte fältbuss",
+        "DCS används bara i byggnader"
+      ],
+      "a": 1,
+      "e": "DCS för stora kontinuerliga processanläggningar på plats (raffinaderier, kemi). SCADA för geografiskt spridda system med fjärrstyrning."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är ett funktionsblock i DCS?",
+      "o": [
+        "En typ av PLC",
+        "Objektorienterade kodblock som emulerar analoga hårdvarukontrollkomponenter, t.ex. PID-algoritmer",
+        "En nätverksprotokoll",
+        "En sensor"
+      ],
+      "a": 1,
+      "e": "Funktionsblock: objektorienterade kodblock som emulerar analoga hårdvarukomponenter (t.ex. PID). Dominerande kontrollmetod i DCS. Stöds av Foundation Fieldbus."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är hot-swap i DCS?",
+      "o": [
+        "Byte av kablar under drift",
+        "Redundanta processorer tar automatiskt och utan avbrott över vid fel",
+        "En uppgraderingsprocess",
+        "En testprocedur"
+      ],
+      "a": 1,
+      "e": "Hot-swap: dubbla redundanta processorer med hot-switching – vid fel tar den andra processorn automatiskt och omedelbart över utan driftstopp."
+    },
+    {
+      "c": "DCS",
+      "q": "Vilket OS och nätverksteknik adopterade DCS på 1980-talet för öppenhet?",
+      "o": [
+        "Windows och Modbus",
+        "UNIX och TCP/IP",
+        "Linux och PROFIBUS",
+        "DOS och Ethernet"
+      ],
+      "a": 1,
+      "e": "DCS-industrin adopterade UNIX och TCP/IP (ursprungligen från det amerikanska försvarsdepartementet, DARPA/ARPANET) för att lösa öppenhet och datadelning."
+    },
+    {
+      "c": "DCS",
+      "q": "Exakt vad säger ditt material om UNIX och TCP/IP:s ursprung?",
+      "o": [
+        "De skapades av IBM för affärsapplikationer",
+        "UNIX och TCP/IP utvecklades av det amerikanska försvarsdepartementet för öppenhet – precis det problem processindustrin ville lösa",
+        "De skapades av Microsoft",
+        "De skapades av Foxboro för DCS"
+      ],
+      "a": 1,
+      "e": "Exakt citat ur ditt DCS-material: 'UNIX och dess medföljande nätverksteknik TCP-IP utvecklades av det amerikanska försvarsdepartementet för öppenhet, vilket just var problemet processindustrin ville lösa.'"
+    },
+    {
+      "c": "DCS",
+      "q": "Vilket var den första DCS-leverantören att använda UNIX och Ethernet?",
+      "o": [
+        "Honeywell 1975",
+        "Siemens 1980",
+        "Foxboro med I/A-serien 1987",
+        "ABB 1990"
+      ],
+      "a": 2,
+      "e": "Foxboro introducerade I/A-serien 1987 – den första DCS som använde UNIX och Ethernet-nätverksteknik, och öppnade dörren för IT-integration."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad kallas 1990-talets strid om IEC-fältbussstandard?",
+      "o": [
+        "Protocol War",
+        "PROFIBUS-konflikten",
+        "Fieldbus Wars",
+        "Ethernet-striden"
+      ],
+      "a": 2,
+      "e": "'Fieldbus Wars': konkurrerande organisationer tävlade om att definiera IEC-fältbussstandarden för digital kommunikation med fältinstrumentation istället för 4–20 mA analog."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är COTS och varför förändrade det DCS?",
+      "o": [
+        "En typ av fältbuss",
+        "Commercial Off-The-Shelf – standardkomponenter som sänkte DCS-hårdvarukostnader kraftigt och drev övergång till mjukvarubaserade affärsmodeller",
+        "En certifieringsstandard",
+        "En kommunikationsprotokoll"
+      ],
+      "a": 1,
+      "e": "COTS (Commercial Off-The-Shelf): standardkomponenter från Intel/Motorola ersatte egentillverkade. Sänkte kostnader drastiskt och drev övergång från hårdvara- till mjukvarubaserade affärsmodeller."
+    },
+    {
+      "c": "DCS",
+      "q": "Vilket år lanserade Honeywell sitt första DCS och vad hette det?",
+      "o": [
+        "1969 – Process 2000",
+        "1975 – TDC 2000",
+        "1980 – NETWORK 90",
+        "1987 – I/A-serien"
+      ],
+      "a": 1,
+      "e": "1975 introducerade Honeywell TDC 2000 och Yokogawa CENTUM – de första moderna DCS-systemen, lanserade oberoende av varandra."
+    },
+    {
+      "c": "DCS",
+      "q": "Vilka är typiska DCS-applikationer?",
+      "o": [
+        "Järnväg och kraftnät",
+        "Kemiska anläggningar, oljeraffinaderier, kärnkraftverk, massa/papper, farmaceutisk tillverkning",
+        "Byggnadsautomation",
+        "Väderstationer"
+      ],
+      "a": 1,
+      "e": "DCS: kemiska anläggningar, petrokemiska/oljeraffinaderier, kärnkraftverk, massa- och pappersbruk, vattenrening, farmaceutisk tillverkning, biltillverkning."
+    },
+    {
+      "c": "DCS",
+      "q": "Hur signalerar DCS traditionellt till fältenheter?",
+      "o": [
+        "Enbart Ethernet",
+        "4–20 mA strömslingor och/eller fältbussprotokoll som PROFIBUS och Foundation Fieldbus",
+        "Enbart PROFIBUS",
+        "Enbart trådlöst"
+      ],
+      "a": 1,
+      "e": "DCS: primärt 4–20 mA strömslingor som fältsignaleringsstandard. Moderna DCS stöder också digitala fältbussprotokoll (PROFIBUS, Foundation Fieldbus, HART, Modbus)."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är DCS nivå 3?",
+      "o": [
+        "I/O-moduler och processorer",
+        "Övervakningsdatorer",
+        "Produktionskontrollnivå – ej direkt processkontroll, utan övervakning av produktions- och övervaknningsmål",
+        "Fältanordningar"
+      ],
+      "a": 2,
+      "e": "Nivå 3: produktionskontrollnivå – hanterar produktions- och övervakningsmål. Inte direkt processkontroll i traditionell mening."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad möjliggjorde DCS jämfört med äldre centraliserade system?",
+      "o": [
+        "Dyrare installation",
+        "Sammankoppling av styrslingor, automatisk händelseloggning, lokal I/O, minskad kabeldragning, höga processöversikter",
+        "Enklare protokoll",
+        "Färre sensorer"
+      ],
+      "a": 1,
+      "e": "DCS möjliggjorde: kaskade styrslingor och förreglingar, automatisk händelseloggning, borttagning av fysiska register, lokal I/O-placering och minskad kabeldragning."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad karakteriserar moderna DCS-system (2010 och framåt)?",
+      "o": [
+        "Enbart proprietära protokoll",
+        "Trådlösa system, fjärrövervakning, mobila gränssnitt, inbäddade webbservrar, IoT-integration",
+        "Enbart Ethernet",
+        "Enbart lokala system"
+      ],
+      "a": 1,
+      "e": "Moderna DCS (2010+): trådlösa system och protokoll, fjärrövervakning och loggning, mobila gränssnitt, inbäddade webbservrar, IoT-integration."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är OPC i DCS-sammanhang?",
+      "o": [
+        "En typ av PLC",
+        "OLE for Process Control – de facto-anslutningsstandard mellan DCS och Windows-baserade IT-system",
+        "En PROFIBUS-profil",
+        "En redundanslösning"
+      ],
+      "a": 1,
+      "e": "OPC (OLE for Process Control): uppstod när Microsoft intog skrivbords-/serverlagret på 1990-talet. De facto-standard för anslutning och datautbyte mellan DCS och IT-miljöer."
+    },
+    {
+      "c": "DCS",
+      "q": "Varför migrerade DCS-industrin till UNIX på 1980-talet?",
+      "o": [
+        "UNIX var billigare",
+        "UNIX och TCP/IP löste öppenhetsproblemet – dela data över hela företaget – precis som det amerikanska försvarsdepartementet (DARPA) ursprungligen designat det för",
+        "UNIX var mer tillförlitligt",
+        "UNIX var standard i industrin"
+      ],
+      "a": 1,
+      "e": "DCS-industrin adopterade UNIX för att lösa öppenhet och datadelning. UNIX och TCP/IP hade ursprungligen utvecklats av det amerikanska försvarsdepartementet (DARPA/ARPANET) för samma syfte."
+    },
+    {
+      "c": "DCS",
+      "q": "Vad är PAS?",
+      "o": [
+        "En typ av fältbuss",
+        "Process Automation System – en kombination av traditionell PLC och DCS i en lösning för alla",
+        "En säkerhetsstandard",
+        "En typ av HMI"
+      ],
+      "a": 1,
+      "e": "PAS (Process Automation System): trend som kombinerar traditionella PLC- och DCS-koncept i en lösning för alla. Uppstod som svar på konvergensen av de två teknikerna."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vilket kommunikationsprotokoll är kärnan i PROFIBUS?",
+      "o": [
+        "PROFIBUS PA",
+        "Modbus TCP",
+        "PROFIBUS DP",
+        "BACnet"
+      ],
+      "a": 2,
+      "e": "PROFIBUS DP (Decentralized Periphery) är kärnan och gemensamt för alla applikationer. Finns i DP-V0, DP-V1 och DP-V2."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vilka OSI-nivåer använder PROFIBUS?",
+      "o": [
+        "1, 2, 3, 7",
+        "1, 2, 7",
+        "2, 4, 7",
+        "1, 3, 5, 7"
+      ],
+      "a": 1,
+      "e": "PROFIBUS använder nivå 1 (fysisk), 2 (datalänk/FDL med master-slav + token-passing) och 7 (applikation/PROFIBUS DP). Nivåerna 3–6 används inte."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vilken hastighet har PROFIBUS MBP?",
+      "o": [
+        "9,6 kbit/s",
+        "12 Mbit/s",
+        "31,25 kbit/s",
+        "100 Mbit/s"
+      ],
+      "a": 2,
+      "e": "MBP: fast 31,25 kbit/s. Levererar energi och data via samma kabel. Max kabellängd 1 900 m inkl. dropkablar."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Hur många noder max i ett RS485-segment?",
+      "o": [
+        "16",
+        "32",
+        "64",
+        "126"
+      ],
+      "a": 1,
+      "e": "Max 32 noder per segment i RS485. Med repeatrar kan hela nätverket ha upp till 126 noder."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är skillnaden segmentkopplare vs länk?",
+      "o": [
+        "Ingen skillnad",
+        "Segmentkopplare: transparent, ej konfig, PA-enheter synliga på DP-sidan. Länk: intelligent, mappar alla MBP-enheter som EN slav, max 244 byte.",
+        "Segmentkopplare är intelligent",
+        "Länken är billigare"
+      ],
+      "a": 1,
+      "e": "Segmentkopplare: transparent RS485→MBP, ingen konfiguration, PA-enheter synliga på DP-sidan. Länk: intelligent, mappar alla MBP-enheter som EN enda slav på RS485-sidan, max 244 byte."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad innebär FISCO-modellen?",
+      "o": [
+        "En certifieringsmodell",
+        "Fieldbus Intrinsically Safe Concept – egensäker planering i Ex-zon 1 utan individuella beräkningar",
+        "En konfigurationsprotokoll",
+        "En redundanslösning"
+      ],
+      "a": 1,
+      "e": "FISCO: förenklar planering i Ex-zon 1 utan individuella säkerhetsberäkningar om alla komponenter är FISCO-certifierade. Max 1 000 m, en energikälla per segment."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är GSD-filens funktion?",
+      "o": [
+        "Lagrar mätvärden",
+        "Elektroniskt datablad från tillverkaren med kommunikationsegenskaper – räcker för cyklisk kommunikation",
+        "Konfigurerar topologin",
+        "Hanterar larm"
+      ],
+      "a": 1,
+      "e": "GSD (General Station Description): tillverkarens elektroniska datablad med kommunikationsegenskaper och diagnostikdata. Räcker för cyklisk kommunikation."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad används PROFIsafe till?",
+      "o": [
+        "Drivteknik",
+        "Processautomation",
+        "Felsäker kommunikation med nödstopp och ljusridåer till felsäkra styrsystem",
+        "Identifikation"
+      ],
+      "a": 2,
+      "e": "PROFIsafe: profil för felsäker kommunikation med säkerhetsutrustning (nödstopp, ljusridåer) till felsäkra styrsystem via PROFIBUS."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad används PROFIdrive till?",
+      "o": [
+        "Processautomation",
+        "Felsäkerhet",
+        "Hastighetsstyrda elektriska drivutrustningar – frekvensomformare till servostyrningar",
+        "Byggautomation"
+      ],
+      "a": 2,
+      "e": "PROFIdrive: profil som definierar egenskaper, accessmetod och dataformat för hastighetsstyrda drivutrustningar på PROFIBUS."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är MS1 vs MS2 i DP-V1?",
+      "o": [
+        "Två typer av cyklisk kommunikation",
+        "MS1: max en per slav kopplad till cyklisk komm. MS2: flera masters, etableras separat, stängs vid inaktivitet",
+        "Två hastighetslägen",
+        "Redundanskanaler"
+      ],
+      "a": 1,
+      "e": "MS1: max en per slav, bara om cyklisk kommunikation pågår. MS2: slaven kan ha koppling till flera masters, etableras separat av mastern, stängs vid inaktivitet."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Hur adresseras parametrar i PROFIBUS acyklisk kommunikation?",
+      "o": [
+        "Via IP-adress och port",
+        "Via slot (0–254) och index (0–254)",
+        "Via nodadress och kanal",
+        "Via GSD-filen"
+      ],
+      "a": 1,
+      "e": "Parametrar adresseras med slot (0–254): i modulär enhet = modulnummer, i PA = funktionsblock. Index (0–254): specifik parameter inom sloten."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vilka typer av redundans erbjuder PROFIBUS?",
+      "o": [
+        "Enbart kabeldubblering",
+        "Master-, media-, kopplare/länk-, ring- och slavredundans",
+        "Enbart reservPLC",
+        "Enbart segmentkopplare-redundans"
+      ],
+      "a": 1,
+      "e": "PROFIBUS: masterredundans, mediaredundans, kopplare/länk-redundans (sömlös övergång), ringredundans (aktiva fältfördelare), slavredundans."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Hur fungerar HART på PROFIBUS?",
+      "o": [
+        "HART-instrument kopplas direkt utan adapter",
+        "HART-klientapp i PROFIBUS-master. HART-master i PROFIBUS-slav fungerar som multiplexer för HART-enheter",
+        "PROFIBUS ersätter HART helt",
+        "HART kommunicerar trådlöst"
+      ],
+      "a": 1,
+      "e": "HART klientapplikation i PROFIBUS-mastern. HART-master i en PROFIBUS-slav fungerar som multiplexer och tar över kommunikationen med HART-enheterna."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är I&M (Identification & Maintenance)?",
+      "o": [
+        "En fältbusstyp",
+        "Bindande spec. för hur produktdata lagras i varje PROFIBUS-enhet. XML-filer på profibus.com hanteras online av tillverkarna",
+        "En certifieringsprocess",
+        "En diagnostikstandard"
+      ],
+      "a": 1,
+      "e": "I&M: bindande specifikationer för hur produktidentifikationsdata ska lagras i varje PROFIBUS-enhet. XML-filer på profibus.com-servern hanteras online av tillverkarna."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är stamkabelkonceptet i PROFIBUS PA?",
+      "o": [
+        "En enkel kabel för hela nätet",
+        "EX e (förhöjd säkerhet) för stamkabeln + Ex i (egensäkerhet) för dropkablarna via fältbarriärer",
+        "En redundanskabel",
+        "En optisk fiberkabel"
+      ],
+      "a": 1,
+      "e": "Stamkabelkonceptet: EX e för stamkabeln + Ex i (egensäkerhet) för dropkablarna via fältbarriärer. Möjliggör längre kablar och fler enheter än FISCO."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Hur många repeatrar max i RS485 respektive MBP?",
+      "o": [
+        "RS485: 4, MBP: 9",
+        "RS485: 9, MBP: 4",
+        "RS485: 4, MBP: 4",
+        "Obegränsat i båda"
+      ],
+      "a": 1,
+      "e": "RS485: max 9 repeatrar. MBP: max 4 repeatrar. Fiberoptik: obegränsat antal repeatrar (med fördröjning)."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är iPar-Server?",
+      "o": [
+        "En webbserver för fjärrstyrning",
+        "Profil som specificerar hur instrument-parametrar sparas och läses tillbaka automatiskt vid modulbyte",
+        "En typ av master",
+        "En redundanslösning"
+      ],
+      "a": 1,
+      "e": "iPar-Server: specificerar hur i-parametrar sparas i styrsystemet och automatiskt läses tillbaka när en modul byts ut – förenklar underhållsarbetet."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vilket DP-V nummer introducerade broadcast och isokron mod?",
+      "o": [
+        "DP-V0",
+        "DP-V1",
+        "DP-V2",
+        "DP-V3"
+      ],
+      "a": 2,
+      "e": "DP-V2: broadcast (producent/konsument), isokron mod (ekvidistans), klocksync och tidmärkning. Speciellt för drivstyrning och synkroniserade rörelser."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är EDD i PROFIBUS?",
+      "o": [
+        "En fältbusstyp",
+        "Electronic Device Description – textbaserad produktbeskrivning för komplex parametrering, diagnostik och underhåll",
+        "En certifieringsstandard",
+        "En typ av master"
+      ],
+      "a": 1,
+      "e": "EDD (Electronic Device Description): kraftfullare textbaserad produktbeskrivning för parametrering, service, underhåll och diagnostik av komplexa fältenheter från ingenjörssystem."
+    },
+    {
+      "c": "PROFIBUS",
+      "q": "Vad är max kabellängd för MBP totalt inkl. dropkablar?",
+      "o": [
+        "500 m",
+        "1 000 m",
+        "1 900 m",
+        "3 000 m"
+      ],
+      "a": 2,
+      "e": "MBP: max total längd inklusive stam- och dropkablar är 1 900 m. Dropkablar i egensäkra applikationer max 30 m (inkluderat i totalen)."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är BAS/BMS?",
+      "o": [
+        "Ett industriellt styrsystem",
+        "Automatiserad centraliserad styrning av byggnaders HVAC, belysning, säkerhet, åtkomstkontroll och sammanhängande system",
+        "En typ av PLC",
+        "En kommunikationsprotokoll"
+      ],
+      "a": 1,
+      "e": "BAS (Building Automation System)/BMS (Building Management System): automatiserad centraliserad styrning av HVAC, el, belysning, skuggning, åtkomstkontroll, säkerhetssystem."
+    },
+    {
+      "c": "BAS",
+      "q": "Vilket öppet protokoll dominerar kommersiell byggautomation?",
+      "o": [
+        "KNX",
+        "X-10",
+        "BACnet",
+        "Modbus"
+      ],
+      "a": 2,
+      "e": "BACnet (ASHRAE-standard): dominerande öppna protokollet i kommersiella, institutionella och industriella byggnader. Möjliggör interoperabilitet mellan tillverkare."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är DALI?",
+      "o": [
+        "En typ av HVAC-styrsystem",
+        "Digital Addressable Lighting Interface – fältbuss för belysningsstyrning med fullständig dimning och feldetektering",
+        "En säkerhetsprotokoll",
+        "En BACnet-variant"
+      ],
+      "a": 1,
+      "e": "DALI (Digital Addressable Lighting Interface): fältbussstandard för belysningsstyrning. Möjliggör fullständig dimning och detekterar lamp- och ballastfel på DALI-armaturer."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är skillnaden VAV vs CAV?",
+      "o": [
+        "CAV är mer energieffektivt",
+        "VAV: variabel fläkthastighet, en låda per rum, mer energieffektivt. CAV: konstant hastighet, styr med spjäll och vattenventiler",
+        "Ingen skillnad",
+        "CAV används alltid i moderna byggnader"
+      ],
+      "a": 1,
+      "e": "VAV (Variable Air Volume): variabel fläkthastighet via VFD, mer energieffektivt, en låda per rum/område. CAV (Constant Air Volume): konstant fläkthastighet, styr med spjäll."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är morgonuppvärmning (MWU) i BAS?",
+      "o": [
+        "En larmfunktion",
+        "Optimerad start – BAS värmer upp byggnaden till börvärdet lagom till inflyttning baserat på utomhusförhållanden och historik",
+        "En nattmode-funktion",
+        "Manuell override"
+      ],
+      "a": 1,
+      "e": "MWU (Morning Warm-Up)/Optimerad start: BAS startar uppvärmning baserat på utomhusförhållanden och historik för att nå börvärdet precis till inflyttning."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad händer i BAS vid brandlarm?",
+      "o": [
+        "Alla system stängs av",
+        "Brandlarmspanelen åsidosätter BAS – yttre spjäll stängs för att hindra luftintag, avgassystem isolerar branden",
+        "Bara belysning stängs av",
+        "Ingenting – de är separata system"
+      ],
+      "a": 1,
+      "e": "Brandlarmspaneler är fastkopplade för att åsidosätta BAS. Vid aktivering: yttre spjäll stängs (förhindrar luftintag), avgassystem isolerar branden. BAS kan inte överskugga."
+    },
+    {
+      "c": "BAS",
+      "q": "Varför är VFD:er på pumpar energieffektiva?",
+      "o": [
+        "De är billigare att köpa",
+        "En motor på 50% (30 Hz/60 Hz) förbrukar bara ca 18% av full energi – förhållandet är icke-linjärt",
+        "De kräver inget underhåll",
+        "De eliminerar behovet av ventiler"
+      ],
+      "a": 1,
+      "e": "Förhållandet motor-effekt till energiförbrukning är icke-linjärt. VFD:er på cirkulationspumpar har sänkt energiförbrukning till ca 15% av ursprunglig förbrukning."
+    },
+    {
+      "c": "BAS",
+      "q": "Vilka driftslägen finns i ett BAS?",
+      "o": [
+        "Enbart på/av",
+        "Beläggningsläge, nattläge, morgonuppvärmning (MWU), obemannat läge och åsidosättning",
+        "Enbart beläggning och natt",
+        "Enbart manuellt och automatiskt"
+      ],
+      "a": 1,
+      "e": "BAS-driftslägen: beläggningsläge, nattläge (sänkt energi), morgonuppvärmning/MWU (optimerad start), obemannat läge och åsidosättning (manuell override)."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är rumsautomation?",
+      "o": [
+        "Automation av ett helt hus",
+        "Delmängd av BAS för ett rum – konferensrum/föreläsningssalar med pekskärm som styr projektor, ljud, belysning, videokonferens",
+        "Automation av produktionsrum",
+        "En HVAC-funktion"
+      ],
+      "a": 1,
+      "e": "Rumsautomation: delmängd av BAS för ett specifikt rum. Vanligast i konferensrum, presentationssviter och föreläsningssalar med pekskärm som styr alla system."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är AHU-urladdningstemperaturreglering?",
+      "o": [
+        "Styrning av kylvattentemperatur",
+        "Luftbehandlingsenheter varierar automatiskt tilluftstemperaturen (55–70°F) för att minska kyl-, uppvärmnings- och fläktenergi",
+        "Styrning av inomhustemperatur",
+        "Kontroll av utetemperatur"
+      ],
+      "a": 1,
+      "e": "AHU-enheter som betjänar flera zoner varierar tilluftstemperaturen automatiskt (55–70°F). Minskar energi för kyla, uppvärmning och fläkt. Höjs vid låg utetemperatur för att minska eftervärmning."
+    },
+    {
+      "c": "BAS",
+      "q": "Hur loggar BAS-system sina larmnotifieringar?",
+      "o": [
+        "Det loggas inte",
+        "Systemet loggar alltid vem som meddelades, när och hur – viktigt för försäkring och ansvar",
+        "Enbart lokalt",
+        "Enbart i brandlarmspanelen"
+      ],
+      "a": 1,
+      "e": "BAS loggar alltid vem som meddelades, när och på vilket sätt vid larm – viktigt för försäkrings- och ansvarsändamål."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad styr ett BAS utöver HVAC?",
+      "o": [
+        "Enbart temperatur",
+        "Belysning (DALI), åtkomstkontroll, säkerhet, energiförbrukning, efterfrågestyrning, skuggning, inglasning",
+        "Enbart ventilation",
+        "Enbart energiförbrukning"
+      ],
+      "a": 1,
+      "e": "BAS styr: HVAC, belysning (DALI, fotoceller, närvaro), åtkomstkontroll, säkerhet, energiförbrukning, efterfrågestyrning, skuggning och dynamisk inglasning."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är dynamisk skuggning i BAS?",
+      "o": [
+        "Permanent fastsatta persienner",
+        "Automatiserade skuggningsanordningar (persienner, rullgardiner, lameller) som styr dagsljus och solenergi baserat på utomhusdata och solposition",
+        "En typ av belysningsstyrning",
+        "En säkerhetsfunktion"
+      ],
+      "a": 1,
+      "e": "Dynamisk skuggning: automatiserade anordningar (persienner, rullgardiner, lameller) som aktivt styr dagsljus och solvärme baserat på utomhusförhållanden, dagsljusbehov och solposition."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är DCV (Demand Controlled Ventilation)?",
+      "o": [
+        "En typ av fläkt",
+        "Behovsstyrd ventilation – justerar mängden uteluft baserat på uppmätta beläggningsnivåer för att optimera IAQ och energieffektivitet",
+        "En kylningsmetod",
+        "En larmfunktion"
+      ],
+      "a": 1,
+      "e": "DCV (Demand Controlled Ventilation): justerar mängden uteluft baserat på uppmätta beläggningsnivåer. Optimerar inomhusluftskvalitet (IAQ) och energieffektivitet."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är en intelligent byggnad?",
+      "o": [
+        "En byggnad med avancerad brandskydd",
+        "En byggnad som styrs av ett BAS – automatiserad styrning av HVAC, belysning, säkerhet och energi",
+        "En byggnad med solpaneler",
+        "En byggnad med avancerat säkerhetssystem"
+      ],
+      "a": 1,
+      "e": "En byggnad som styrs av ett BAS kallas 'intelligent byggnad' eller 'smart byggnad'. Om bostad: 'smart hem'. Exempel: Klaukkala, Finland (2018)."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är en primär och sekundär buss i ett BAS-nätverk?",
+      "o": [
+        "Huvud- och reservkabel",
+        "Kommunikationsnätverk som kopplar styrnivåer med I/O-enheter och HMI",
+        "Elnät och styrnät",
+        "LAN och WLAN"
+      ],
+      "a": 1,
+      "e": "De flesta BAS-nätverk har en primär och sekundär buss som kopplar högnivåstyrenheter med lägre-nivåregulatorer, I/O-enheter och användargränssnittet."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är ZigBee och hur används det i BAS?",
+      "o": [
+        "En typ av HVAC-enhet",
+        "Trådlöst mesh-nätverksprotokoll (IEEE 802.15.4) med öppen standard för BAS-enheter",
+        "En belysningsprotokoll",
+        "En säkerhetsstandard"
+      ],
+      "a": 1,
+      "e": "ZigBee är en trådlös mesh-standard baserad på IEEE 802.15.4 som används i moderna BAS-system för att koppla samman enheter trådlöst med låg energiförbrukning."
+    },
+    {
+      "c": "BAS",
+      "q": "Varför används PoE (Power over Ethernet) i BAS-säkerhetssystem?",
+      "o": [
+        "Det är billigare",
+        "PoE kan driva kameror och PTZ-enheter (30-90W) och frigör trådlöst nät för andra applikationer",
+        "Det är snabbare",
+        "Det kräver ingen installation"
+      ],
+      "a": 1,
+      "e": "PoE driver pan-tilt-zoom-kameror och liknande enheter upp till 30-90 watt och håller trådlösa nätverk fria för verkligt trådlösa applikationer som backupkommunikation."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är CAV-luftbehandling?",
+      "o": [
+        "Constant Air Volume – konstant fläkthastighet, styr med spjäll och vattenventiler, betjänar flera utrymmen",
+        "Variable Air Volume – variabel hastighet",
+        "En typ av kylare",
+        "En fläktbatteri"
+      ],
+      "a": 0,
+      "e": "CAV (Constant Air Volume): fläktarna kör konstant hastighet. Styr temperaturen via spjäll och vattenförsörjningsventiler. En CAV betjänar generellt flera utrymmen."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad innebär DCV (Demand Controlled Ventilation)?",
+      "o": [
+        "En typ av fläkt",
+        "Behovsstyrd ventilation som justerar uteluftmängd baserat på beläggning – optimerar luftkvalitet och energi",
+        "En kylningsmetod",
+        "En larmfunktion"
+      ],
+      "a": 1,
+      "e": "DCV justerar mängden uteluft baserat på uppmätta beläggningsnivåer (ofta CO2-sensorer). Optimerar inomhusluftskvalitet (IAQ) och energieffektivitet."
+    },
+    {
+      "c": "BAS",
+      "q": "Hur fungerar ett kylvattensystem i BAS?",
+      "o": [
+        "Det värmer vatten",
+        "Kylare producerar kallt vatten som cirkuleras till kylspolar i luftbehandlingsenheter",
+        "Det renar luften",
+        "Det styr belysningen"
+      ],
+      "a": 1,
+      "e": "En kylare (chiller) producerar kallt vatten (kylt vatten) som cirkuleras till kylspolar i luftbehandlingsenheter, fläktspolar eller induktionsenheter för rymdkylning."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är minimum och maximum CFM i VAV-lådor?",
+      "o": [
+        "Kostnadsgränser",
+        "Måste ställas in för att säkerställa tillräcklig ventilation och korrekt luftbalans i byggnaden",
+        "Temperaturinställningar",
+        "Tryckinställningar"
+      ],
+      "a": 1,
+      "e": "Minimum och maximum CFM (kubikfot per minut) måste ställas in på VAV-lådor för att säkerställa tillräcklig ventilation och korrekt luftbalans i hela byggnaden."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är efterfrågestyrning (demand response) inom BAS-belysning?",
+      "o": [
+        "Lampor aldrig stängs av",
+        "Dimma eller stänga av lampor vid höglasttillfällen för att spara energi och dra fördel av DR-incitament",
+        "Lampor styrs av tidur",
+        "Lampor styrs av fotoceller"
+      ],
+      "a": 1,
+      "e": "Belysning är en bra kandidat för efterfrågestyrning (demand response): BAS kan dimma eller stänga av lampor vid höglasttillfällen för energibesparingar och ekonomiska incitament."
+    },
+    {
+      "c": "BAS",
+      "q": "Vad är ett VAV-hybridsystem?",
+      "o": [
+        "Enbart VAV-lådor",
+        "Kombination av VAV för inre zoner och CAV med värmebatteri för yttre zoner med dubbla kanalblandningsboxar",
+        "Enbart CAV-enheter",
+        "En typ av kylsystem"
+      ],
+      "a": 1,
+      "e": "VAV-hybridsystem: inre zoner fungerar som vanligt VAV. Yttre zoner har värmefläkt med värmebatteri. Zontermostater väljer kyld eller uppvärmd luft beroende på behov."
+    },
+    {
+      "c": "BAS",
+      "q": "Vilken säkerhetsrisk lyfts fram för BAS-system?",
+      "o": [
+        "Enbart brandrisker",
+        "BAS-system är upprepade gånger rapporterade som sårbara för hackare – sensorer möjliggör övervakning, ställdon möjliggör obehörig åtkomst",
+        "Enbart vattenskada",
+        "Enbart strömavbrott"
+      ],
+      "a": 1,
+      "e": "BAS-system är upprepade gånger rapporterade som sårbara för hackare och cyberkriminella. Sensorer tillåter övervakning av rörelser, ställdon tillåter åtgärder som att öppna dörrar."
+    }
+  ],
+  "flashcards": [
+    {
+      "c": "SCADA",
+      "t": "SCADA",
+      "d": "Supervisory Control And Data Acquisition – system för övervakning och styrning av storskaliga processer med datorer, kommunikation och HMI."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA – 4 huvudkomponenter",
+      "d": "RTU:er/PLC:er, kommunikationsinfrastruktur, övervaknings-/huvuddatorer och HMI (människa-maskin-gränssnitt)."
+    },
+    {
+      "c": "SCADA",
+      "t": "Nivå 0",
+      "d": "Fältets sensorer och ställdon: flödesmätare, temperatursensorer, ventiler, motorer, strömbrytare."
+    },
+    {
+      "c": "SCADA",
+      "t": "Nivå 1",
+      "d": "I/O-moduler och elektronik – mikrokontrollers, PLC:er, RTU:er som tar emot/skickar signaler till fältet."
+    },
+    {
+      "c": "SCADA",
+      "t": "Nivå 2",
+      "d": "Övervakningsdatorer med SCADA-mjukvara och HMI. Samlar information, hanterar larm och historik."
+    },
+    {
+      "c": "SCADA",
+      "t": "Nivå 3",
+      "d": "Styrning och övervakning – driftcentraler och kontrollrum. Behöver inte alltid vara direkt styrning."
+    },
+    {
+      "c": "SCADA",
+      "t": "Nivå 4",
+      "d": "Produktionsplanering – planerat underhåll och schemaläggning längre fram i tid."
+    },
+    {
+      "c": "SCADA",
+      "t": "HMI",
+      "d": "Human-Machine Interface – presenterar processdata i realtid via diagram, hanterar larm och historik. Operatören styr via mus och tangentbord."
+    },
+    {
+      "c": "SCADA",
+      "t": "HMI – historikfunktion",
+      "d": "Ackumulerar tidsmärkta data (mätvärden, händelser, larm) i databas. Används vid uppföljning och felsökning."
+    },
+    {
+      "c": "SCADA",
+      "t": "Tagdatabas",
+      "d": "Databas med dataelement (tags) kopplade till specifika instrument, sensorer eller ställdon i processen."
+    },
+    {
+      "c": "SCADA",
+      "t": "Skuggserver (shadow server)",
+      "d": "Redundant server i SCADA som ger kontinuerlig kontroll och övervakning vid serverfel eller avbrott."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA gen 1 – Monolitisk",
+      "d": "Stora minidatorer, inga gemensamma nät, proprietära protokoll. Redundans via reservstordator kopplad till alla RTU:er."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA gen 2 – Distribuerad",
+      "d": "Flera stationer i LAN, nästan realtid. Protokoll fortfarande proprietära. Säkerhet ofta förbisedd."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA gen 3 – Nätverk",
+      "d": "Process Control Network (PCN). Spridd över flera LAN geografiskt. Standardprotokoll börjar användas."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA gen 4 – IoT/Moln",
+      "d": "Cloud SCADA, skalbarhet, TLS-säkerhet, komplexa styralgoritmer, realtidsrapportering via molntjänster."
+    },
+    {
+      "c": "SCADA",
+      "t": "Paritetsbit",
+      "d": "Enklaste felrättande metoden. En extra bit läggs till så summan alltid är udda. Stämmer den inte begärs omsändning."
+    },
+    {
+      "c": "SCADA",
+      "t": "CRC",
+      "d": "Cyclic Redundancy Check – tillförlitligare felkontroll. Meddelandet divideras med 16-gradspolynom, resten läggs till datablocket."
+    },
+    {
+      "c": "SCADA",
+      "t": "Nyttolast",
+      "d": "Datafackspråk: meddelandet (datan) inkapslad i ett större datablock med fast längd av tecken beroende på protokoll."
+    },
+    {
+      "c": "SCADA",
+      "t": "OPC",
+      "d": "OLE for Process Control – standard för kommunikation mellan olika hårdvaror och mjukvaror i industriella nätverk."
+    },
+    {
+      "c": "SCADA",
+      "t": "SONET/SDH i SCADA",
+      "d": "Synkrona digitala överföringsstandarder. Används i stora SCADA-system (järnväg, kraftverk)."
+    },
+    {
+      "c": "SCADA",
+      "t": "Telemetri",
+      "d": "Fjärrövervakning – avläsning och överföring av mätdata från avlägsna platser till ett centralt system."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA-protokoll – legacy",
+      "d": "Modbus RTU, RP-570, Profibus, Conitel – proprietära men allmänt antagna. Modbus gjordes öppet av Schneider Electric."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA-protokoll – standardiserade",
+      "d": "IEC 60870-5, IEC 61850, DNP3 – erkänns av alla större SCADA-leverantörer. Många fungerar nu över TCP/IP."
+    },
+    {
+      "c": "SCADA",
+      "t": "SCADA – användningsområden",
+      "d": "Industri (tillverkning, el, raffinering), infrastruktur (vatten, elnät, naturgas, fjärrvärme), anläggningar (byggnader, flygplatser, fartyg)."
+    },
+    {
+      "c": "SCADA",
+      "t": "VSAT",
+      "d": "Very Small Aperture Terminal – satellitbaserad kommunikation för SCADA. Äldre privatkonsumentversioner var dåliga, moderna bärarklass-system uppfyller SCADA-krav."
+    },
+    {
+      "c": "SCADA",
+      "t": "IEC 61131-3 – 5 språk",
+      "d": "IL (instruktionslista), LD (ladderdiagram), FBD (funktionsblocksdiagram), ST (strukturerad text), SFC (Sequential Function Charts)."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU",
+      "d": "Remote Terminal Unit – mikroprocessorbaserad enhet som integrerar en fysisk process med ett överliggande SCADA/DCS. Samlar data (telemetri) och utför styrkommandon."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU – kommunikationsenhet",
+      "d": "Gränssnitt mot SCADA-nätverk. Tar emot kommandon, tolkar protokoll, initierar åtgärder, skickar bekräftelse. Kan kopplas till flera huvuddatorer."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU – internenhet",
+      "d": "Centrala process- och kontrollenheten. Hanterar A/D-omvandling, tidsmärkning (<1 ms), mätvärdesinsamling, val och exekvering av enhet."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU – utgångsenhet",
+      "d": "Skyddar RTU mot farlig processmiljö: temperatur, fukt, transienter, överspänning, ESD, EMI. Fysiska in/utgångar sitter här."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU – strömförsörjning",
+      "d": "Alltid likström, vanligast 24V DC (upp till 250V). Ställverk: batteribackup. Stöd för flera spänningsnivåer ökar pålitligheten."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU – tidsmärkning",
+      "d": "Kräver <1 ms precision. GPS-synkronisering ger nästan perfekt precision. Synk från huvuddator: minst 6–8 ms avvikelse."
+    },
+    {
+      "c": "RTU",
+      "t": "4–20 mA signal",
+      "d": "Industristandard för analoga signaler. 4 mA = 0%, 20 mA = 100% av mätområdet. Immun mot elektriska störningar. Under 4 mA = fel på mätutrustningen."
+    },
+    {
+      "c": "RTU",
+      "t": "Dödband",
+      "d": "Intervall inom vilket analoga mätvärden inte skickas vidare. Minskar kommunikationsbelastningen i SCADA-systemen."
+    },
+    {
+      "c": "RTU",
+      "t": "Digitala ingångar",
+      "d": "Tvålägesdata: på/av. Isolerad spännings-/strömkälla: >0V = på, 0V = av. Ex: strömbrytare öppen/stängd."
+    },
+    {
+      "c": "RTU",
+      "t": "Analoga ingångar",
+      "d": "Varierar inom ett intervall (4–20 mA, 0–10 V, ±2,5 V etc.). Transducer skyddar RTU. A/D-omvandlare konverterar till digitalt."
+    },
+    {
+      "c": "RTU",
+      "t": "Digitala utgångar",
+      "d": "Styrning via relä – öppnar/stänger elektrisk krets. Kontaktutgångar förblir i positionen tills nytt kommando ges."
+    },
+    {
+      "c": "RTU",
+      "t": "Analoga utgångar",
+      "d": "Används för variabla processenheter (vätskenivå, motorhastighet). mA-signal proportionell mot det digitala kommandot."
+    },
+    {
+      "c": "RTU",
+      "t": "Transducer",
+      "d": "Omvandlar processvärden till elektriska signaler (t.ex. 4–20 mA). Skyddar RTU:ens känsliga ingångar mot farliga spänningar."
+    },
+    {
+      "c": "RTU",
+      "t": "PAC",
+      "d": "Programmable Automation Controller – kombinerar PC-baserat styrsystem med PLC-funktion. Används i SCADA för RTU- eller PLC-funktion."
+    },
+    {
+      "c": "RTU",
+      "t": "IED",
+      "d": "Intelligent Electronic Device – mikroprocessorbaserad enhet inom elkraft. Skickar all data digitalt – grunden för ett 'intelligent kraftsystem'."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU vs PLC",
+      "d": "RTU: avlägsna/obemannade platser, trådlöst, proprietära verktyg. PLC: lokal styrning i fabriker, trådbundet, IEC 61131-3."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU – check before operate (1923)",
+      "d": "Förregling som säkerställer att ett kommando är säkert/giltigt innan det faktiskt verkställs. Föregångare till modern säkerhetslogik."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU – historik (1927)",
+      "d": "Första systemet som loggade statusändringar med tid och datum – utskrivet på papper. Föregångare till modern historikloggning."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU multiportskommunikation",
+      "d": "Moderna RTU:er kommunicerar med fler huvuddatorer och med angränsande RTU:er/IED:er i olika protokoll samtidigt."
+    },
+    {
+      "c": "RTU",
+      "t": "RTU HMI på avlägsen plats",
+      "d": "RTU:er på avlägsna platser är obemannade och har ofta inga displayer. Moderna har LED/LCD för lokal statusvisning."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS",
+      "d": "Distributed Control System – datoriserat styrsystem med autonoma styrenheter distribuerade utan central operatörskontroll. Hög tillförlitlighet via distribuerad bearbetning."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS – tillförlitlighet",
+      "d": "Processorfel påverkar bara en del av processen, inte hela. Lokal I/O-placering ger snabb hanteringstid utan nätverksfördröjning."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS – nivå 1 & 2 (kärna)",
+      "d": "Nivå 1: I/O-moduler och distribuerade processorer. Nivå 2: övervakningsdatorer och operatörsskärmar."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS – nivå 3 & 4",
+      "d": "Nivå 3: produktionskontroll (mål/övervakning, inte direkt styrning). Nivå 4: produktionsplanering (schemaläggning)."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS vs SCADA",
+      "d": "DCS: kontinuerliga processanläggningar, hög tillförlitlighet, kontrollrum EJ geografiskt avlägset. SCADA: geografiskt spridda system, fjärrstyrning."
+    },
+    {
+      "c": "DCS",
+      "t": "Funktionsblock i DCS",
+      "d": "Objektorienterade kodblock som emulerar analoga hårdvarukontrollkomponenter (ex. PID-algoritmer). Dominerande kontrollmetod. Stöds av Foundation Fieldbus."
+    },
+    {
+      "c": "DCS",
+      "t": "4–20 mA i DCS",
+      "d": "Huvudsaklig fältsignaleringsstandard i DCS. Moderna DCS stöder även digitala fältbussprotokoll (PROFIBUS, Foundation Fieldbus, HART, Modbus)."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS – hot-swap",
+      "d": "Dubbla redundanta processorer med hot-switching: vid fel tar den andra processorn automatiskt och utan avbrott över."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS – UNIX och TCP/IP på 1980-talet",
+      "d": "DCS-industrin adopterade UNIX och TCP/IP (ursprungligen från det amerikanska försvarsdepartementet/DARPA) för att lösa öppenhet och datadelning."
+    },
+    {
+      "c": "DCS",
+      "t": "Fieldbus Wars (1990-talet)",
+      "d": "Konkurrerande organisationer tävlade om att definiera IEC-fältbussstandarden för digital kommunikation med fältinstrumentation istället för 4–20 mA analog."
+    },
+    {
+      "c": "DCS",
+      "t": "COTS i DCS",
+      "d": "Commercial Off-The-Shelf – standardkomponenter (Intel, Motorola) som sänkte DCS-hårdvarukostnader kraftigt och drev övergång till mjukvarubaserade affärsmodeller."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS – Honeywell TDC 2000 (1975)",
+      "d": "Honeywell lanserade TDC 2000 och Yokogawa lanserade CENTUM – de första moderna DCS-systemen, oberoende av varandra."
+    },
+    {
+      "c": "DCS",
+      "t": "Foxboro I/A-serien (1987)",
+      "d": "Första DCS-leverantören att använda UNIX och Ethernet-nätverksteknik. Öppnade dörren för integration med IT-infrastruktur."
+    },
+    {
+      "c": "DCS",
+      "t": "DCS – typiska applikationer",
+      "d": "Kemiska anläggningar, oljeraffinaderier, kärnkraftverk, massa- och pappersbruk, vattenrening, avloppsreningsverk, farmaceutisk tillverkning."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "PROFIBUS",
+      "d": "Process Field Bus – globalt ledande fältbussstandard sedan 1989. IEC 61158 (typ 3), IEC 61784 (familj 3). Över 40 miljoner installerade noder."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "PROFIBUS DP",
+      "d": "Decentralized Periphery – kärnan i PROFIBUS. Master-slav med token-passing. Finns i DP-V0, DP-V1 och DP-V2."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "DP-V0",
+      "d": "Grundläggande cyklisk kommunikation. GSD-konfiguration. Enhets-, modul- och kanalspecifik diagnostik. Ex: 'för hög temperatur', 'kortsluten utgång'."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "DP-V1",
+      "d": "Acyklisk kommunikation (MS1/MS2): parametrering, styrning, övervakning, larmhantering. Stöder EDD, FDT/DTM, PROFIsafe."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "DP-V2",
+      "d": "Broadcast (producent/konsument), isokron mod (ekvidistans), klocksync, tidmärkning, redundans. Speciellt för drivstyrning."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "Master-slav + token-passing",
+      "d": "Master anropar slavar cykliskt, slaven svarar med svarstelegram. Vid flera masters: token (accessrätt) skickas mellan masters."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "DPM1 – Master klass 1",
+      "d": "Cyklisk kommunikation med slavar. Ofta integrerad i PLC eller DCS-automationsstation."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "DPM2 – Master klass 2",
+      "d": "Acyklisk kommunikation för parametrering. Del av ingenjörsstation. Behöver inte vara permanent ansluten till bussen."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "PROFIBUS slav",
+      "d": "Passiv kommunikationsnod. Svarar på anrop. Fältenheter: decentrala I/O, drives, ventiler, omvandlare, analysatorer."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "RS485",
+      "d": "9,6–12 000 kbit/s · Kabel typ A (partvinnad, skärmad) · Linjetopologi · Max 32 noder/segment, 126/nätverk · Max 9 repeatrar · Ingen Ex-säkerhet."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "MBP – Manchester Coded Bus Powered",
+      "d": "31,25 kbit/s · Energi + data på samma kabel · Max 1 900 m · Max 4 repeatrar · Processautomation · IEC 61158-2."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "MBP-IS",
+      "d": "Egensäker version av MBP (Ex ia/ib). Används i explosionsfarliga områden (kemi, olja, gas)."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "RS485-IS",
+      "d": "Egensäker version av RS485 (Ex ib). Lägre max-hastighet: 9,6–1 500 kbit/s."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "Fiberoptik i PROFIBUS",
+      "d": "9,6–12 000 kbit/s · Glas (multimod 2–3 km, singelmod >15 km), PCF (~500 m), plast (100 m) · Stjärn-/ringtopologi · Obegränsade repeatrar."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "FISCO-modellen",
+      "d": "Fieldbus Intrinsically Safe Concept – egensäker planering i Ex-zon 1 utan individuella beräkningar. Max 1 000 m, en energikälla per segment."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "Stamkabelkoncept",
+      "d": "EX e (förhöjd säkerhet) för stamkabeln + Ex i (egensäkerhet) för dropkablarna via fältbarriärer. Möjliggör längre kablar och fler enheter."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "Segmentkopplare",
+      "d": "Transparent RS485→MBP-omvandlare. PA-enheter synliga direkt på DP-sidan. Ingen konfiguration behövs."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "Länk (Link)",
+      "d": "Intelligent. Mappar ALLA MBP-enheter som EN enda slav på RS485-sidan. Konfigureras. Max 244 byte. Begränsar inte RS485-hastigheten."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "GSD-fil",
+      "d": "General Station Description – elektroniskt datablad från tillverkaren med kommunikationsegenskaper. Räcker för cyklisk kommunikation."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "EDD",
+      "d": "Electronic Device Description – textbaserad produktbeskrivning för komplex parametrering, diagnostik och underhåll från ingenjörssystem."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "DTM / FDT",
+      "d": "Device Type Manager – mjukvarukomponent som kommunicerar via FDT-interfacet. Tillverkarspecifik, flexibel konfiguration."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "MS1 vs MS2",
+      "d": "MS1: acyklisk kanal, max en per slav, bara om cyklisk kommunikation pågår. MS2: kan kopplas till flera masters, etableras separat, stängs vid inaktivitet."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "Slot och index",
+      "d": "Parametrering: slot (0–254, modul/funktionsblock) + index (0–254, parameter inom sloten). I PA = slot adresserar ett funktionsblock."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "PROFIsafe",
+      "d": "Profil för felsäker kommunikation med säkerhetsutrustning (nödstopp, ljusridåer) till felsäkra styrsystem."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "PROFIdrive",
+      "d": "Profil för hastighetsstyrda elektriska drivutrustningar – från enkla frekvensomformare till snabba servostyrningar."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "PA-profil v3.02",
+      "d": "PROFIBUS PA för processautomation. V3.02: automatisk versionsanpassning vid enhetsbyte, förenklad integration, snabbare up/nedladdning, NAMUR 107-diagnostik."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "I&M – Identification & Maintenance",
+      "d": "Bindande specifikationer för hur produktdata lagras i varje PROFIBUS-enhet. XML-filer på profibus.com-servern som hanteras online av tillverkarna."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "iPar-Server",
+      "d": "Profil som specificerar hur instrument-parametrar sparas i styrsystemet och automatiskt läses tillbaka när en modul byts ut."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "PROFIBUS redundans",
+      "d": "Masterredundans, mediaredundans, kopplare/länk-redundans (sömlös övergång), ringredundans (aktiva fältfördelare), slavredundans."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "HART på PROFIBUS",
+      "d": "HART-klientapp i PROFIBUS-master. HART-master i PROFIBUS-slav fungerar som multiplexer för HART-enheter i fält."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "OSI nivå 1 (PROFIBUS)",
+      "d": "Fysiskt lager: RS485, MBP, MBP-IS, RS485-IS, fiberoptik, trådlöst."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "OSI nivå 2 (PROFIBUS)",
+      "d": "Datalänklager – FDL (Fieldbus Data Link): master-slav + token-passing. Bussaccess och datasäkerhet."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "OSI nivå 7 (PROFIBUS)",
+      "d": "Applikationslager – PROFIBUS DP (DP-V0, DP-V1, DP-V2). Cyklisk och acyklisk kommunikation."
+    },
+    {
+      "c": "PROFIBUS",
+      "t": "OSI nivåerna 3–6",
+      "d": "Används INTE i PROFIBUS. Presentation, session, transport och nätverk – hoppas över."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS/BMS",
+      "d": "Building Automation System – automatiserad centraliserad styrning av HVAC, el, belysning, skuggning, åtkomstkontroll, säkerhet."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS-mål",
+      "d": "Förbättrad komfort, effektiv drift, minskad energiförbrukning, lägre underhållskostnader, ökad säkerhet, historisk dokumentation, förlängd utrustningslivslängd."
+    },
+    {
+      "c": "BAS",
+      "t": "BACnet",
+      "d": "ASHRAE:s öppna protokollstandard för byggautomation. Dominant i kommersiella byggnader. Möjliggör interoperabilitet mellan tillverkare."
+    },
+    {
+      "c": "BAS",
+      "t": "LonTalk",
+      "d": "Öppet protokoll för byggautomation, alternativ till BACnet. Används i BAS-nätverk."
+    },
+    {
+      "c": "BAS",
+      "t": "DALI",
+      "d": "Digital Addressable Lighting Interface – fältbuss för belysningsstyrning. Fullständig dimning, detekterar lamp- och ballastfel."
+    },
+    {
+      "c": "BAS",
+      "t": "VAV vs CAV",
+      "d": "VAV (Variable Air Volume): variabel fläkthastighet, en låda per rum, mer energieffektiv. CAV (Constant Air Volume): konstant hastighet, styr med spjäll och vattenventiler."
+    },
+    {
+      "c": "BAS",
+      "t": "Beläggningsläge",
+      "d": "BAS-läge vid bemannad byggnad. Komfortabelt klimat med zonbaserad styrning. Temperatursensor i zonen ger återkoppling."
+    },
+    {
+      "c": "BAS",
+      "t": "Morgonuppvärmning MWU",
+      "d": "Optimerad start – BAS värmer upp till börvärdet lagom till inflyttning. Faktorer in utomhusförhållanden och historik."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – driftslägen",
+      "d": "Beläggningsläge, nattläge (sänkt energi), morgonuppvärmning (MWU), obemannat läge, åsidosättning (manuell override)."
+    },
+    {
+      "c": "BAS",
+      "t": "Åsidosättning (override)",
+      "d": "Manuellt initierat kommando till BAS via tryckknapp eller webbgränssnitt. Tvingar systemet till beläggningsläge ett bestämt antal minuter."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – analoga ingångar",
+      "d": "Temperatur, fukt, trycksensorer – termistor, 4–20 mA, 0–10 V, PT-givare eller trådlösa."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – digitala ingångar",
+      "d": "På/av – dörrkontaktbrytare, strömställare, luftflödesbrytare, torrkontakt, pulsingångar (turbinflödesmätare)."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – styrenheter",
+      "d": "PLC, system-/nätverksstyrenheter, terminalenhetskontroller. Specialbyggda datorer med in/ut-möjligheter."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – larm och notifiering",
+      "d": "Via e-post/SMS, personsökare, mobiltelefon (röstsamtal), hörbart larm. Systemet loggar alltid vem, när och hur."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – vanliga larm",
+      "d": "Temperaturlarm, tryck/fukt, filterstatus, pump-/motorstatus, CO/CO2-koncentration, köldmedieläckage, strömstatus."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – brandlarm åsidosätter",
+      "d": "Brandlarmspanelen åsidosätter BAS: stänger yttre spjäll, isolerar branden med avgassystem. BAS kan inte överskugga dessa säkerhetsöverskridanden."
+    },
+    {
+      "c": "BAS",
+      "t": "Frekvensomriktare VFD i BAS",
+      "d": "En motor på 50% (30 Hz/60 Hz) förbrukar bara ca 18% av full energi – förhållandet är icke-linjärt. VFD:er på pumpar sänker energiförbrukning till ~15% av ursprunglig."
+    },
+    {
+      "c": "BAS",
+      "t": "Kylvattensystem",
+      "d": "Kylare och pumpar. Kylt vatten till kylspolar i luftbehandlingsenheter. Kapacitetsreglering via modulering av vattenflöde."
+    },
+    {
+      "c": "BAS",
+      "t": "Kondensorvattensystem",
+      "d": "Kyltorn och pumpar med VFD för temperaturstyrning. Korrekt kyltornstemperatur säkerställer rätt köldmedietryck i kylaren."
+    },
+    {
+      "c": "BAS",
+      "t": "Varmvattensystem",
+      "d": "Panna och pumpar. Blandningsventil styr temperaturen. Pumpar och panna sekvenseras för att upprätthålla matningen."
+    },
+    {
+      "c": "BAS",
+      "t": "Rumsautomation",
+      "d": "Delmängd av BAS för ett specifikt rum. Konferensrum/föreläsningssalar: pekskärm styr projektor, ljud, belysning, videokonferens."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – informationssäkerhet",
+      "d": "BAS-system rapporterade sårbara mot hackare. Sensorer möjliggör övervakning, ställdon möjliggör åtgärder. KNX, ZigBee, BACnet förbättrar säkerhetsfunktioner."
+    },
+    {
+      "c": "BAS",
+      "t": "BAS – skuggning och inglasning",
+      "d": "Automatiserade skuggningsanordningar (persienner, rullgardiner, lameller) styr dagsljus och solenergi baserat på utomhusdata, dagsljusbehov och solposition."
+    },
+    {
+      "c": "BAS",
+      "t": "AHU-urladdningstemperatur",
+      "d": "Luftbehandlingsenheter varierar tilluftstemperaturen automatiskt (55–70°F) för att minska kyl-, uppvärmnings- och fläktenergi."
+    }
+  ],
+  "comparison": "<div class=\"slabel\" style=\"margin-top:0;\">SCADA vs DCS vs RTU vs PLC</div><div class=\"comp-grid\"><div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag t-scada\">SCADA</span></div><div class=\"comp-r\">Geografiskt spridda processer, fjärrstyrning</div><div class=\"comp-r\">Radio, satellit, GSM/4G, SONET/SDH</div><div class=\"comp-r\">HMI, tagdatabas, larmhantering</div><div class=\"comp-r\">Kraftnät, vatten, järnväg, pipeline</div></div><div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag t-dcs\">DCS</span></div><div class=\"comp-r\">Lokal kontinuerlig processanläggning</div><div class=\"comp-r\">Ethernet LAN, redundanta kablar, hot-swap</div><div class=\"comp-r\">Funktionsblock (PID), 4–20 mA</div><div class=\"comp-r\">Raffinaderier, kemi, kärnkraft</div></div><div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag t-rtu\">RTU</span></div><div class=\"comp-r\">Avlägsna och obemannade platser</div><div class=\"comp-r\">Trådlös kommunikation, GPS-tidsmärkning</div><div class=\"comp-r\">Telemetri, 4–20 mA, &lt;1 ms precision</div><div class=\"comp-r\">Olja/gas, pumpstationer, elnät</div></div><div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag t-profibus\">PLC</span></div><div class=\"comp-r\">Lokal styrning i fabriker och kraftverk</div><div class=\"comp-r\">Trådbunden, PROFIBUS, Ethernet</div><div class=\"comp-r\">IEC 61131-3: LD, FBD, ST, IL, SFC</div><div class=\"comp-r\">Tillverkningsindustri, stora fabriker</div></div></div><div class=\"slabel\">PROFIBUS OSI-modellen</div><div class=\"lev\"><div class=\"lev-n\" style=\"background:#ede9fe;color:#5b21b6;\">7</div><div class=\"lev-c\"><div class=\"lev-name\">Applikation – PROFIBUS DP (V0/V1/V2)</div><div class=\"lev-d\">Cyklisk &amp; acyklisk kommunikation, profiler</div></div></div><div class=\"lev\"><div class=\"lev-n\" style=\"background:var(--surface2);color:var(--text2);\">3–6</div><div class=\"lev-c\"><div class=\"lev-name\">Används ej</div><div class=\"lev-d\">Presentation, session, transport, nätverk</div></div></div><div class=\"lev\"><div class=\"lev-n\" style=\"background:#dbeafe;color:#1e40af;\">2</div><div class=\"lev-c\"><div class=\"lev-name\">Datalänk – FDL: master-slav + token-passing</div><div class=\"lev-d\">Bussaccess och datasäkerhet</div></div></div><div class=\"lev\"><div class=\"lev-n\" style=\"background:#fef3c7;color:#92400e;\">1</div><div class=\"lev-c\"><div class=\"lev-name\">Fysiskt – RS485, MBP, fiberoptik, trådlöst</div><div class=\"lev-d\">RS485: upp till 12 Mbit/s · MBP: 31,25 kbit/s + energi via kabel</div></div></div><div class=\"slabel\">PROFIBUS – överföringsteknik</div><table class=\"ptable\"><thead><tr><th>Teknik</th><th>Hastighet</th><th>Max längd</th><th>Ex-skydd</th><th>Topologi</th><th>Noder/seg</th></tr></thead><tbody><tr><td>RS485</td><td>9,6–12 000 kbit/s</td><td>100–1 200 m</td><td>Nej</td><td>Linje</td><td>32</td></tr><tr><td>RS485-IS</td><td>9,6–1 500 kbit/s</td><td>—</td><td>Ex ib</td><td>Linje</td><td>32</td></tr><tr><td>MBP</td><td>31,25 kbit/s</td><td>1 900 m</td><td>Nej</td><td>Linje/tråd</td><td>32</td></tr><tr><td>MBP-IS</td><td>31,25 kbit/s</td><td>1 900 m</td><td>Ex ia/ib</td><td>Linje/tråd</td><td>32</td></tr><tr><td>Fiberoptik</td><td>9,6–12 000 kbit/s</td><td>2–15+ km</td><td>Nej</td><td>Stjärna/ring</td><td>126</td></tr></tbody></table>",
+  "srData": {}
+}
