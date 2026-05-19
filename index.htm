@@ -153,6 +153,11 @@ button.full{width:100%;justify-content:center;margin-top:8px;}
 input:checked+.slider{background:var(--text);}
 input:checked+.slider:before{transform:translateX(18px);}
 .danger-zone h3{color:#dc2626;font-size:14px;font-weight:700;margin-bottom:.75rem;}
+.prog-wrap{margin-bottom:1.25rem;}
+.prog-label{display:flex;justify-content:space-between;font-size:12px;color:var(--text3);margin-bottom:4px;}
+.prog-track{height:8px;background:var(--border);border-radius:4px;overflow:hidden;}
+.prog-fill{height:100%;border-radius:4px;transition:width .6s cubic-bezier(.4,0,.2,1);}
+#confetti-canvas{position:fixed;inset:0;pointer-events:none;z-index:99998;display:none;}
 .category-list{display:flex;flex-direction:column;gap:8px;}
 .file-drop{border:2px dashed var(--border2);border-radius:var(--rl);padding:2rem;text-align:center;color:var(--text3);font-size:13px;cursor:pointer;transition:border-color .15s,color .15s;}
 .file-drop:hover{border-color:var(--text);color:var(--text);}
@@ -199,7 +204,7 @@ input:checked+.slider:before{transform:translateX(18px);}
 <div class="flash-face flash-front">
 <div class="flash-cat-lbl" id="fc-cat-f"></div>
 <div class="flash-term" id="fc-term"></div>
-<div class="flash-hint">Klicka för att se svaret</div>
+<div class="flash-hint">Klicka eller tryck mellanslag för att vända · ← → för att bläddra</div>
 </div>
 <div class="flash-face flash-back">
 <div class="flash-cat-lbl" id="fc-cat-b"></div>
@@ -388,6 +393,7 @@ input:checked+.slider:before{transform:translateX(18px);}
 </div>
 
 <input type="file" id="module-file-input" accept=".json" style="display:none;" onchange="handleModuleFile(this)">
+<canvas id="confetti-canvas"></canvas>
 <div id="toast"></div>
 
 <script>
@@ -397,6 +403,7 @@ input:checked+.slider:before{transform:translateX(18px);}
 const DSC_MODULE = {
   name: "Distribuerade Styrsystem",
   icon: "🏭",
+  version: "1.1",
   categories: [
     {name:"SCADA",  color:"#4f46e5", icon:"🏭"},
     {name:"RTU",    color:"#7c3aed", icon:"📡"},
@@ -739,6 +746,7 @@ function handleModuleFile(input) {
       if (!choice) return;
       // Bevara srData om samma modul laddas igen
       if (!parsed.srData) parsed.srData = {};
+      checkModuleVersion(parsed);
       mod = parsed;
       saveLocal();
       setUnsaved(false);
@@ -808,8 +816,9 @@ function sm2Update(key, correct) {
 }
 function sm2Status(key) {
   const c = sm2Get(key);
-  if (c.correct===0&&c.wrong===0) return 'new';
-  return c.ef<1.8?'hard':'ok';
+  if (c.correct===0 && c.wrong===0) return 'new';  // aldrig svarad
+  if (c.wrong > 0) return 'hard';                   // ett enda fel = svår, punkt
+  return 'ok';                                       // bara rätta svar = kan
 }
 function sm2Weight(key) {
   const c = sm2Get(key);
@@ -841,12 +850,35 @@ function updateStats() {
 // ÖVERSIKT
 // ================================================================
 function renderOverview() {
-  let html = '<div class="slabel" style="margin-top:0;">Kategorier</div>';
+  const allQ = mod.quiz||[];
+  // Global SM-2 progress
+  let totalDone=0, totalOk=0;
+  allQ.forEach(q=>{
+    const c=sm2Get(sm2Key(q));
+    if(c.correct>0||c.wrong>0) totalDone++;
+    if(c.correct>0&&c.wrong===0) totalOk++;
+  });
+  const globalPct = allQ.length ? Math.round(totalOk/allQ.length*100) : 0;
+  let html = '';
+  // Global progress bar
+  if(allQ.length>0){
+    html += `<div class="prog-wrap">
+      <div class="prog-label"><span>📊 Totalt inlärningsframsteg</span><span>${totalOk}/${allQ.length} klara</span></div>
+      <div class="prog-track"><div class="prog-fill" style="width:${globalPct}%;background:${globalPct>=80?'#059669':globalPct>=50?'#d97706':'#6366f1'};"></div></div>
+    </div>`;
+  }
+  html += '<div class="slabel">Kategorier</div>';
   (mod.categories||[]).forEach(cat => {
-    const qc=(mod.quiz||[]).filter(q=>q.c===cat.name).length;
+    const catQ = allQ.filter(q=>q.c===cat.name);
+    const catOk = catQ.filter(q=>{ const c=sm2Get(sm2Key(q)); return c.correct>0&&c.wrong===0; }).length;
+    const catPct = catQ.length ? Math.round(catOk/catQ.length*100) : 0;
     const fc=(mod.flashcards||[]).filter(f=>f.c===cat.name).length;
-    html+=`<div class="ccard"><div class="ccard-h"><span class="tag" style="background:${cat.color};color:white">${cat.icon||'❓'} ${cat.name}</span></div>
-    <div class="ccard-b">${qc} quizfrågor &nbsp;·&nbsp; ${fc} flashkort</div></div>`;
+    html+=`<div class="ccard">
+      <div class="ccard-h"><span class="tag" style="background:${cat.color};color:white">${cat.icon||'❓'} ${cat.name}</span>
+      <span style="font-size:12px;color:var(--text3);margin-left:auto;">${catOk}/${catQ.length} klara</span></div>
+      <div class="prog-track" style="margin-bottom:6px;"><div class="prog-fill" style="width:${catPct}%;background:${cat.color};opacity:.8;"></div></div>
+      <div class="ccard-b">${catQ.length} quizfrågor &nbsp;·&nbsp; ${fc} flashkort</div>
+    </div>`;
   });
   document.getElementById('overview-content').innerHTML = html;
 }
@@ -916,7 +948,7 @@ function updateSRStats() {
   let nw=0,hard=0,ok=0;
   all.forEach(q=>{const s=sm2Status(sm2Key(q));if(s==='new')nw++;else if(s==='hard')hard++;else ok++;});
   document.getElementById('sr-stats').innerHTML=
-    `<span class="sm2-badge sm2-new">Nya: ${nw}</span><span class="sm2-badge sm2-hard">Svåra: ${hard}</span><span class="sm2-badge sm2-ok">Kan: ${ok}</span>`;
+    `<span class="sm2-badge sm2-new">Nya: ${nw}</span><span class="sm2-badge sm2-hard">Fel: ${hard}</span><span class="sm2-badge sm2-ok">Kan: ${ok}</span>`;
 }
 function buildSession() {
   let pool=qFilter==='Alla'?[...(mod.quiz||[])]:(mod.quiz||[]).filter(q=>q.c===qFilter);
@@ -935,14 +967,15 @@ function renderQuizContent() {
   if(qDone){
     const pct=Math.round(qScore/sessionQ.length*100);
     box.innerHTML=`<div class="score-box"><div class="score-n">${qScore}/${sessionQ.length}</div><div class="score-l">${pct}% rätt</div>
-    <div class="score-msg">${pct>=80?'Bra jobbat! 🎉':pct>=60?'Halvvägs – öva mer 📚':'Plugga på och försök igen 😊'}</div>
+    <div class="score-msg">${pct===100?'🏆 Perfekt! Alla rätt!':pct>=80?'Bra jobbat! 🎉':pct>=60?'Halvvägs – öva mer 📚':'Plugga på och försök igen 😊'}</div>
     <button class="primary" style="margin-top:1.25rem;" onclick="restartQ()">🔄 Försök igen</button></div>`;
+    if(pct===100) launchConfetti();
     return;
   }
   const q=sessionQ[qCur];
   const cat=(mod.categories||[]).find(c=>c.name===q.c)||{color:'#666',icon:''};
   const key=sm2Key(q); const st=sm2Status(key);
-  const badge=settings.spacedRep?(st==='new'?'<span class="sm2-badge sm2-new">Ny</span>':st==='hard'?'<span class="sm2-badge sm2-hard">Svår</span>':''):'';
+  const badge=settings.spacedRep?(st==='new'?'<span class="sm2-badge sm2-new">Ny</span>':st==='hard'?'<span class="sm2-badge sm2-hard">Fel</span>':''):'';
   box.innerHTML=`<div class="qbox">
     <div class="q-meta"><span class="tag" style="background:${cat.color};color:white">${cat.icon} ${q.c}</span>${badge}</div>
     <div class="question">${q.q}</div>
@@ -1230,6 +1263,91 @@ function showToast(msg,isErr=false){
 // ================================================================
 // INIT
 // ================================================================
+// ================================================================
+// KEYBOARD NAVIGATION
+// ================================================================
+document.addEventListener('keydown', e => {
+  // Don't trigger if user is typing in an input/textarea
+  if (['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) return;
+  // Admin overlay open — skip
+  if (document.getElementById('admin-overlay').classList.contains('open')) return;
+
+  const activeTab = document.querySelector('.section.active');
+  if (!activeTab) return;
+
+  if (activeTab.id === 'fc') {
+    // Flashcard keyboard nav
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); nextCard(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); prevCard(); }
+    else if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flipCard(); }
+  } else if (activeTab.id === 'qz') {
+    // Quiz keyboard nav — number keys 1-4 to select answer
+    if (!qAns && ['1','2','3','4'].includes(e.key)) {
+      const i = parseInt(e.key) - 1;
+      const opts = document.querySelectorAll('.opt');
+      if (opts[i] && !opts[i].disabled) { e.preventDefault(); selectQ(i); }
+    } else if (qAns && (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight')) {
+      const nb = document.getElementById('qnb');
+      if (nb && nb.style.display !== 'none') { e.preventDefault(); nextQ(); }
+    }
+  }
+});
+
+// ================================================================
+// CONFETTI
+// ================================================================
+function launchConfetti() {
+  const canvas = document.getElementById('confetti-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  canvas.style.display = 'block';
+
+  const colors = ['#6366f1','#10b981','#f59e0b','#ef4444','#3b82f6','#8b5cf6','#ec4899'];
+  const pieces = Array.from({length:150}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height - canvas.height,
+    r: Math.random() * 8 + 4,
+    d: Math.random() * 150 + 50,
+    color: colors[Math.floor(Math.random()*colors.length)],
+    tilt: Math.random() * 10 - 5,
+    tiltAngle: 0,
+    tiltSpeed: Math.random() * 0.1 + 0.05,
+    speed: Math.random() * 3 + 2
+  }));
+
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pieces.forEach(p => {
+      p.tiltAngle += p.tiltSpeed;
+      p.y += p.speed;
+      p.tilt = Math.sin(p.tiltAngle) * 12;
+      ctx.beginPath();
+      ctx.lineWidth = p.r;
+      ctx.strokeStyle = p.color;
+      ctx.moveTo(p.x + p.tilt, p.y);
+      ctx.lineTo(p.x + p.tilt + p.r * 2, p.y + p.r * 2);
+      ctx.stroke();
+    });
+    frame++;
+    if (frame < 200) requestAnimationFrame(draw);
+    else { ctx.clearRect(0,0,canvas.width,canvas.height); canvas.style.display='none'; }
+  }
+  draw();
+}
+
+// ================================================================
+// MODULE VERSION CHECK
+// ================================================================
+function checkModuleVersion(loaded) {
+  if (!loaded.version || !mod.version) return;
+  if (loaded.version === mod.version) return;
+  // Newer version available
+  const msg = `Modulen du laddade (v${loaded.version}) skiljer sig från aktiv version (v${mod.version||'?'}).`;
+  showToast(msg);
+}
+
 document.addEventListener('DOMContentLoaded',()=>{
   // Försök ladda från localStorage, annars DSC-modulen
   if (!loadLocal()) {
