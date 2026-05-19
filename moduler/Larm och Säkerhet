@@ -1,0 +1,1775 @@
+{
+  "name": "Larm och säkerhet",
+  "icon": "🚨",
+  "version": "1.0",
+  "categories": [
+    {
+      "name": "Brandlarm",
+      "color": "#dc2626",
+      "icon": "🔥"
+    },
+    {
+      "name": "Inbrottslarm",
+      "color": "#7c3aed",
+      "icon": "🔓"
+    },
+    {
+      "name": "Passersystem och lås",
+      "color": "#2563eb",
+      "icon": "🔑"
+    },
+    {
+      "name": "CCTV och kameraövervakning",
+      "color": "#0891b2",
+      "icon": "📷"
+    },
+    {
+      "name": "Detektorer",
+      "color": "#059669",
+      "icon": "📡"
+    },
+    {
+      "name": "Lagar, normer och certifiering",
+      "color": "#d97706",
+      "icon": "📋"
+    },
+    {
+      "name": "Installation och underhåll",
+      "color": "#64748b",
+      "icon": "🔧"
+    }
+  ],
+  "quiz": [
+    {
+      "c": "Brandlarm",
+      "q": "Vilka tre delar ingår i begreppet brandskydd?",
+      "o": [
+        "Förebyggande, upptäckande/skadebegränsande och bekämpande brandskydd",
+        "Aktiva, passiva och tekniska brandskydd",
+        "Detektions-, larmsändnings- och räddningsskydd",
+        "Primärt, sekundärt och tertiärt brandskydd"
+      ],
+      "a": 0,
+      "e": "Brandskydd delas in i förebyggande (förhindra att brand uppstår), upptäckande/skadebegränsande (brandlarm som tidigt detekterar) och bekämpande brandskydd (räddningstjänst, sprinkler). Varje gång räddningstjänsten rycker ut har det förebyggande arbetet misslyckats."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är en brandcell?",
+      "o": [
+        "Ett eller flera rum som omsluts av väggar och dörrar med minst 60 minuters brandmotstånd",
+        "En sektion i brandlarmssystemet med max 1 600 m²",
+        "En brandvarnare med inbyggt batteri",
+        "En grupp av rökdetektorer på samma slinga"
+      ],
+      "a": 0,
+      "e": "En brandcell definieras av sitt brandmotstånd på minst 60 minuter (EI 60). Syftet är att räddningstjänsten lättare ska kunna begränsa brandspridningen."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad kallas det regelverk som är 'bibeln' för brandlarm?",
+      "o": [
+        "SBF 110:6",
+        "SSF 130:7",
+        "BBR 94",
+        "EN 54"
+      ],
+      "a": 0,
+      "e": "SBF 110:6 utges av Svenska Brandskyddsföreningen och används som underlag för krav från försäkringsbolag. Tidigare hette det RUS 110 och förvaltades av Försäkringsförbundet."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vilka tre typer av förbränningsprocesser finns det?",
+      "o": [
+        "Pyrolysbrand, glödbrand och flambrand",
+        "Kemisk, fysikalisk och biologisk brand",
+        "Torr, våt och elektrisk brand",
+        "Snabb, långsam och explosiv brand"
+      ],
+      "a": 0,
+      "e": "Vid pyrolysbrand finns varken flamma eller glöd. Glödbrand uppstår när temperaturen överskrider flampunkten. Flambrand (öppen brand) är självständig och behöver ingen tillförd energi."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "En sektion i ett konventionellt brandlarmssystem får maximalt omfatta hur stor yta?",
+      "o": [
+        "1 600 m²",
+        "3 000 m²",
+        "6 000 m²",
+        "800 m²"
+      ],
+      "a": 0,
+      "e": "Enligt SBF-reglerna är 1 600 m² maximal yta per sektion i ett konventionellt system. I ett adresserbart eller analogt system kan kabelnätet täcka upp till 3 000 m² men sektioneras sedan mjukvarumässigt till 1 600 m²."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Hur ofta rapporterar en analog detektor mätvärden till centralapparaten?",
+      "o": [
+        "Ca 30 gånger per minut",
+        "En gång per sekund",
+        "Bara vid brandlarm",
+        "Var 5:e minut"
+      ],
+      "a": 0,
+      "e": "Den analoga detektorn fungerar som ett mätinstrument och rapporterar kontinuerligt ca 30 gånger per minut. Det är centralapparaten som fattar beslut om det är brand, inte detektorn själv."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är det viktigaste kännetecknet för ett konventionellt brandlarmssystem?",
+      "o": [
+        "Detektorerna är kollektivt adresserade — centralen vet vilken sektion men inte exakt detektor",
+        "Varje detektor har en individuell adress",
+        "Detektorerna mäter kontinuerliga analogvärden",
+        "Systemet kommunicerar via bussteknik"
+      ],
+      "a": 0,
+      "e": "I ett konventionellt system kan alla detektorer inom en sektion indikera larm men centralen kan inte skilja dem åt. Centralen ser alltså 'Sektion 3 larmar' men vet inte vilken av de 10 detektorerna som utlöste larmet."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är skillnaden mellan brandlarm och utrymningslarm?",
+      "o": [
+        "Brandlarm ska tidigt upptäcka brand så personalen kan agera; utrymningslarm ska varna alla att utrymma byggnaden",
+        "Brandlarm används bara utomhus; utrymningslarm inomhus",
+        "Brandlarm kräver manuell aktivering; utrymningslarm är alltid automatiskt",
+        "Det är samma sak, bara olika namn"
+      ],
+      "a": 0,
+      "e": "Brandlarm riktar sig till personal som ska kunna läsa av centralen och hitta och släcka branden. Utrymningslarm riktar sig till alla i byggnaden med målet snabb och effektiv utrymning. Aktiveras ofta automatiskt via brandlarm eller manuellt via larmtryckknappar."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är en larmlagringstablå?",
+      "o": [
+        "En enhet som fördröjer utgående brandlarm till larmcentral/brandförsvar så intern insatsstyrka kan undersöka larmet",
+        "En enhet som lagrar alla brandlarmshändelser för dokumentation",
+        "En tablå som visar larmstatus för räddningstjänsten",
+        "En enhet för att testa detektorerna"
+      ],
+      "a": 0,
+      "e": "Larmlagringstablån ger insatsstyrkan (larmorganisationen) tid att undersöka larmet och eventuellt häva det innan räddningstjänsten kallas. Användning måste godkännas av berörd räddningstjänst och försäkringsbolag för varje objekt."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vilken färg ska brandlarmskablar ha?",
+      "o": [
+        "Röd",
+        "Gul",
+        "Grön",
+        "Orange"
+      ],
+      "a": 0,
+      "e": "Brandlarmskablar ska ha röd mantel. Kravet gäller all utrustning som strömförsörjs från brandlarmscentralen. Om annan färg används av estetiska skäl ska kabeln rödmarkeras (50 mm) var 20:e meter samt på båda sidor vid genomgång i golv och tak."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vilken täckningsyta har en värmedetektor?",
+      "o": [
+        "Max 30 m²",
+        "Max 100 m²",
+        "Max 60 m²",
+        "Max 50 m²"
+      ],
+      "a": 0,
+      "e": "Värmedetektor max 30 m² och ingen del av taket får vara längre från detektorn än 5 m. Rökdetektor har max 100 m² med max 10 m avstånd till tak. Detektorer får inte placeras närmare en vägg än 0,5 m."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vilken täckningsyta har en rökdetektor?",
+      "o": [
+        "Max 100 m²",
+        "Max 30 m²",
+        "Max 60 m²",
+        "Max 150 m²"
+      ],
+      "a": 0,
+      "e": "Rökdetektor täcker max 100 m² och ingen del av taket får vara längre bort än 10 m. Rökdetektorer placeras inte närmre vägg än 0,5 m. Jämfört med värmededetektor (30 m²) täcker rökdetektorn betydligt mer."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är en tidkanal i ett brandlarmssystem?",
+      "o": [
+        "Ett kontrolluttryck kopplat till centralens klocka som kan bortkoppla detektorer under bestämda tider",
+        "En mätkanal som registrerar tid från brandstart till larm",
+        "En kommunikationskanal till larmcentralen",
+        "En timer för fördröjning av larmöverföring"
+      ],
+      "a": 0,
+      "e": "Tidkanaler används t.ex. för att automatiskt bortkoppla rökdetektorer 07:00–17:00 i lokaler där verksamheten (matlagning, hantverksarbete) annars skulle generera oönskade larm."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är en brandförsvarstablå (BFT)?",
+      "o": [
+        "En standardiserad manöverpanel för räddningstjänstens hantering av brandlarmscentralen vid larm",
+        "En tablå som lagrar alla brandlarmshändelser",
+        "En panel för intern larmorganisations användning",
+        "En enhet för att bortkoppla sektioner"
+      ],
+      "a": 0,
+      "e": "BFT har de knappar och indikeringar som räddningstjänsten behöver för att manövrera brandlarmscentralen. De flesta BFT:er har textdisplay med sektion och eventuell larmande detektor samt möjlighet att skriva ut larmet."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Hur ska batterier bytas i en brandlarmssystem för problemfri funktion?",
+      "o": [
+        "Vart fjärde år",
+        "Vart annat år",
+        "Varje år",
+        "Vart tredje år"
+      ],
+      "a": 0,
+      "e": "Batterierna bör bytas vart fjärde år. Batteriprov utförs internt av centralen — vid försämrad batterifunktion avger centralen ett fellarm. En brandlarmssystem ska alltid kunna drivas via två alternativa strömkällor."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad innebär 'pollning' i ett adresserbart brandlarmssystem?",
+      "o": [
+        "Centralen frågar detektorerna i tur och ordning om deras status; bara den tillfrågade enheten svarar",
+        "Detektorerna skickar kontinuerliga mätvärden till centralen",
+        "En testmetod för att kontrollera kablar",
+        "Kommunikation via radio"
+      ],
+      "a": 0,
+      "e": "Pollning innebär att centralen systematiskt frågar varje detektor om dess status. Det möjliggör individuell identifiering av varje detektor i systemet och ger hög säkerhet mot sabotage."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Hur stor yta kan ett adresserbart/analogt brandlarmssystems kabelnät maximalt täcka INNAN mjukvarumässig sektionering?",
+      "o": [
+        "3 000 m²",
+        "1 600 m²",
+        "6 000 m²",
+        "500 m²"
+      ],
+      "a": 0,
+      "e": "I ett adresserbart/analogt system kan kabelnätet täcka en yta på max 3 000 m² (och max 50 rum) men sektioneras sedan mjukvarumässigt till kravet på 1 600 m² per sektion. Det ger mer flexibilitet vid installationen."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vilka tre kravställare finns för brandlarmsinstallationer?",
+      "o": [
+        "Myndigheter (myndighetskrav), försäkringsbolag (försäkringskrav) och anläggningsinnehavare (frivilliga krav)",
+        "Boverket, Brandskyddsföreningen och SBSC",
+        "Räddningstjänsten, polisen och kommunen",
+        "Elinstallatörer, ingenjörer och besiktningsmän"
+      ],
+      "a": 0,
+      "e": "Boverket (via BBR 94) kräver t.ex. brandvarnare i nya bostäder och automatiskt brandlarm i vårdbyggnader. Försäkringsbolagen kräver brandlarm för förmånliga villkor. Anläggningsinnehavaren kan frivilligt installera mer än vad lagar kräver."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad kallas den typ av indikeringsdon som ger minst panikkänsla vid larm?",
+      "o": [
+        "Talat meddelande via förinspelat media",
+        "Klocka",
+        "Siren",
+        "Blixtljus"
+      ],
+      "a": 0,
+      "e": "Talade meddelanden via förinspelade media ger mindre panikkänsla än klockor eller sirener och kan ge tydlig information om vad som har hänt och vilken väg man ska ta sig ut. Det är en allt vanligare lösning."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad innebär brandventilation (rökluckor)?",
+      "o": [
+        "Ventilerar bort värme, rök och brandgaser för att underlätta utrymning och brandsläckning",
+        "Förhindrar spridning av brand via ventilationskanaler",
+        "Detekterar rök i ventilationskanaler",
+        "Stänger brandspjäll automatiskt"
+      ],
+      "a": 0,
+      "e": "Brandventilationens uppgift är att ventilera bort rök och brandgaser, minska rökspridning och göra branden mer koncentrerad och åtkomlig för räddningstjänsten. Tilluft (1–1,5 ggr frånluftsöppningarnas yta) krävs för att systemet ska fungera."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vilket brandlarmssystem ger extra hög immunitet mot oönskade larm enligt texten?",
+      "o": [
+        "Interaktivt system",
+        "Konventionellt system",
+        "Adresserbart system",
+        "Analogt system"
+      ],
+      "a": 0,
+      "e": "Interaktiva system samarbetar detektorn och centralen interaktivt för att fatta beslut. Siemens har t.ex. tagit fram 'introperspektivdetektorn' med dubbla optiska och termiska sensorer. Merkostnaden för analoga/interaktiva system tjänas in på lägre service- och underhållskostnader."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är ett ändmotstånd i ett konventionellt brandlarmssystem?",
+      "o": [
+        "Ett motstånd i den sista detektorn som låter centralen mäta sektionens motstånd och kontrollera att ledningen är hel",
+        "En säkring som skyddar mot överspänning",
+        "En enhet som avslutar kommunikationsslingan",
+        "Ett motstånd som justerar detektorns känslighet"
+      ],
+      "a": 0,
+      "e": "Ändmotståndet avslutar sektionskretsen och gör det möjligt för centralen att övervaka om ledningen är hel. Om motståndet förändras (kabelbrott eller kortslutning) utlöses larm."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "En konventionell anläggarfirma för brandlarm måste bl.a. ha vad?",
+      "o": [
+        "En behörig ingenjör för brandlarm anställd samt ha installerat ett visst antal kvm brandlarm",
+        "Bara ett polisgodkännande",
+        "Minst 10 anställda",
+        "Certifiering av Datainspektionen"
+      ],
+      "a": 0,
+      "e": "För att vara godkänd anläggarfirma för brandlarm krävs att man uppfyller antal villkor: tillräcklig installationserfarenhet (antal kvm) och en certifierad behörig ingenjör för brandlarm. Godkända firmor får installera, ansluta, driftsätta och skriva anläggarintyg."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad menas med 'oönskade larm' och vad är den vanligaste orsaken?",
+      "o": [
+        "Larm som inte orsakas av verklig brand — vanligaste orsaker är dålig detektorplacering och oinformerade hantverkare",
+        "Larm från felaktiga detektorer — lösningen är att byta dem",
+        "Larm p.g.a. åskväder — lösningen är åskskydd",
+        "Larm från för känsliga detektorer — lösningen är lägre känslighet"
+      ],
+      "a": 0,
+      "e": "Oönskade larm är ett stort problem för branschen. Detektorer kan placeras bättre och hantverkare som tillfälligt arbetar i lokalerna måste informeras om anläggningen. Man ska alltid underrätta larmcentralen vid arbeten i en centralansluten anläggning."
+    },
+    {
+      "c": "Brandlarm",
+      "q": "Vad är en klartextsdisplay i ett brandlarmssystem?",
+      "o": [
+        "En display som presenterar brandlarm med lättfattlig text (t.ex. avdelning och rumsnummer) istället för bara ett sektionsnummer",
+        "En brandförsvarstablå avsedd för räddningstjänsten",
+        "En display för att programmera centralapparaten",
+        "En display som visar batteristatus"
+      ],
+      "a": 0,
+      "e": "Klartextsdisplayer är till för personal (t.ex. på sjukhus) som kan ha svårt att hitta rätt om bara ett sektionsnummer visas. Med klartext om avdelning och rum kan personalen snabbt hitta och hjälpa till med utrymning."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Hur länge får ett utvändigt akustiskt larmdon ljuda vid lokallarm?",
+      "o": [
+        "Högst 15 minuter",
+        "Högst 30 minuter",
+        "Tills larmet återställs manuellt",
+        "Högst 5 minuter"
+      ],
+      "a": 0,
+      "e": "Enligt reglerna får ett utvändigt akustiskt larmdon ljuda i högst 15 minuter. Vid lokallarm är det viktigt att veta att polisen kanske inte rycker ut om inte någon iakttagit något som tyder på inbrott."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad innebär skalskydd?",
+      "o": [
+        "Byggnadens omslutningsyta (fasad, dörrar, fönster, tak) skyddas helt mot intrång",
+        "Endast de synliga ytorna skyddas",
+        "Detektorer placeras på strategiska passageplatser",
+        "Hela volymen inomhus övervakas"
+      ],
+      "a": 0,
+      "e": "Skalskydd skyddar byggnadens 'skal' — samtliga dörrar, fönster, takluckor etc. Det ger larm innan intrång skett. Skyddet utgörs av magnetkontakter (öppningsskydd), glasdetektorer och vibrationsdetektorer."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad är försåtsskydd?",
+      "o": [
+        "Detektorer på strategiska platser där inkräktaren med säkerhet passerar, t.ex. korridorer",
+        "Skydd av specifika föremål som kassaskåp",
+        "Skydd av byggnadens ytterskal",
+        "Skydd av hela volymen inomhus"
+      ],
+      "a": 0,
+      "e": "'Försåt' betyder bakhåll eller fälla. Detektorer placeras i korridorer, varugångar etc. Utgörs oftast av rörelsedetektorer men kan också inkludera magnetkontakter i innerdörrar."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vilka fyra larmklasser finns för inbrottslarm?",
+      "o": [
+        "Larmklass 1, 2, 3 och 4",
+        "Klass A, B, C och D",
+        "Nivå bas, standard, hög och extra",
+        "Grad 1, 2, 3 och 4"
+      ],
+      "a": 0,
+      "e": "Larmklasserna 1–4 enligt SSF 130:7 bestämmer skyddsnivå. Klass 1 är vanligast i villor. Klassen bestäms av skyddsbehovet och styr krav på utrustning, projektering och dokumentation."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad krävs för att ett A-larm ska genereras?",
+      "o": [
+        "Ytterligare en detektor med annan arbetsprincip ska ha löst ut inom 30 minuter efter den första detektionen",
+        "Tre detektorer av samma typ larmar inom 5 minuter",
+        "En rörelsedetektor löser ut tre gånger i rad",
+        "Larmcentralen bekräftar larmet manuellt"
+      ],
+      "a": 0,
+      "e": "A-larm kräver att TWO detektorer med OLIKA funktion utlöses inom 30 minuter. Exempel: glasdetektor (skalskydd) + IR-detektor (volymskydd) = A-larm. Larmcentralen äger då rätt att tillkalla polis."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad innebär ett B-larm?",
+      "o": [
+        "Första detekteringen av en sektion — föranleder väktarutryckning, inte polisinsats",
+        "Andra detekteringen inom 30 minuter — föranleder polisinsats",
+        "Ett lokalt larm utan larmöverföring",
+        "Ett feillarm som ska ignoreras"
+      ],
+      "a": 0,
+      "e": "B-larm uppstår vid FÖRSTA detekteringen i en sektion. Larmcentralen tillkallar bara väktare. Varje ny detektering av SAMMA detektor ger också bara B-larm. A-larm kräver två olika detektionsprinciper."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad är en dubbelbalanserad larmslinga?",
+      "o": [
+        "Varje detektor har ett parallellkopplat motstånd så centralen kan skilja larm från sabotage på samma trådpar",
+        "En slinga med ändmotstånd i sista detektorn",
+        "En slinga med redundant kabling",
+        "En slinga med triplekoppling"
+      ],
+      "a": 0,
+      "e": "I en dubbelbalanserad slinga kan centralen på ETT trådpar särskilja inbrottslarm (dubblad resistans) från sabotage (kortslutning eller avbrott). Det är det modernaste och säkraste systemet för konventionella slingor."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad gäller specifikt för larmklass 4?",
+      "o": [
+        "Skalskydd oavsett höjd kompletterat med volymskydd i ALLA utrymmen",
+        "Skalskydd upp till 4 m + volymskydd i alla rum utom wc och små fönsterlösa rum",
+        "Skalskydd upp till 4 m + försåtsskydd",
+        "Bara inre försåtsskydd krävs"
+      ],
+      "a": 0,
+      "e": "Larmklass 4 är den högsta klassen med skalskydd OAVSETT HÖJD (alltså även tak och högt belägna fönster) plus volymskydd i alla utrymmen. Lämpar sig för objekt med mycket högt skyddsvärde."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Hur länge är ett larmföretags certifiering giltig?",
+      "o": [
+        "5 år",
+        "3 år",
+        "1 år",
+        "10 år"
+      ],
+      "a": 0,
+      "e": "En certifiering gäller i 5 år. Certifieringarna hanteras av SBSC (Svensk Brand och Säkerhets Certifiering AB), som ägs gemensamt av Svenska Stöldskyddsföreningen och Svenska Brandskyddsföreningen."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad är en tidsförbikoppling?",
+      "o": [
+        "En magnetkontakt i entredörren startar en inpasseringstid (30–45 sek) för att nå manöverpanelen och slå in rätt kod",
+        "En tidsstyrd funktion som automatiskt kopplar till/från larmet vid bestämda tider",
+        "En fördröjning av larmöverföringen till larmcentralen",
+        "En timer som bortkopplar rökdetektorer vid bestämda tider"
+      ],
+      "a": 0,
+      "e": "Tidsförbikoppling ger dig 30–45 sekunder på dig att nå manöverpanelen och koda av larmet. Det är det vanligaste alternativet och godkänt i larmklass 1 och 2."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad är en nyckeltub?",
+      "o": [
+        "En larmad förvaringslåda för nyckel som väktaren använder vid inre kontroll efter larmutryckning",
+        "En elektronisk nyckelbricka för förbikoppling av larmet",
+        "En central nyckelförvaring i systemets centralapparat",
+        "En kodgenerator för engångslösenord"
+      ],
+      "a": 0,
+      "e": "Nyckeltuben förvarar nycklarna till fastigheten säkert och larmat. Väktaren som rycker ut vid larm kan öppna nyckeltuben och utföra en inre kontroll utan att ägaren behöver vara på plats."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad är skillnaden mellan ett lokallarm och ett centralanslutet larm?",
+      "o": [
+        "Lokallarm väcker bara omgivningen med ljud/ljus; centralanslutet larm överförs till larmcentral som kallar polis/väktare",
+        "Lokallarm är billigare men har samma säkerhet",
+        "Centralanslutet larm kräver inget polisgodkännande",
+        "Lokallarm är bara godkänt för bostäder"
+      ],
+      "a": 0,
+      "e": "Lokallarm larmar lokalt och är sårbart om ingen reagerar. Centralanslutet larm är kopplat till en larmcentral med avtal om åtgärder dygnet runt. Alla larmföretag som installerar centralanslutna larm MÅSTE ha polisgodkännande."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad är C-larm?",
+      "o": [
+        "Oftast lokalt larm avsett som skrämsellarm/varsellarm, t.ex. för larmat staket med hög risk för falsklarm",
+        "Tredje detekteringen i följd som föranleder polisinsats",
+        "Larm som bara aktiveras nattetid",
+        "Larm för branddetektering integrerat med inbrottslarm"
+      ],
+      "a": 0,
+      "e": "C-larm är ett skrämsel- eller varsellarm. Det kan t.ex. vara ett larmat staket runt en bensinstation — risken för falsklarm är stor men larmet kan skrämma bort inbrottsförsök. Vid 'djupare intrång' i byggnaden genereras istället A- eller B-larm."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "I vilken larmklass är trådlösa larm godkända?",
+      "o": [
+        "Larmklass R — en reducerad variant av larmklass 1, endast för privatbostäder med normala inventarievärden",
+        "Larmklass 1 fullt ut",
+        "Larmklass 1 och 2",
+        "Ingen larmklass — de är inte godkända"
+      ],
+      "a": 0,
+      "e": "Trådlösa larm hör till larmklass R som innebär att de inte helt uppfyller kraven för larmklass 1. De godkänns bara för privatbostäder med normala inventarievärden. I nuläget är det inte godkänt enligt SSF 130:7 med trådlösa larm."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad menas med 'behörighetsområden' i ett inbrottslarmssystem?",
+      "o": [
+        "Delar av anläggningen som olika personalgrupper kan koppla till/från beroende på sin behörighet och arbetstider",
+        "Geografiska zoner som skyddas av olika larmklasser",
+        "Sektioner med olika känslighet för detektorer",
+        "Zoner med olika typer av detektorer"
+      ],
+      "a": 0,
+      "e": "Behörighetsområden gör det möjligt att dela upp en stor anläggning där olika personalgrupper (med olika arbetstider och access) kan koppla till/från just sina delar. Används t.ex. när flera företag delar en fastighet."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Hur ofta ska inbrottslarm i larmklass 2, 3 och 4 kontrolleras?",
+      "o": [
+        "Minst en gång per kalenderår med högst 15 månaders mellanrum",
+        "En gång vart tredje kalenderår",
+        "Varje månad",
+        "En gång vart annat år"
+      ],
+      "a": 0,
+      "e": "Larmklass 2–4 kontrolleras minst 1 gång/år med max 15 månaders mellanrum. Larmklass 1 kontrolleras en gång vart tredje kalenderår. Den första perioden efter driftsättning av ett inbrottslarm ska vara en provdriftperiod på minst 4 dygn och högst 3 veckor."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vilken fördel har en adresserbar larmslinga jämfört med dubbelbalanserad?",
+      "o": [
+        "Systemet 'pollar' alla detektorer kontinuerligt och kan identifiera exakt vilken detektor som larmat eller sabogerats",
+        "Den är billigare att installera",
+        "Den kräver färre kablar",
+        "Den ger automatisk polisinsats"
+      ],
+      "a": 0,
+      "e": "I ett adresserbart system kopplas varje larmpunkt till en adressenhet (transponder/PID). Systemet pollar kontinuerligt alla detektorer vilket ger mycket hög säkerhet mot sabotage — om en enhet slutar svara märks det omedelbart."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad är volymskydd och när krävs det?",
+      "o": [
+        "Hela rummets volym/yta övervakas med rörelsedetektorer; krävs i larmklass 3 och 4",
+        "Skydd av specifika föremål (volymer) med seismiska detektorer",
+        "Skydd med detektorer placerade på 0,5 m avstånd från väggarna",
+        "Skydd av enbart dörrvolymerna"
+      ],
+      "a": 0,
+      "e": "Volymskydd innebär att hela ytan/volymen är skyddad — ett krav i larmklass 3 och 4. Det krävs betydligt fler rörelsedetektorer än vid försåtsskydd. I larmklass 3 undantas wc, dusch och fönsterlösa rum < 4 m²."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vilka tre kodtyper finns grundläggande i ett inbrottslarmssystem?",
+      "o": [
+        "Masterkod, användarkod och installatörskod",
+        "Adminkod, brukarkod och servicekod",
+        "Primärkod, sekundärkod och tertiärkod",
+        "Ägarekod, anläggningsskötarkod och väktarkod"
+      ],
+      "a": 0,
+      "e": "Masterkoden ger fullständig tillgång och administrerar andra koder. Användarkoden kan koppla till/från anläggningen. Installatörskoden ger tillgång till programmeringsläget men kan normalt INTE koppla till/från — det kräver separatprogrammering."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vad innebär 'indraget skalskydd'?",
+      "o": [
+        "Rörelsedetektorer placeras max 0,5 m innanför fönstren som ska skyddas — larmar först när inkräktaren kommit in",
+        "Skalskyddet monteras innanpå väggen istället för utanpå",
+        "Skalskyddet är dolt inuti väggar och tak",
+        "Skalskydd kombinerat med volymskydd"
+      ],
+      "a": 0,
+      "e": "Indraget skalskydd är tillåtet i larmklass 2 om kravställaren medger det. Nackdelen är att larmet utlöses EFTER att inkräktaren tagit sig in genom fönstret, till skillnad mot traditionellt skalskydd som larmar redan vid uppbrytningsförsök."
+    },
+    {
+      "c": "Inbrottslarm",
+      "q": "Vem utfärdar tillstånd för larminstallationsverksamhet?",
+      "o": [
+        "Den lokala polismyndigheten",
+        "Svenska Stöldskyddsföreningen (SSF)",
+        "SBSC",
+        "Länsstyrelsen"
+      ],
+      "a": 0,
+      "e": "Larmlagen (trädde i kraft 1 juli 1984) ger polisen rätt att utfärda tillstånd för larminstallationsverksamhet. Alla larmföretag som installerar centralanslutna larm måste ha detta polisgodkännande. Lokallarm kräver inget tillstånd."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad definierar begreppet 'behörighet' i ett passersystem?",
+      "o": [
+        "Vem som tilldelats behörighet, VAR den gäller (vilka delar av byggnaden) och NÄR den gäller (tider och dagar)",
+        "Bara vilka nycklar/kort en person har",
+        "Vilken larmklass området tillhör",
+        "Personens anställningsgrad"
+      ],
+      "a": 0,
+      "e": "Behörighet är tredimensionell: person + plats + tid. Det innebär att man t.ex. kan styra att lagerpersonalen bara får komma in på lagret mån–fre dagtid men inte helger."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är ett elslutbleck och vad är dess viktigaste egenskap?",
+      "o": [
+        "Elektromekanisk låsenhet monterad i karmen (ej dörrbladet), kräver fallkolv och kan inte användas som nattlåsning",
+        "En elektrisk regel monterad i dörrbladet",
+        "En magnetisk låsenhet som öppnas med kort",
+        "En elektrisk cylinderlåsning med nyckel"
+      ],
+      "a": 0,
+      "e": "Elslutblecket monteras i karmen vilket undviker komplicerad kabeldragning i dörren. Nackdelen är att det kräver en fallkolv (snedkolv) och inte godkänns som nattlåsning. Finns i rättvänd (låst vid strömbortfall) och omvänd funktion."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad kräver elslutbleck i brand- och utrymningsvägar avseende funktion?",
+      "o": [
+        "Omvänd funktion (olåst vid strömbortfall) — dörrar FÅR INTE vara låsta vid strömavbrott",
+        "Rättvänd funktion — dörrar ska vara låsta vid strömavbrott",
+        "Multifunktion — operatören väljer",
+        "Det spelar ingen roll vilken funktion"
+      ],
+      "a": 0,
+      "e": "I brand- och utrymningsvägar som saknar lås med handtag krävs omvänd funktion. Om anläggningen blir strömlös ska dörrar kunna öppnas fritt. Liv går alltid före sak."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är ett motorlås och vad är dess nackdel?",
+      "o": [
+        "Låsregeln är motorstyrd för upplåsning och låsning; nackdelen är att det kräver kablage genom dörrbladet",
+        "En magnet som håller dörren stängd; nackdelen är hög strömförbrukning",
+        "En fallregel med elektromagnet; nackdelen är att den inte kan låsas nattetid",
+        "En enhet med inbyggt batteri; nackdelen är täta batteribyten"
+      ],
+      "a": 0,
+      "e": "Motorlåset kan låsas mekaniskt med nyckel/vred och ger statusindikering om dörr och låskolvens läge. Nackdelen är kabeldragning GENOM dörrbladet och en överföringskontakt i karmen, vilket är mer komplicerat än t.ex. elslutblecket."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vilka fem låsklasser finns för inbrottsskyddande lås?",
+      "o": [
+        "Klass 1–5 där klass 1 är utan krav och klass 5 är extra höga krav",
+        "Klass A–E",
+        "Grad 1–5 enligt EN-standard",
+        "Nivå bas, standard, brons, silver och guld"
+      ],
+      "a": 0,
+      "e": "Klass 1: inga krav. Klass 2: utrymningskrav viktigare än intrångskrav. Klass 3: båda håll kräver nyckel. Klass 4: som klass 3 plus borrskydd för låshuset. Klass 5: extra höga intrångskrav."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är skillnaden mellan tillhållarlås och cylinderlås?",
+      "o": [
+        "Tillhållarlås har avkänning i låshuset och kan EJ ingå i låssystem; cylinderlås avläser nyckeln i cylindern och KAN ingå i system",
+        "Tillhållarlås är säkrare; cylinderlås är billigare",
+        "Tillhållarlås öppnas med kort; cylinderlås med nyckel",
+        "De är identiska, bara olika namn"
+      ],
+      "a": 0,
+      "e": "Tillhållarlåsens tillhållare (spärrmekanism) sitter inuti låset. De kan INTE ingå i låssystem och nycklarna kan INTE skyddas mot otillåten kopiering. Cylinderlås kan ingå i låssystem och har kopieringsskydd."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad innebär 'distribuerad intelligens' i ett passersystem?",
+      "o": [
+        "Varje undercentral lagrar och utvärderar data lokalt och fungerar autonomt även om kommunikationen med huvuddatorn bryts",
+        "All information lagras centralt i en server",
+        "Detektorerna fattar egna beslut utan centralenhet",
+        "Systemet är uppdelat i flera oberoende delsystem"
+      ],
+      "a": 0,
+      "e": "Med distribuerad intelligens behåller systemet sin funktion även vid kommunikationsavbrott. Varje UC (undercentral) kan hantera 2–16 dörrar med upp till 60 000 kort och fungerar självständigt."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är en hotkod i ett passersystem?",
+      "o": [
+        "En kod som vid inloggning under tvång skickar ett tyst larm till t.ex. larmcentral utan att det märks på plats",
+        "En kod som låser alla dörrar omedelbart",
+        "En kod som aktiverar kameraövervakning",
+        "En masterkod för nödsituationer"
+      ],
+      "a": 0,
+      "e": "Hotkoden används om en person tvingas logga in under hot. Den öppnar dörren normalt MEN skickar samtidigt ett tyst larm (tyst överföring) till larmcentralen så att polis kan kallas utan att gärningsmannen märker något."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad lagras i logg-/transaktionsregistret i ett passersystem?",
+      "o": [
+        "Alla händelser: transaktioner från kodavläsare, larm, felsignaler och operatörers omprogrammering, normalt i kronologisk ordning",
+        "Bara larmlarm från detektorer",
+        "Bara in- och utpasseringshändelser",
+        "Bara felsignaler"
+      ],
+      "a": 0,
+      "e": "Logg-/transaktionsregistret är passersystemets 'dagbok'. Det möjliggör i efterhand kontroll av vem som var var och när. Har något hänt kan man gå tillbaka och se exakt vad som skedde — värdefullt vid utredning av incidenter."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad reglerar SSF 210?",
+      "o": [
+        "Installation av elektromekaniska låsanläggningar knutna till försäkringsavtal",
+        "Projektering och installation av inbrottslarmanläggningar",
+        "Krav på passersystems certifiering",
+        "Kameraövervakning och CCTV"
+      ],
+      "a": 0,
+      "e": "SSF 210 behandlar elektromekanisk låsning. Viktigt: elektromekaniska lås tillåts ENDAST för objekt i skyddsklasserna 1 och 2. Eftersom passersystem inte fungerar utan elektromekaniska lås berörs passersystem av dessa regler."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vilken standard gäller för passersystem och vilka säkerhetsgrader definierar den?",
+      "o": [
+        "SS-EN 60839-11-1 med säkerhetsgrader 1 (lägst) till 4 (högst)",
+        "SSF 130:7 med larmklasser 1–4",
+        "EN 50132 med säkerhetsgrader A–D",
+        "SBF 110:6 med övervakningsprinciper 1–3"
+      ],
+      "a": 0,
+      "e": "SS-EN 60839-11-1 bygger på samma säkerhetsgradsystem som inbrottslarm. Grad 1 passar hotell; grad 4 passar banker och militära anläggningar. Grad 4 kräver kryptering med autentisering i kommunikationen mellan läsare och centralenhet."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är nyckelkontroll 'ABSOLUT' enligt ASSA?",
+      "o": [
+        "Kräver ett godkänt och registrerat behörighetsavtal för att efterbeställa nycklar; elektroniken möjliggör snabb förändring av enskilda nycklars behörighet",
+        "Nycklarna kan kopieras fritt hos ASSA-återförsäljare",
+        "Nycklarna är kodade men kan kopieras med provnyckel och legitimation",
+        "Nycklar tillverkas av patenterade ämnen men kräver inget avtal"
+      ],
+      "a": 0,
+      "e": "ABSOLUT är den högsta nivån av nyckelkontroll. Elektroniken gör det möjligt att snabbt och enkelt spärra enskilda eller grupper av nycklar — som ett borttappat passerkort. Det ger samma höga säkerhet som ett passersystem."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är skillnaden mellan Off-line/Standalone och On-line passersystem?",
+      "o": [
+        "Off-line hanterar all information lokalt i kodlåset; On-line kommunicerar med en centralenhet och centraldator",
+        "Off-line är äldre teknik utan kryptering; On-line är modern teknik",
+        "Off-line kräver nätverksuppkoppling; On-line är fristående",
+        "De är identiska, bara olika märkesnamn"
+      ],
+      "a": 0,
+      "e": "Off-line/Standalone är enkelt och billigt för enstaka dörrar men kan bara innehålla ett tiotal koder och programmeras direkt i låset. On-line-system med centraldator kan hantera tusentals användare, tidszoner och integreras med andra säkerhetssystem."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är en undercentral (UC) i ett passersystem?",
+      "o": [
+        "En enhet som autonomt styr 2–16 dörrar, lagrar upp till 60 000 kort och fungerar även om kommunikationen med huvuddatorn bryts",
+        "En PC som administrerar hela passersystemet",
+        "En kodavläsare med inbyggd beslutslogik",
+        "En enhet som bara vidarebefordrar signaler till centraldatorn"
+      ],
+      "a": 0,
+      "e": "UC:er är kärnan i distribuerad intelligens. Minnesfunktionen har batteribackup och realtidsklocka med kalender. Kan hantera tidsscheman och ger larm om t.ex. dörr forcerad, dörr öppen för länge, motorlåsfel eller sabotage."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är ett kortlås för typ som används ofta på hotell?",
+      "o": [
+        "Magnetkort programmeras i receptionen för aktuell dörr och innebär ett giltighetsdatum — det upphör automatiskt",
+        "Hålkort som städerskan byter kod på med en masterbricka inför varje ny gäst",
+        "RFID-kort som alltid gäller tills det spärs manuellt",
+        "Chip-kort som kräver PIN-kod"
+      ],
+      "a": 0,
+      "e": "Hotellmagnekort programmeras för en specifik dörr med giltighetstid. Vid förlust måste nästa kort innehålla information som inaktiverar det gamla. Hålkortsystem (mekanisk variant) återprogrammeras istället med en masterbricka."
+    },
+    {
+      "c": "Passersystem och lås",
+      "q": "Vad är en porttelefon och vad är dess primära funktion?",
+      "o": [
+        "Kombinerar kommunikation med dörröppning — innehavaren kan tala med besökaren och öppna dörren elektromekaniskt",
+        "En telefon för nödsamtal",
+        "En kamera som identifierar besökare automatiskt",
+        "En kodpanel kombinerat med intercom"
+      ],
+      "a": 0,
+      "e": "Porttelefonen är vanlig vid bostads- och företagsentrieer. Moderna lösningar använder mobiltelefon — besökaren ringer till den boende, som öppnar porten genom att ringa ett speciellt nummer (utan samtalskostnad för den boende)."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vad betyder förkortningen CCTV?",
+      "o": [
+        "Closed Circuit Television",
+        "Central Camera and TV",
+        "Continuous Camera Television Vision",
+        "Circuit Control TV"
+      ],
+      "a": 0,
+      "e": "CCTV (Closed Circuit Television) är fackbeteckningen för kameraövervakning. Begreppet ersätts allt oftare med VSS (Video Security Solutions)."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Hur stor andel av bildhöjden måste en person uppta vid IDENTIFIERING med CCTV?",
+      "o": [
+        "Minst 120 % av bildhöjden",
+        "Minst 50 % av bildhöjden",
+        "Minst 10 % av bildhöjden",
+        "Minst 5 % av bildhöjden"
+      ],
+      "a": 0,
+      "e": "De fyra uppgifterna är: Identifiering ≥120%, Igenkänning ≥50%, Detektering ≥10%, Övervakning ≥5%. Identifiering ställer alltså högst krav på kamera, linser och bildkvalitet."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Var måste tillstånd sökas för kameraövervakning?",
+      "o": [
+        "Hos Länsstyrelsen för allmän plats; för bankkontor/butiker räcker anmälan till Länsstyrelsen",
+        "Hos polismyndigheten för alla platser",
+        "Hos Datainspektionen för alla platser",
+        "Inget tillstånd eller anmälan krävs någonsin"
+      ],
+      "a": 0,
+      "e": "Kameraövervakningslagen (SFS 2013:460, gäller från 1 juli 2013): allmän plats kräver TILLSTÅND från Länsstyrelsen. Bankkontor, postkontor och butiker räcker med ANMÄLAN om man följer reglerna. Upplysningsplikt gäller alltid."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vad är en CCD-sensor i en övervakningskamera?",
+      "o": [
+        "Charge Coupled Device — ett chip med ljuskänsliga pixlar som detekterar bilden och vars pixelantal bestämmer upplösningen",
+        "Continuous Color Detection — ett filter som ger färgbild",
+        "Camera Control Device — elektroniken som styr kameran",
+        "Closed Circuit Digitizer — en analog-till-digital-omvandlare"
+      ],
+      "a": 0,
+      "e": "CCD-sensorn (Charge Coupled Device) har rader och kolumner med ljuskänsliga pixlar. Pixelantalet bestämmer kamerans upplösning. Vanliga format: 1/3\" (chipbredd 4,4 mm) och 1/2\" (chipbredd 6,6 mm)."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vad är standardupplösning respektive hög upplösning för analoga CCTV-kameror?",
+      "o": [
+        "Standard: minst 300 TV-linjer horisontellt; Hög: minst 450 TV-linjer horisontellt",
+        "Standard: 640×480 pixlar; Hög: 1920×1080 pixlar",
+        "Standard: 25 bilder/s; Hög: 50 bilder/s",
+        "Standard: 1 Mpixel; Hög: 4 Mpixel"
+      ],
+      "a": 0,
+      "e": "I analoga system anges upplösning i antal vertikala och horisontala linjer. Europastandarden definierar: standardupplösning ≥300 TV-linjer och hög upplösning ≥450 TV-linjer. VHS-bandspelare ger ca 300 linjer, S-VHS ca 400 linjer."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vad är PTZ och vad används det till?",
+      "o": [
+        "Pan Tilt Zoom — rörlig kamerans rörelseenhet för fjärrstyrning horisontellt, vertikalt och zoom",
+        "Power Transfer Zoom — ett zoomobjektiv med elektrisk styrning",
+        "Picture Transmission Zone — ett säkerhetsprotokoll för bildöverföring",
+        "Passive Tracking Zone — ett system för automatisk spårning"
+      ],
+      "a": 0,
+      "e": "PTZ-kameror kan fjärrstyras från operatörsplatsen. De kan också programmeras med förinställda positioner (Pre-Set) som aktiveras vid larm. Fjärrstyrningen sker med pulskodad signal eller via nätverk."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vad är skillnaden mellan DVR och NVR?",
+      "o": [
+        "DVR tar emot analoga kamerasignaler och omvandlar till digitalt; NVR tar bara emot nätverkskameror (IP-kameror)",
+        "DVR är äldre analog teknik; NVR är digital teknik med bättre bildkvalitet",
+        "DVR lagrar på hårddisk; NVR lagrar i molnet",
+        "De är identiska, bara olika fabrikat"
+      ],
+      "a": 0,
+      "e": "DVR (Digital Video Recorder) har BNC-anslutningar för analoga kameror och omvandlar signalen till digital för lagring. NVR (Network Video Recorder) har INGA analoga ingångar utan kommunicerar bara med IP-kameror via nätverk."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vilka tre vanliga bildkomprimeringsformat används i CCTV?",
+      "o": [
+        "JPEG, MPEG och WAVELET",
+        "AVI, MP4 och H.264",
+        "BMP, TIFF och RAW",
+        "MOV, WMV och FLV"
+      ],
+      "a": 0,
+      "e": "JPEG komprimerar stillbilder, MPEG komprimerar rörliga bilder och WAVELET är en modern komprimeringsteknik. Valet av komprimeringsgrad påverkar bildkvaliteten och hur länge inspelningen kan fortgå innan disken är full."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Varför är en svartvit kamera 5–10 gånger ljusstarkare än en färgkamera?",
+      "o": [
+        "Färgfiltret på framsidan av CCD-sensorn i färgkameran stjäl en stor del av det infallande ljuset",
+        "Färgkameran har en sämre CCD-sensor",
+        "Svartvita kameror har ett bättre objektiv",
+        "Färgkameror kräver mer elektronik som värmer upp sensorn"
+      ],
+      "a": 0,
+      "e": "Färgfiltret på färgkamerans CCD-sensor filtrerar bort en stor del av ljuset (rött, grönt och blått separeras). Svartvita kameror saknar detta filter och är därför mycket bättre i svagt ljus — viktigt vid nattövervakning."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vilket krav gäller för utomhuskamerors skyddshus?",
+      "o": [
+        "Täthetsklass minst IP55 med termostatstyrt värmeelement och gärna solskärm",
+        "IP44 räcker för normalt utomhusbruk",
+        "Inget formellt krav, bara rekommendation",
+        "IP67 krävs för all utomhusinstallation"
+      ],
+      "a": 0,
+      "e": "IP55 ger skydd mot damm och vattensprutning från alla håll. Värmeelementet förhindrar att fönstret immas igen av kondens. Solskärmen leder bort värme och förhindrar reflexer. Kamerafästet ska tåla hård blåst utan att vibrera."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vad är en multiplexer i ett CCTV-system?",
+      "o": [
+        "En enhet som digitaliserar och mixar bilder från flera kameror till en monitorbild/inspelningsenhet",
+        "En enhet som kopplar en kamera till en monitor",
+        "En programvara för bildanalys",
+        "En enhet som komprimerar och lagrar bilder"
+      ],
+      "a": 0,
+      "e": "Multiplexern tar en bild från varje kamera sekventiellt och uppdaterar monitorbilden löpande. Ju fler kameror, desto längre tid tar uppdateringen, vilket kan ge ryckiga bilder. Används när flera kameror ska spelas in på en gemensam inspelningsenhet."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vilka fyra säkerhetsgrader finns för CCTV-system enligt SS-EN 50132-1?",
+      "o": [
+        "Grad 1 (låg risk) till Grad 4 (hög risk), baserade på sannolikheten för och konsekvenserna av en oönskad händelse",
+        "Nivå A till D baserade på upplösningskrav",
+        "Klass 1–4 baserade på antal kameror",
+        "Säkerhetsklass bronze, silver, guld och platina"
+      ],
+      "a": 0,
+      "e": "Grad 1: låg risk, lager med låg risk. Grad 2: låg-medelhög risk. Grad 3: medelhög-hög risk, offentliga byggnader. Grad 4: hög risk, konfidentiell information och höga värden. Stor sannolikhet + stora konsekvenser = Grad 4."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vad innebär reflektans i CCTV-sammanhang?",
+      "o": [
+        "Hur mycket ljus en yta reflekterar mot kameran — varierar kraftigt mellan mörka och ljusa ytor",
+        "Hur mycket ljus objektivet reflekterar",
+        "Hur kameran hanterar motljus",
+        "Hur skärpedjupet påverkas av ljusförhållandena"
+      ],
+      "a": 0,
+      "e": "Reflektansen påverkar kraftigt hur mycket ljus kameran 'ser'. Blöt asfalt kan ha mycket låg reflektans medan snöbelagd asfalt reflekterar mycket mer. Det är det reflekterade ljuset som når kamerans CCD-sensor."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "q": "Vilka normer/regelverk gäller specifikt för CCTV-anläggningar i Sverige?",
+      "o": [
+        "SSF 1060 (projektering och installation), SSF 1061 (anläggarfirma) och SSF 1062 (behörig ingenjör)",
+        "SSF 130 och SSF 200",
+        "SBF 110:6 och EN 54",
+        "BBR 94 och larmlagen"
+      ],
+      "a": 0,
+      "e": "SSF 1060 innehåller krav på risk/behovsanalys, dokumentation, verifiering och service. SSF 1061 ställer krav på anläggarfirman. SSF 1062 ger behörig ingenjör certifikat. Standarderna SS-EN 50132-1 och SS-EN 50132-7 är referenserna."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är skillnaden mellan en maximalvärmedetektor och en differentialvärmedetektor?",
+      "o": [
+        "Maximal larmar vid fast temperatur (ca 50°C); differential larmar vid snabb temperaturökning (ca 10°C/minut)",
+        "Maximal larmar vid hög luftfuktighet; differential larmar vid temperatur",
+        "Maximal används utomhus; differential inomhus",
+        "De fungerar identiskt, bara olika tillverkare"
+      ],
+      "a": 0,
+      "e": "Differentialdetektorn är snabbare och bör väljas i första hand eftersom den reagerar på en snabb temperaturstegring (brandförlopp) snarare än ett absolut värde. Maximaldetektorn används i bastu, imkåpa och utomhus."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en joniserande rökdetektor (RDj) bra respektive dålig på?",
+      "o": [
+        "Bra på flammande bränder, dålig på pyrande (glödande) bränder",
+        "Bra på pyrande bränder, dålig på flammande bränder",
+        "Bra på alla brandtyper, används mest",
+        "Bra på gasbränder, dålig på rök"
+      ],
+      "a": 0,
+      "e": "Joniserande detektorer detekterar små osynliga partiklar (flammande bränder). De innehåller ett radioaktivt ämne och är på väg ut från marknaden. I hemmen finns de fortfarande men bör bytas mot optiska detektorer."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en optisk rökdetektor (RDo) bra på och hur fungerar den?",
+      "o": [
+        "Bra på pyrande (glödande) bränder; arbetar med pulserat IR-ljus som vid rök reflekteras till en fotodiod",
+        "Bra på flammande bränder; arbetar med jonisering",
+        "Bra på alla brandtyper; arbetar med laserteknik",
+        "Bra på gasdetektion; arbetar med kemiska sensorer"
+      ],
+      "a": 0,
+      "e": "Den optiska detektorn kräver stora ljusa rökpartiklar (pyro-/glödbränder). Ljusspridningsprincipen: IR-puls + rök = reflektion till fotodiod = larm. Idag den vanligaste grunddetektorn i modernt brandskydd."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en flerkriteriedetektor?",
+      "o": [
+        "Två eller fler tekniker (t.ex. diffvärme + optisk rök) arbetar tillsammans — värmedelen styr ofta känsligheten i rökkammaren",
+        "En detektor som kan väljas om för olika typer av bränder",
+        "En detektor med inbyggd kommunikationsmodul",
+        "En detektor som täcker extra stor yta"
+      ],
+      "a": 0,
+      "e": "Kombinationen värme/rök är en bra ersättare för den joniserande detektorn. Det finns även kombinationer av rök/värme och brandgasdetektorer. Syftet är att minska oönskade larm och öka träffsäkerheten."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en linjerökdetektor (RDL) och vilka ytor passar den för?",
+      "o": [
+        "En sändare skickar IR-ljus upp till 100 m till en mottagare — täcker stora ytor (>500 m²) med högt i tak t.ex. centrumanläggningar",
+        "En kabel som drar längs taket och reagerar på rök",
+        "En detektor för ventilationskanaler",
+        "En rad av punktdetektorer monterade i linje"
+      ],
+      "a": 0,
+      "e": "Linjerökdetektorn kräver mer rök för att larma jämfört med punktdetektorer. I stora lokaler placeras de ofta på lägre höjd för tidigare indikering. Fördunklingsprincipen: rök minskar IR-ljusets intensitet vid mottagaren."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en samplingsdetektor?",
+      "o": [
+        "Ett rörsystem med hål suger in luft till en laserdetektor — ger tidig indikering och används för förvarningslarm (lokala förlarm)",
+        "En detektor som samplar luft periodvis för energibesparing",
+        "En detektor för att provta rök ur ventilationskanaler",
+        "En optisk detektor med högre samplingsfrekvens"
+      ],
+      "a": 0,
+      "e": "Samplingsdetektorn är ett högkänslighetssystem — lasern kan 'se' mycket små rökpartiklar. Den används som förlarm (stannar inom byggnaden) som ger personal tid att reagera innan larm går ut externt."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en magnetkontakt och vad används den till i inbrottslarm?",
+      "o": [
+        "Detekterar uppbrytning av dörrar, fönster och luckor — en del av skalskyddet",
+        "Detekterar vibrationer i väggar vid intrång",
+        "Detekterar rörelser i volymen",
+        "Detekterar glassprickor vid krossning"
+      ],
+      "a": 0,
+      "e": "Magnetkontakten larmar när dörren/fönstret öppnas och magneten separerar från kontakten. Det är det vanligaste skalskyddsskyddet. Enligt SSF 130:7 får max 6 magnetkontakter per sektion (utan separat analysarenhet)."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är skillnaden mellan en seismisk detektor och en glasdetektor?",
+      "o": [
+        "Seismisk/vibrationsdetektor skyddar förvaringsenheter (kassaskåp); glasdetektor detekterar krossning av fönsterglas",
+        "De är identiska — seismisk är ett äldre namn",
+        "Seismisk detekterar rörelse i luften; glasdetektor berör glaset",
+        "Glasdetektor är mer känslig än seismisk"
+      ],
+      "a": 0,
+      "e": "Seismiska/vibrationsdetektorer är punktskyddets kärna — de sätts fast på kassaskåp, värdeskåp etc. Glasdetektorer monteras på glasrutan eller i taket och detekterar krossningens karakteristiska ljudmönster."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Hur nära vägg får detektorer placeras?",
+      "o": [
+        "Inte närmare än 0,5 m",
+        "Inte närmare än 1,0 m",
+        "Inte närmare än 0,3 m",
+        "Det finns inget minimikrav"
+      ],
+      "a": 0,
+      "e": "Både värme- och rökdetektorer ska placeras minst 0,5 m från vägg. Nära väggar bildas ett luftlager som försenar rök- och värmetransport till detektorn. Detektorer bör placeras centralt i rummet för bäst täckning."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en flamdetektor och var används den?",
+      "o": [
+        "Reagerar på elektromagnetisk strålning (UV/IR) från öppen låga — används i brand-/explosionsfarlig miljö t.ex. oljeplattformar och sprutboxar",
+        "Reagerar på röken från en flammande brand",
+        "En specialversion av optisk rökdetektor",
+        "En termisk kamera för branddetektering"
+      ],
+      "a": 0,
+      "e": "Flammdetektorn reagerar extremt snabbt (20 ms) på strålningen en brand utstrålar. Den styr ofta ett automatiskt släckmedel. Finns för UV-, IR- eller kombinerat spektrum."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en ventilationsmätkammare?",
+      "o": [
+        "En plastlåda med rör som borras in i ventilationskanalen och leder luft genom en inbyggd rökdetektor — detekterar rök i kanalsystemet",
+        "En mätkammare för luftflöde i brandventilationssystemet",
+        "En kanalfläkt för brandventilation",
+        "En analog detektor för kanalövervakning"
+      ],
+      "a": 0,
+      "e": "Ventilationsmätkammaren är den enda godkända metoden för rökdetektering i ventilationskanaler. En modell med luftflödesindikator bör användas för att verifiera att luft verkligen passerar genom detektorkammaren."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en laserdetektor (VIEW) och vad utmärker den?",
+      "o": [
+        "En optisk detektor med pulserat laserljus — många gånger känsligare än vanlig optisk rökdetektor, kan detektera mycket små partiklar",
+        "En detektor som scannar rummet med laser",
+        "En linjerökdetektor som använder laser istället för IR",
+        "En ny typ av flamdetektor"
+      ],
+      "a": 0,
+      "e": "Laserdetektorn fungerar som den optiska detektorn men laser kan 'se' mycket mindre partiklar. Den används i miljöer med höga krav på tidig detektion, ofta i kombination med samplingsdetektorer."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en adressenhet i ett brandlarms- eller inbrottslarmssystem?",
+      "o": [
+        "En enhet som ger en konventionell detektor en individuell identitet i ett adresserbart/analogt system",
+        "En hårdvarumodul i centralapparaten",
+        "En kommunikationsenhet för larmöverföring",
+        "En enhet som mäter och lagrar detektorns analogvärden"
+      ],
+      "a": 0,
+      "e": "Adressenheterna (transpondrar/PID) gör det möjligt att ansluta konventionella detektorer till adresserbara system. De kan också ansluta 'ej systemanknutna' detektorer som linjerök-, linjevärme-, flam- och samplingsdetektorer."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en kombinationsdetektor?",
+      "o": [
+        "En detektor med rökkammare och termistor i samma skal — delarna arbetar var för sig och röken kan kopplas bort vid heta arbeten",
+        "En detektor som kombinerar brand- och inbrottsdetektion",
+        "En detektor för både rök och gas",
+        "En detektor med automatisk kompensation för smuts"
+      ],
+      "a": 0,
+      "e": "Kombinationsdetektorn är praktisk vid t.ex. 'heta arbeten' (svetsning, slipning) — man kopplar bort rökkammardelen men behåller värmedetektionen. Det minskar risken för oönskade larm utan att helt kompromissa med säkerheten."
+    },
+    {
+      "c": "Detektorer",
+      "q": "Vad är en linjevärmedetektor?",
+      "o": [
+        "En kabel/rör som påverkas av värme längs hela sin sträcka — lämplig för skydd av elkabelnät på stegar och takfotssskydd på träbyggnader",
+        "En rad av termiska punktdetektorer monterade i linje",
+        "En IR-stråle som mäter temperatur längs en linje",
+        "En konventionell värmedetektor med extra lång räckvidd"
+      ],
+      "a": 0,
+      "e": "Linjevärmdetektorn skyddar långa sträckor och kan ge antingen maximalvärde- eller differentialvärdelarm. Perfekt för stöldrika miljöer med lång kabelinstallation och för att skydda träbyggnaders takfot mot anlagda bränder."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad krävs av en godkänd anläggarfirma för att installera inbrottslarm enligt SSF 130?",
+      "o": [
+        "Certifiering av SBSC, polisgodkännande och att installationen utförs av certifierad personal",
+        "Bara polisgodkännande",
+        "Bara certifiering av SSF",
+        "Inget specifikt — vem som helst får installera"
+      ],
+      "a": 0,
+      "e": "Larmföretag som installerar centralanslutna larm MÅSTE ha polisgodkännande (larmlagen). För installationer enligt SSF 130 krävs dessutom SBSC-certifiering. Certifieringen gäller i 5 år och innefattar både personcertifiering (behörig ingenjör) och företagscertifiering."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vilka fyra delar innehåller SSF:s regelverk för inbrottslarm?",
+      "o": [
+        "SSF 130 (projektering/installation), SSF 1014 (materiel), SSF 1015 (anläggarfirma), SSF 1016 (behörig ingenjör)",
+        "SSF 110, 120, 130 och 140",
+        "SSF A, B, C och D",
+        "SSF 1, 2, 3 och 4"
+      ],
+      "a": 0,
+      "e": "Svenska Stöldskyddsföreningens fyra delar täcker hela kedjan: regelverket för installationen, kraven på materielen, kraven på firman och kraven på den ansvariga ingenjören."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad kräver Boverkets BBR 94 avseende brandlarm?",
+      "o": [
+        "Brandvarnare i nya bostäder; automatiskt brandlarm i vårdbyggnader och alternativa boenden; utrymningslarm i hotell och samlingslokaler",
+        "Sprinkler i alla nya byggnader",
+        "Brandlarm i alla kommersiella lokaler",
+        "Brandvarnare bara i flerfamiljshus"
+      ],
+      "a": 0,
+      "e": "BBR 94 är Boverkets byggregelverk. Utöver dessa grundkrav ställer Arbetsmiljöverket krav på brandskydd på arbetsplatser. Kraven kompletteras av försäkringsbolagen som ofta kräver brandlarm för förmånliga villkor."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad innebär brandteknisk klass EI 60?",
+      "o": [
+        "E = rökavskiljning (rök ska ej spridas till nästa utrymme), I = isolering (värme ska ej tränga igenom), 60 = antal minuter brandmotståndet ska hålla",
+        "E = evacuation, I = insulation, 60 = brandtemperatur i grader Celsius",
+        "EI = europeisk standard, 60 = klassificeringsnummer",
+        "En förkortning för en specifik brandskyddsmaterial"
+      ],
+      "a": 0,
+      "e": "EI 60 är brandteknisk klass för en avskiljande byggnadsdel. E-kravet (rökavskiljning) skyddar utrymningsvägar. I-kravet (isolering) skyddar mot värmeledning. 60 minuter ger räddningstjänsten tid att komma och begränsa branden."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vilket organ har centralt tillsynsansvar för all kameraövervakning i Sverige?",
+      "o": [
+        "Datainspektionen",
+        "Länsstyrelsen",
+        "Polismyndigheten",
+        "Säkerhetspolisen"
+      ],
+      "a": 0,
+      "e": "Kameraövervakningslagen (SFS 2013:460) ger Datainspektionen centralt tillsynsansvar. Länsstyrelsen hanterar dock tillstånd och anmälningar. Tillstånds- och anmälningsplikten beror på om platsen är allmän eller enskild."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad reglerar standarden SS-EN 60839-11-1?",
+      "o": [
+        "Passersystem — loggning, identifiering och kontroll, med säkerhetsgrader 1–4 och krav på kryptering i högsta graden",
+        "Brandlarmssystem och detektorer",
+        "Kameraövervakning och bildlagring",
+        "Inbrottslarm och larmöverföring"
+      ],
+      "a": 0,
+      "e": "SS-EN 60839-11-1 graderar passersystem i säkerhetsgrader 1–4 (som inbrottslarm). Grad 4 kräver kryptering med autentisering. Standarden tillåter RFID och NFC som kodmedia men kräver kryptering för höga säkerhetsgrader."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad är ett anläggarintyg och vad ska det innehålla?",
+      "o": [
+        "Ett intyg som skrivs av certifierad anläggarfirma vid driftsättning och anger bl.a. vilken övervakningsprincip som valts",
+        "Ett intyg från Boverket att byggnaden uppfyller brandkrav",
+        "Ett dokument som bekräftar att detektorerna fungerar",
+        "En rapport från larmcentralen om anläggningens status"
+      ],
+      "a": 0,
+      "e": "Anläggarintyget är en viktig del av dokumentationen. Det anger övervakningsprincip (fullständig/ofullständig), vilka regler som följts och att installationen är korrekt utförd av certifierad firma. Krävs vid försäkringsanläggningar."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad reglerar SSF 200?",
+      "o": [
+        "Hur kraven på inbrottsskydd varierar beroende av värde och stöldbegärlighet på egendomen — tre skyddsklasser",
+        "Krav på anläggarfirmor för inbrottslarm",
+        "Krav på behörig ingenjör för passersystem",
+        "Regler för kameraövervakning i butiker"
+      ],
+      "a": 0,
+      "e": "SSF 200 definierar tre skyddsklasser: klass 1 (allmänna villkor, normala värden), klass 2 (särskilda villkor, större mängd begärlig egendom) och klass 3 (särskilda villkor, t.ex. radio/TV-affär med huvudsakligen begärlig egendom)."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad innebär EN 54-normerna för brandlarmsystem?",
+      "o": [
+        "Maximalt 512 adresser per centralapparat i adresserbara system; nätverkskopplade centraler faller utanför normerna",
+        "Brandlarmscablar ska vara EU-certifierade",
+        "Alla detektorer ska vara individuellt adresserade",
+        "Branddörrar ska öppnas automatiskt vid larm"
+      ],
+      "a": 0,
+      "e": "EN 54 är den europeiska normserien för brandlarmsutrustning. Begränsningen på 512 adresser per central gäller. Vill man bygga större system kopplas centraler samman i nätverk, men det faller utanför EN 54-ramverket."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vilken myndighet ansvarar för brandskyddet på arbetsplatser?",
+      "o": [
+        "Arbetsmiljöverket",
+        "Boverket",
+        "Räddningstjänsten",
+        "Försäkringsinspektionen"
+      ],
+      "a": 0,
+      "e": "Arbetsmiljöverket ansvarar för brandskyddet specifikt på arbetsplatser och kan i dessa sammanhang kräva brandlarm i vissa typer av verksamheter, utöver vad BBR 94 kräver."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad innebär upplysningsplikten vid kameraövervakning?",
+      "o": [
+        "Tydlig skyltning att platsen är kameraövervakad — gäller alltid, även om det inte är allmän plats",
+        "Bara krav på allmänna platser",
+        "Krav bara vid inspelning, inte live-bevakning",
+        "Gäller bara om ansiktsigenkänning används"
+      ],
+      "a": 0,
+      "e": "Upplysningsplikt innebär att personer som befinner sig inom ett kameraövervakat område alltid ska informeras om detta via tydlig skyltning. Det gäller oavsett om tillstånds- eller anmälningsplikt föreligger."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vilka skyddsklasser definieras i SSF 200?",
+      "o": [
+        "Tre: skyddsklass 1 (allmänna villkor), skyddsklass 2 (särskilda villkor) och skyddsklass 3 (särskilda villkor, högt begärlig egendom)",
+        "Fyra klasser motsvarande larmklasserna 1–4",
+        "Fem klasser A–E",
+        "Tre larmklasser R, 1 och 2"
+      ],
+      "a": 0,
+      "e": "Skyddsklass 1: låg risk, t.ex. blomsteraffär. Skyddsklass 2: medelhög risk, t.ex. livsmedelsaffär. Skyddsklass 3: hög risk, t.ex. radio/TV-affär. I skyddsklass 3 måste dörrar förses med TWO oberoende lås i minst klass 3."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "q": "Vad kräver Vanderbilt SPC-systemets centralapparater för att uppfylla EN50131-standarden?",
+      "o": [
+        "Batteriinstallation och sabotageskydd som möter standardkraven; kapslingarna ska ha specifika sabotagebrytarsatser",
+        "Bara en programvarucertifiering",
+        "Bara ett godkänt polisnummer",
+        "Certifiering av SBSC räcker"
+      ],
+      "a": 0,
+      "e": "EN 50131 är den europeiska standarden för inbrottslarmssystem. Vanderbilt SPC-systemet uppfyller EU-direktiv och standarder inklusive EN 50131, EN 50136 (larmöverföring) och kan konfigureras för PD 6662:2010 (brittisk vägledning)."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vilka kabeltyper används normalt för brandlarmssystem?",
+      "o": [
+        "ELAKY, ELKY och EKKR med röd mantel, normalt 2×0,6 eller 2×1,0 mm",
+        "FKKJ och ELKM med gul mantel",
+        "Koaxialkabel för alla slingor",
+        "Screened CAT5 nätverkskabel"
+      ],
+      "a": 0,
+      "e": "2×1,0 mm (area 0,75 mm²) används vid långa slingor/sektioner. Kablar utan röd mantel får användas av estetiska skäl men ska rödmarkeras var 20:e meter och vid genomgång i golv/tak. Röd mantel gäller ALL utrustning strömförsörjd från brandlarmscentralen."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad ingår i ett kvartalstest för brandlarm?",
+      "o": [
+        "Larmprov av minst en detektor per sektion i 10% av sektionerna, funktionsprov av larmdon och styrningar, prov av larmförbindelsen",
+        "Bara lamptest och visuell kontroll",
+        "Bara prov av centralapparaten",
+        "Hela systemet testas varje kvartal"
+      ],
+      "a": 0,
+      "e": "Kvartalsprov utökar månadsprovet: på ett ÅR ska ALLA sektioner provas (minst 10% per kvartal). Varje avvikelse noteras i kontrolljournalen och åtgärdas snarast. Provet ska utföras av utbildad anläggningsskötare."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad är viktigt vid kabelförläggning för inbrottslarmssystem?",
+      "o": [
+        "Kabeln ska förläggas inom det skyddade området och så infälld som möjligt — utanpåliggande kablar har alltid sabotagerisk",
+        "Kabeln ska vara röd och tydligt märkt",
+        "Kabeln ska förläggas i separat kabelkanal utanför det skyddade området",
+        "Det finns inga specifika krav på förläggning"
+      ],
+      "a": 0,
+      "e": "Kabelförläggnig inom det skyddade området minskar sabotagerisken. Inbrottslarm måste ha sitt eget kabelnät och får inte förläggas i samma kabelmantel som ledare för annan anläggning."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad är en provdriftperiod för ett inbrottslarmssystem?",
+      "o": [
+        "Minst 4 dygn och högst 3 veckor efter driftsättning — en period för att kontrollera att systemet fungerar i praktiken",
+        "En testvecka under installationsfasen",
+        "En månadslång utvärderingsperiod",
+        "En daglig testperiod de första 30 dagarna"
+      ],
+      "a": 0,
+      "e": "Provdriftperioden är obligatorisk enligt SSF 130:7. Under denna period identifieras praktiska problem (oönskade larm, missade detektorer) som inte syntes under idrifttagningen. Perioden ska vara tillräcklig för att täcka normala driftsituationer."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad ska ingå i dokumentationen som lämnas vid överlämnande av ett inbrottslarmssystem?",
+      "o": [
+        "Handhavandeinstruktion, teknisk dokumentation, orienteringsritning och utbildning av anläggningsskötaren",
+        "Bara en teknisk manual",
+        "Bara en installationsritning",
+        "Bara ett certifikat"
+      ],
+      "a": 0,
+      "e": "Komplett dokumentation är avgörande. Anläggningsskötaren måste utbildas grundligt. Brukare får bara instruktioner om på/av och sina specifika funktioner. Orienteringsritningen visar detektorernas placering och sektionsnummer."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad kallas kabeln som förenklar passersysteminstallation och vad innehåller den?",
+      "o": [
+        "Securcable — innehåller spänningsmatning (2×0,75) och ett skärmat kommunikationspar (2×0,22) i samma mantel",
+        "Multikabel — innehåller fyra skärmade par",
+        "Säkerhetskabel — innehåller fyra trådpar i röd mantel",
+        "Systemkabel — innehåller koaxial och datapar"
+      ],
+      "a": 0,
+      "e": "Securcable samlar spänningsmatning och kommunikation i ett kabel, vilket väsentligt underlättar installationen. Kabelvalet för passersystem styrs av antal parter och avstånd; för standalone-system vs. nätverkssystem finns skillnader."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Hur ofta ska servicebesök utföras på en brandlarmsanläggning?",
+      "o": [
+        "Daglig kontroll av anläggningsskötare, månadsvis lampprov, kvartalsvis detektorprov, och årlig service av anläggarfirma",
+        "Bara en gång om året",
+        "Varje månad av anläggarfirma",
+        "Bara vid fel eller larm"
+      ],
+      "a": 0,
+      "e": "Skötselschema: dagligen (visuell kontroll), månatligen (lampprov + reservkraftprov), kvartalsvis (detektorprov + larmdontest), och årsvis (service av anläggarfirma + revisionbesiktning av certifierad besiktningsfirma)."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad är en orienteringsritning (OR-ritning) och vad visar den?",
+      "o": [
+        "En ritning som visar sektionernas/adressernas omfattning och placering i byggnaden — används för att snabbt lokalisera utlöst larm",
+        "En installationsritning med kabelvägar",
+        "En dokumentation av centralapparatens inställningar",
+        "En brandskyddsplan för räddningstjänsten"
+      ],
+      "a": 0,
+      "e": "OR-ritningen är ett kritiskt hjälpmedel vid larm — utan den kan det ta lång tid att hitta en utlöst detektor i en stor byggnad. I moderna adresserbara system kompletteras OR-ritningen med klartext i centralapparaten för snabb lokalisering."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad är idrifttagning av ett brandlarmssystem?",
+      "o": [
+        "Spänningssättning efter anslutning av alla komponenter, följt av inställningar, injustering och funktionsprovning av alla delar",
+        "Bara spänningssättning och kontroll att centralen startar",
+        "Provning av detektorer utan att aktivera larmöverföring",
+        "En slutbesiktning utförd av Brandskyddsföreningen"
+      ],
+      "a": 0,
+      "e": "Idrifttagning kräver att ALLA delar provats och fungerar till 100%. Det gäller att testa alla detektorer, manöverpaneler, larmdon och larmöverföringen. Felaktiga inställningar kan kosta liv — 'Testa av allt, det ska rädda liv!'"
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad ska alltid finnas vid varje brandlarmcentral?",
+      "o": [
+        "En kontrolljournal med särtryck av regelverkets kapitel 6 och 7",
+        "En skrivare för larmutskrifter",
+        "En kopia av anläggarintyget",
+        "En brandförsvartablå"
+      ],
+      "a": 0,
+      "e": "Kontrolljournalen är obligatorisk enligt SBF 110. Den används för att notera alla månads- och kvartalsprov, avvikelser och åtgärder. Särtrycket av kapitel 6 och 7 ger anläggningsskötaren direkta instruktioner för underhåll."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad ska göras omedelbart efter ett arbete i en centralansluten brandlarmsanläggning?",
+      "o": [
+        "Alltid underrätta larmcentralen och avsluta med ett överföringsprov där uppgifter stäms av",
+        "Bara återställa centralapparaten",
+        "Notera arbetet i kontrolljournalen",
+        "Kontakta försäkringsbolaget"
+      ],
+      "a": 0,
+      "e": "Rutinen är viktig för att undvika falsklarm till räddningstjänsten (och kostnaderna för det) och för att säkerställa att larmöverföringen fungerar korrekt efter arbetet. Larmcentralen måste också ha uppdaterade uppgifter om anläggningen."
+    },
+    {
+      "c": "Installation och underhåll",
+      "q": "Vad är strömförsörjningskraven för en brandlarmsanläggning?",
+      "o": [
+        "Ska alltid kunna drivas via TVÅ alternativa strömkällor — nätspänning via likriktare OCH batterier",
+        "Bara nätspänning räcker",
+        "Bara batteri för enkel drift",
+        "Reservaggregat och UPS är obligatoriska"
+      ],
+      "a": 0,
+      "e": "Kravet på dubbla strömkällor säkerställer att brandlarmet fungerar vid strömavbrott. Batterierna ska klara reservdrift under tillräcklig tid (varierar beroende på anläggning). Batterierna bör bytas vart fjärde år."
+    }
+  ],
+  "flashcards": [
+    {
+      "c": "Brandlarm",
+      "t": "SBF 110:6",
+      "d": "Svenska Brandskyddsföreningens regelverk för brandlarm — 'bibeln' för brandlarmsinstallationer, ersätter det gamla RUS 110 från Försäkringsförbundet."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Brandcell",
+      "d": "Ett eller flera rum omslutna av väggar och dörrar med minst 60 minuters brandmotstånd (EI 60). Syftet är att begränsa brandspridning och ge räddningstjänsten tid att agera."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Konventionellt brandlarmssystem",
+      "d": "Detektorer är kollektivt adresserade per sektion — centralen vet vilken sektion som larmar men inte exakt detektor. Ändmotstånd används för att övervaka kabelns integritet."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Adresserbart brandlarmssystem",
+      "d": "Varje detektor är individuellt adresserad via en adressenhet. Centralen pollar detektorerna och kan identifiera exakt vilken som larmar. Kabeln läggs som en slinga med återgång."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Analogt brandlarmssystem",
+      "d": "Detektorerna fungerar som mätinstrument och rapporterar ca 30 mätvärden/minut. Centralapparaten fattar beslut om brand genom att jämföra med tidigare lagrade värden från just den detektorn."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Differentialvärmedetektor",
+      "d": "Larmar vid snabb temperaturökning (ca 10°C/minut). Snabbare och mer lämplig än maximaldetektorn i de flesta situationer. Bör väljas i första hand."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Maximalvärmedetektor",
+      "d": "Larmar när temperaturen nått ett förinställt värde (ca 50°C). Får bara användas i små rum med förväntat snabbt brandförlopp, t.ex. bastu och imkåpa."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Optisk rökdetektor (RDo)",
+      "d": "Vanligaste rökdetektorn idag. Arbetar med pulserat IR-ljus (ljusspridningsprincipen) — bra på pyrande bränder, sämre på flammande. Kräver stora ljusa rökpartiklar."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Joniserande rökdetektor (RDj)",
+      "d": "Innehåller radioaktivt ämne som joniserar luften — bra på flammande bränder, dålig på pyrande. Håller på att försvinna från marknaden. Brandvarnare hemma bör bytas till optisk typ."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Sektionsyta max",
+      "d": "En sektion i brandlarmssystem får maximalt omfatta 1 600 m². I adresserbara/analoga system kan kabelnätet täcka 3 000 m² men sektioneras sedan mjukvarumässigt."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Brandförsvarstablå (BFT)",
+      "d": "Standardiserad manöverpanel för räddningstjänstens hantering vid larm. Har knappar, indikeringar och textdisplay som räddningstjänsten behöver för att manövrera brandlarmscentralen."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Larmlagringstablå",
+      "d": "Fördröjer utgående brandlarm till larmcentral/brandförsvar så intern insatsstyrka kan undersöka larmet. Måste godkännas av räddningstjänst och försäkringsbolag för varje objekt."
+    },
+    {
+      "c": "Brandlarm",
+      "t": "Utrymningslarm vs Brandlarm",
+      "d": "Brandlarm = för personal att hitta och släcka branden. Utrymningslarm = för att varna alla att utrymma byggnaden. Aktiveras automatiskt via brandlarm eller manuellt via larmtryckknappar."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "A-larm",
+      "d": "Utlöses när två detektorer med OLIKA arbetsprincip larmar inom 30 minuter. Larmcentralen har rätt att tillkalla polis."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "B-larm",
+      "d": "Utlöses vid FÖRSTA detekteringen i en sektion. Föranleder väktarutryckning, inte polisinsats. Varje ny detektering av SAMMA detektor ger också B-larm."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Dubbelbalanserad larmslinga",
+      "d": "Varje detektor har ett parallellkopplat motstånd. Centralen kan på ett trådpar skilja larm (dubblad resistans) från sabotage (kortslutning eller avbrott). Det modernaste konventionella systemet."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Larmklass 1–4",
+      "d": "1: villor, enkel försåtsskydd. 2: skalskydd 4m + försåtsskydd. 3: skalskydd 4m + volymskydd i alla rum >4m². 4: skalskydd oavsett höjd + volymskydd överallt."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Skalskydd",
+      "d": "Skyddar byggnadens omslutningsyta (fasad, dörrar, fönster, takluckor). Larmar INNAN intrång skett. Använder magnetkontakter, glasdetektorer och vibrationsdetektorer."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Försåtsskydd",
+      "d": "Detektorer på strategiska platser (korridorer, varugångar) där inkräktaren SÄKERT passerar. Består mainly av rörelsedetektorer. Obligatoriskt i alla larmklasser (klass 1 kräver bara detta)."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Tidsförbikoppling",
+      "d": "Magnetkontakt i entredörren startar en inpasseringstid (30–45 sek) för att nå manöverpanelen och koda av larmet. Godkänt i larmklass 1 och 2."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Nyckeltub",
+      "d": "Larmad förvaringslåda för fastighetens nycklar. Väktaren kan vid utryckning hämta nycklarna och utföra inre kontroll. Nyckeltuben i sig är larmad."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "SBSC",
+      "d": "Svensk Brand och Säkerhets Certifiering AB — hanterar certifiering av personer, företag och material. Ägs gemensamt av SSF och Svenska Brandskyddsföreningen."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Larmlagen (1984)",
+      "d": "Trädde i kraft 1 juli 1984. Reglerar tillståndsgivning för larminstallationsverksamhet, krav på användaren och polisens rätt att agera vid upprepade falsklarm."
+    },
+    {
+      "c": "Inbrottslarm",
+      "t": "Behörighetsområden",
+      "d": "Delar av anläggningen som specifika personalgrupper kan koppla till/från. Möjliggör att t.ex. flera företag i samma fastighet hanterar sina larm separat."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Elslutbleck",
+      "d": "Äldsta och populäraste elektromekaniska låsenheten — monteras i karmen (ej dörren). Kräver fallkolv och kan inte användas som nattlåsning. Rättvänd = låst vid strömbortfall. Omvänd = olåst vid strömbortfall."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Motorlås",
+      "d": "Motorstyrd låsregel för säker låsning. Kan även manövreras mekaniskt. Kräver kablage GENOM dörrbladet. Ger statusindikering om dörrens och låskolvens läge."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Distribuerad intelligens",
+      "d": "Varje undercentral (UC) lagrar och utvärderar data lokalt. Fungerar autonomt vid kommunikationsavbrott. UC kan hantera 2–16 dörrar och 60 000 kort."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Hotkod",
+      "d": "Kod som vid inloggning under tvång öppnar dörren normalt MEN skickar ett tyst larm till larmcentralen. Ingen på platsen märker att polis kallas."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Kortlås / Off-line",
+      "d": "Fristående enhet med beslutslogiken lokalt i låset. Enkel installation för enstaka dörrar. Kan bara lagra ett tiotal koder och programmeras direkt i låset."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Cylinderlås",
+      "d": "Cylindern avläser nyckeln och frigör låskolven. Kan ingå i låssystem. Har kopieringsskydd. Nyckelns utfrästa form bildar ett 'alplandscape' av olika nedskärningsdjup."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Låsklasser 1–5",
+      "d": "1: inga krav. 2: utrymning viktigare än intrång (vred inomhus ok). 3: nyckel krävs båda sidor. 4: som 3 + borrskydd för låshuset. 5: extra höga krav."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "SSF 210",
+      "d": "Regelverk för elektromekanisk låsanläggning. Elektromekaniska lås tillåts bara i skyddsklasserna 1 och 2. Innehåller krav på behörig ingenjör för elektromekanisk låsanläggning."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "On-line passersystem",
+      "d": "Kodavläsarna kommunicerar med undercentraler och centraldator. Centraldatorn hanterar programmering och presentation. Kan hantera tusentals användare, tidszoner och integrationer."
+    },
+    {
+      "c": "Passersystem och lås",
+      "t": "Nyckelkontroll ABSOLUT (ASSA)",
+      "d": "Kräver godkänt behörighetsavtal för att efterbeställa nycklar. Elektroniken möjliggör snabb spärr av enskilda nycklar — lika säkert som ett passersystem."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "CCTV — fyra uppgifter",
+      "d": "Identifiering ≥120% av bildhöjden. Igenkänning ≥50%. Detektering ≥10%. Övervakning ≥5%. Varje uppgift kräver olika utrustningsnivå."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "DVR vs NVR",
+      "d": "DVR: Digital Video Recorder — tar emot ANALOGA kameror via BNC, omvandlar till digitalt. NVR: Network Video Recorder — tar BARA emot nätverkskameror (IP-kameror)."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "CCD-sensor",
+      "d": "Charge Coupled Device — chip med ljuskänsliga pixlar. Pixelantalet bestämmer upplösningen. Vanliga format: 1/3\" (4,4×3,3 mm) och 1/2\" (6,6×4,4 mm). Svartvita CCD är känsliga för IR-ljus."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "PTZ-kamera",
+      "d": "Pan Tilt Zoom — rörlig kamera som kan fjärrstyras horisontellt, vertikalt och zoomas. Kan programmeras med förinställda positioner (Pre-Set) som aktiveras vid larm."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "Kameraövervakningslagen (SFS 2013:460)",
+      "d": "Gäller från 1 juli 2013. Samlar alla regler. Datainspektionen = centralt tillsynsansvar. Allmän plats = tillstånd hos Länsstyrelsen. Butik/bank = anmälan till Länsstyrelsen."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "JPEG, MPEG, WAVELET",
+      "d": "De tre vanligaste bildkomprimeringsformaten för CCTV. JPEG = stillbilder. MPEG = rörliga bilder. WAVELET = modern teknik. Komprimeringsgraden påverkar lagringstid och bildkvalitet."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "Analog vs digital CCTV-upplösning",
+      "d": "Analog: standardupplösning ≥300 TV-linjer; hög upplösning ≥450 TV-linjer. Digital: mäts i megapixlar. VHS ≈300 linjer, S-VHS ≈400 linjer."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "IP55 — utomhuskamera",
+      "d": "Minimikrav för utomhuskamerors täthetsklass. Ger skydd mot damm och vattensprutning från alla håll. Ska kombineras med värmeelement mot kondens och solskärm mot värme och reflexer."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "Reflektans",
+      "d": "Hur mycket ljus en yta reflekterar mot kamerans objektiv. Varierar kraftigt — blöt asfalt reflekterar lite, snö reflekterar mycket. Avgörande för kamerans förmåga att ge bra bild."
+    },
+    {
+      "c": "CCTV och kameraövervakning",
+      "t": "SSF 1060 / 1061 / 1062",
+      "d": "SSF 1060: projektering och installation av kameraövervakning. SSF 1061: krav på anläggarfirma. SSF 1062: behörig ingenjör med certifikat. Refererar till SS-EN 50132-1 och 50132-7."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Samplingsdetektor",
+      "d": "Rörsystem med hål suger in luft till en laserdetektor. Högkänslighetssystem för tidig varning (förlarm). Kan 'se' mycket små rökpartiklar — används i kritiska miljöer."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Linjerökdetektor (RDL)",
+      "d": "Sändare skickar IR till mottagare upp till 100 m bort (fördunklingsprincipen). Täcker >500 m² — lämpar sig för stora lokaler med högt i tak. Kräver mer rök än punktdetektorer."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Flerkriteriedetektor",
+      "d": "Två eller fler tekniker arbetar tillsammans (t.ex. diffvärme + optisk rök). Värmedelen styr rökkammarens känslighet. Bra ersättare för joniserande detektor."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Flamdetektor",
+      "d": "Reagerar på elektromagnetisk strålning (UV/IR) från öppen låga inom 20 ms. Används i brand-/explosionsfarliga miljöer. Styr ofta automatiskt släckmedel."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Glasdetektor",
+      "d": "Detekterar krossning av fönsterglas via dess karakteristiska akustiska mönster. Del av skalskyddet. Max 6 per sektion utan separat analysarorenhet."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Magnetkontakt",
+      "d": "Larmar när dörr/fönster öppnas och magneten separerar. Vanligaste skalskyddskompenten. Max 6 per sektion (SSF 130:7)."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Seismisk/vibrationsdetektor",
+      "d": "Monteras direkt på kassaskåp, värdeskåp etc. Skyddar mot angrepp genom att detektera vibrationer i det skyddade objektet. Kärnan i punktskyddet."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Ventilationsmätkammare",
+      "d": "Plastlåda med rör som borras in i ventilationskanal. Leder luftflöde genom en inbyggd rökdetektor (vanligen optisk). Enda godkända metoden för rökdetektion i kanaler."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Täckningsyta värme/rök",
+      "d": "Värmedetektor: max 30 m², max 5 m till tak, min 0,5 m från vägg. Rökdetektor: max 100 m², max 10 m till tak, min 0,5 m från vägg."
+    },
+    {
+      "c": "Detektorer",
+      "t": "Adressenhet (transponder/PID)",
+      "d": "Ger en konventionell detektor individuell identitet i ett adresserbart system. Kan också ansluta 'ej systemanknutna' detektorer (linjerök, flamdetektor etc.) till adresserbara centraler."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "BBR 94",
+      "d": "Boverkets byggregler. Kräver: brandvarnare i nya bostäder, automatiskt brandlarm i vårdbyggnader och alternativa boenden, utrymningslarm i hotell och samlingslokaler."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "Larmlagen (1984)",
+      "d": "Reglerar tillståndsgivning för larminstallationsverksamhet. Polismyndigheten utfärdar tillstånd. Centralanslutna larm kräver tillstånd; lokallarm kräver det inte."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "SBSC",
+      "d": "Svensk Brand och Säkerhets Certifiering AB. Certifierar personer (behörig ingenjör), firmor och material. Ägs av SSF + Brandskyddsföreningen. Certifiering giltig i 5 år."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "EI 60 (brandteknisk klass)",
+      "d": "E = rökavskiljning (rök ska EJ sprida sig till nästa utrymme), I = isolering (värme ska EJ tränga igenom), 60 = minuter som klassen ska hålla. Krävs för brandcellsgränser."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "SSF 200 / SSF 210",
+      "d": "SSF 200: inbrottsskyddskrav i tre skyddsklasser (1–3) baserat på egendomsvärde. SSF 210: elektromekanisk låsanläggning — el-lås tillåts bara i skyddsklasserna 1 och 2."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "Kameraövervakningslagen SFS 2013:460",
+      "d": "Gäller 1 juli 2013. Samlar all kameraövervakning. Datainspektionen = tillsyn. Allmän plats = tillstånd. Bank/butik = anmälan. Upplysningsplikt gäller alltid."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "SS-EN 60839-11-1",
+      "d": "Standard för passersystem. Säkerhetsgrader 1–4 (som inbrottslarm). Grad 4 kräver kryptering i kommunikation. Tillåter RFID och NFC."
+    },
+    {
+      "c": "Lagar, normer och certifiering",
+      "t": "Anläggarintyg",
+      "d": "Utfärdas av certifierad anläggarfirma vid driftsättning. Anger övervakningsprincip, regelefterlevnad och att installationen är korrekt utförd. Obligatoriskt vid försäkringsanläggningar."
+    },
+    {
+      "c": "Installation och underhåll",
+      "t": "Brandlarmskabel röd mantel",
+      "d": "Krav: röd mantel på ELAKY/ELKY/EKKR. Om annan färg: rödmarkering var 20:e meter + båda sidor vid genomgång i golv/tak. Normalt 2×0,6 eller 2×1,0 mm (0,75 mm²)."
+    },
+    {
+      "c": "Installation och underhåll",
+      "t": "Kontrolljournal",
+      "d": "Obligatorisk dokumentation vid centralapparaten för brand- och inbrottslarm. Innehåller noteringar om alla prov, avvikelser och åtgärder sedan driftsättning."
+    },
+    {
+      "c": "Installation och underhåll",
+      "t": "Serviceschema brandlarm",
+      "d": "Dagligen: visuell kontroll. Månadsvis: lampprov + reservkraft. Kvartalsvis: detektorprov (10% av sektioner) + larmdon + larmförbindelse. Årligen: anläggarfirma + certifierad besiktning."
+    },
+    {
+      "c": "Installation och underhåll",
+      "t": "Batteriersättning",
+      "d": "Batterier i brandlarmssystem bör bytas vart 4:e år. Batterierna testas internt av centralen — försämrad funktion ger fellarm. System kräver ALLTID två alternativa strömkällor."
+    },
+    {
+      "c": "Installation och underhåll",
+      "t": "Orienteringsritning (OR-ritning)",
+      "d": "Visar sektionernas/adressernas omfattning och placering. Hjälpmedel vid larm för att snabbt hitta utlöst detektor. Ska stämma med verkligheten — kontrolleras vid funktionsprovning."
+    }
+  ],
+  "comparison": "<div class=\"slabel\">Brandlarmssystem — jämförelse av systemtyper</div>\n<div class=\"comp-grid\">\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Konventionellt</div>\n    <div class=\"comp-r\">Kollektiv adressering per sektion</div>\n    <div class=\"comp-r\">Centralen ser sektion, ej enskild detektor</div>\n    <div class=\"comp-r\">Max 1 600 m² per sektion</div>\n    <div class=\"comp-r\">Ändmotstånd i sista detektorn</div>\n    <div class=\"comp-r\">Lämpligt upp till ~20–30 sektioner</div>\n  </div>\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Adresserbart</div>\n    <div class=\"comp-r\">Individuell adressering via adressenhet</div>\n    <div class=\"comp-r\">Centralen ser exakt vilken detektor</div>\n    <div class=\"comp-r\">Slinga med återgång, max 512 adresser/central</div>\n    <div class=\"comp-r\">Sektionering sker mjukvarumässigt</div>\n    <div class=\"comp-r\">Kabelnät täcker upp till 3 000 m²</div>\n  </div>\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Analogt</div>\n    <div class=\"comp-r\">Detektorn är ett mätinstrument</div>\n    <div class=\"comp-r\">Ca 30 mätvärden/minut till central</div>\n    <div class=\"comp-r\">Centralen fattar brandbeslutet</div>\n    <div class=\"comp-r\">Kompenserar för nedsmutsning</div>\n    <div class=\"comp-r\">Lägre driftskostnader i stora system</div>\n  </div>\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Interaktivt</div>\n    <div class=\"comp-r\">Samarbete detektor ↔ central</div>\n    <div class=\"comp-r\">Extra hög immunitet mot falsklarm</div>\n    <div class=\"comp-r\">Dubbla optiska + termiska sensorer</div>\n    <div class=\"comp-r\">Framtidens standard</div>\n    <div class=\"comp-r\">Siemens introperspektivdetektor</div>\n  </div>\n</div>\n\n<div class=\"slabel\">Inbrottslarm — Larmklasser</div>\n<table class=\"ptable\">\n  <tr><th>Klass</th><th>Objekt</th><th>Skalskydd</th><th>Inre skydd</th><th>Förbikoppling</th></tr>\n  <tr><td>1</td><td>Villor/bostäder</td><td>Ej krav</td><td>Försåtsskydd</td><td>Lås- eller tidsförbikoppling</td></tr>\n  <tr><td>2</td><td>Företag/bostäder högt värde</td><td>Upp till 4 m</td><td>Försåtsskydd</td><td>Tids- eller elektronisk FBK</td></tr>\n  <tr><td>3</td><td>Företag högt skyddsvärde</td><td>Upp till 4 m</td><td>Volymskydd (ej wc/små rum)</td><td>Elektronisk FBK (delat montage)</td></tr>\n  <tr><td>4</td><td>Mycket högt skyddsvärde</td><td>Oavsett höjd</td><td>Volymskydd ALLA utrymmen</td><td>Elektronisk FBK (delat montage)</td></tr>\n</table>\n\n<div class=\"slabel\">Detektorer — Brandlarm, täckningsytor och användning</div>\n<table class=\"ptable\">\n  <tr><th>Typ</th><th>Max yta</th><th>Bra på</th><th>Användning</th></tr>\n  <tr><td>Maximalvärme</td><td>30 m²</td><td>Snabb brand</td><td>Bastu, imkåpa, utomhus</td></tr>\n  <tr><td>Differentialvärme</td><td>30 m²</td><td>Snabb temp-stegring</td><td>Förstahandsval värmedetektor</td></tr>\n  <tr><td>Optisk rök (RDo)</td><td>100 m²</td><td>Pyrande bränder</td><td>Standarddetektor i moderna system</td></tr>\n  <tr><td>Joniserande rök (RDj)</td><td>100 m²</td><td>Flammande bränder</td><td>Utgående — ersätt med optisk</td></tr>\n  <tr><td>Linjeredetektor (RDL)</td><td>&gt;500 m²</td><td>Stora ytor, högt i tak</td><td>Centrumanläggningar, lager</td></tr>\n  <tr><td>Flamdetektor</td><td>Varierar</td><td>Öppen låga (UV/IR)</td><td>Oljeplattform, sprutboxar</td></tr>\n  <tr><td>Samplingsdetektor</td><td>Stor</td><td>Extremt tidigt</td><td>Förlarm, datorhallar</td></tr>\n</table>\n\n<div class=\"slabel\">Larmöverföring — säkerhetsnivåer</div>\n<table class=\"ptable\">\n  <tr><th>Metod</th><th>Säkerhet</th><th>Notering</th></tr>\n  <tr><td>Uppringande larmsändare (PSTN)</td><td>Låg</td><td>Lätt att sätta ur spel, vanlig vid lokallarm</td></tr>\n  <tr><td>GSM/3G larmsändare</td><td>Medel</td><td>Svår att klippa, sårbar för störsändare</td></tr>\n  <tr><td>Punkt-till-punkt (förhyrd lina)</td><td>Hög</td><td>Övervakad, kräver kort avstånd</td></tr>\n  <tr><td>Rikstäckande dedikerat säkerhetsnät</td><td>Mycket hög</td><td>Redundant, krypterat, primär+sekundär mottagare</td></tr>\n  <tr><td>Internet/TCP-IP</td><td>Hög (om krypterat)</td><td>Ökande teknikskifte, möjliggör bildöverföring</td></tr>\n</table>\n\n<div class=\"slabel\">CCTV — Bilduppgifter och krav</div>\n<table class=\"ptable\">\n  <tr><th>Uppgift</th><th>Min andel av bildhöjden</th><th>Krav på utrustning</th></tr>\n  <tr><td>Identifiering</td><td>≥ 120 %</td><td>Hög upplösning, bra objektiv, rätt ljus</td></tr>\n  <tr><td>Igenkänning</td><td>≥ 50 %</td><td>God upplösning</td></tr>\n  <tr><td>Detektering</td><td>≥ 10 %</td><td>Normal upplösning</td></tr>\n  <tr><td>Övervakning</td><td>≥ 5 %</td><td>Grundläggande kamera</td></tr>\n</table>\n\n<div class=\"slabel\">Passersystem — elektromekanisk låsning</div>\n<div class=\"comp-grid\">\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Elslutbleck</div>\n    <div class=\"comp-r\">Monteras i karmen</div>\n    <div class=\"comp-r\">Enkel installation</div>\n    <div class=\"comp-r\">Kräver fallkolv</div>\n    <div class=\"comp-r\">EJ nattlåsning</div>\n    <div class=\"comp-r\">Rättvänd/omvänd funktion</div>\n  </div>\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Motorlås</div>\n    <div class=\"comp-r\">Motorstyrd regelkolv</div>\n    <div class=\"comp-r\">Säker skallåsning</div>\n    <div class=\"comp-r\">Kablage i dörrbladet</div>\n    <div class=\"comp-r\">Mekanisk backup</div>\n    <div class=\"comp-r\">Statusindikering</div>\n  </div>\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Eltryckeslås</div>\n    <div class=\"comp-r\">Vanlig på hotell/färjor</div>\n    <div class=\"comp-r\">Utsida el-styrd, insida mekanisk</div>\n    <div class=\"comp-r\">Kan fungera som nattlås</div>\n    <div class=\"comp-r\">Fristående (batteri) eller On-line</div>\n    <div class=\"comp-r\">20 mm fallregel</div>\n  </div>\n  <div class=\"comp-card\">\n    <div class=\"comp-h\">Dörrhållarmagnet</div>\n    <div class=\"comp-r\">Hållkraft 250–1000 kg</div>\n    <div class=\"comp-r\">För utrymningsvägar</div>\n    <div class=\"comp-r\">Kräver kontinuerlig spänning</div>\n    <div class=\"comp-r\">Indikerar låst/olåst med LED</div>\n    <div class=\"comp-r\">Öppnas vid strömavbrott</div>\n  </div>\n</div>",
+  "srData": {}
+}
