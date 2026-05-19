@@ -80,7 +80,7 @@ button.full{width:100%;justify-content:center;margin-top:8px;}
 .score-l{color:var(--text3);font-size:15px;margin-top:6px;}
 .score-msg{font-size:14px;color:var(--text2);margin-top:1.25rem;line-height:1.6;}
 .sm2-badge{font-size:11px;padding:2px 7px;border-radius:10px;margin-left:4px;font-weight:600;}
-.sm2-new{background:#dbeafe;color:#1e40af;}.sm2-hard{background:#fee2e2;color:#dc2626;}.sm2-ok{background:#d1fae5;color:#059669;}
+.sm2-new{background:#dbeafe;color:#1e40af;}.sm2-hard{background:#fee2e2;color:#dc2626;}.sm2-learning{background:#fef3c7;color:#92400e;}.sm2-ok{background:#d1fae5;color:#059669;}
 .sr-info{font-size:12px;color:var(--text3);margin-bottom:.75rem;min-height:1rem;display:flex;gap:6px;flex-wrap:wrap;}
 .spaced-info{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:10px 14px;font-size:13px;color:#166534;margin-bottom:1rem;display:none;}
 .comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem;}
@@ -802,27 +802,93 @@ function applySettings() {
 // SM-2
 // ================================================================
 function sm2Key(q) { return q.c + '|' + q.q.substring(0,30); }
+// ----------------------------------------------------------------
+// SM-2 – Spaced Repetition Algorithm
+//
+// Varje fråga har:
+//   ef        - ease factor (2.5 start, min 1.3). Minskar vid fel, ökar vid rätt.
+//   interval  - dagar till nästa repetition
+//   nextDue   - timestamp (ms) när frågan är förfallen
+//   correct   - totalt rätta svar
+//   wrong     - totalt felaktiga svar
+//   streak    - antal rätt i rad (nollställs vid fel)
+//   lastWrong - true om senaste svaret var fel
+//
+// Status:
+//   new      – aldrig svarad
+//   hard     – senaste svaret fel (repetera nu)
+//   learning – rätt svar men streak < 2 eller ef < 2.0 (fortfarande osäker)
+//   ok       – streak >= 2 OCH ef >= 2.0 (sitter)
+//
+// Vikt i SM-2-läget:
+//   hard     = 100  (alltid upp)
+//   learning = 10 / ef  (lågt ef = oftare)
+//   due      = 5        (förfallen men ok)
+//   ok       = 1        (bara om det fattas frågor)
+// ----------------------------------------------------------------
+
 function sm2Get(key) {
   if (!mod.srData) mod.srData = {};
-  if (!mod.srData[key]) mod.srData[key] = {ef:2.5, interval:1, correct:0, wrong:0};
-  return mod.srData[key];
+  if (!mod.srData[key]) mod.srData[key] = {
+    ef:2.5, interval:1, nextDue:0, correct:0, wrong:0, streak:0, lastWrong:null
+  };
+  // Migrera gamla poster som saknar streak/nextDue
+  const c = mod.srData[key];
+  if (c.streak === undefined) c.streak = 0;
+  if (c.nextDue === undefined) c.nextDue = 0;
+  if (c.lastWrong === undefined) c.lastWrong = null;
+  return c;
 }
-function sm2Update(key, correct) {
+
+function sm2Update(key, answeredCorrect) {
   const c = sm2Get(key);
-  if (correct) { c.correct++; c.interval = c.interval===1?6:Math.round(c.interval*c.ef); c.ef=Math.max(1.3,c.ef+0.1); }
-  else { c.wrong++; c.interval=1; c.ef=Math.max(1.3,c.ef-0.2); }
+  const now = Date.now();
+
+  if (answeredCorrect) {
+    c.correct++;
+    c.streak++;
+    c.lastWrong = false;
+    // Räkna upp interval enligt SM-2
+    if (c.streak === 1)      c.interval = 1;
+    else if (c.streak === 2) c.interval = 6;
+    else                     c.interval = Math.round(c.interval * c.ef);
+    // EF ökar lite vid rätt svar
+    c.ef = Math.min(3.0, Math.max(1.3, c.ef + 0.1));
+  } else {
+    c.wrong++;
+    c.streak = 0;
+    c.lastWrong = true;
+    c.interval = 1;
+    // EF minskar mer ju lägre det redan är
+    c.ef = Math.max(1.3, c.ef - 0.2);
+  }
+
+  // Sätt nästa förfallodatum
+  c.nextDue = now + c.interval * 24 * 60 * 60 * 1000;
   mod.srData[key] = c;
   saveLocal(); setUnsaved(true);
 }
+
 function sm2Status(key) {
   const c = sm2Get(key);
-  if (c.correct===0 && c.wrong===0) return 'new';  // aldrig svarad
-  if (c.wrong > 0) return 'hard';                   // ett enda fel = svår, punkt
-  return 'ok';                                       // bara rätta svar = kan
+  if (c.lastWrong === null) return 'new';
+  if (c.lastWrong === true) return 'hard';
+  if (c.streak < 2 || c.ef < 2.0) return 'learning';
+  return 'ok';
 }
+
+function sm2IsDue(key) {
+  const c = sm2Get(key);
+  return Date.now() >= c.nextDue;
+}
+
 function sm2Weight(key) {
   const c = sm2Get(key);
-  return Math.max(1, 1 + c.wrong*3 - c.correct);
+  const st = sm2Status(key);
+  if (st === 'hard')     return 100;               // senast fel → alltid prioritera
+  if (st === 'learning') return Math.max(5, 10/c.ef); // osäker → prioritera, mer om lågt EF
+  if (sm2IsDue(key))     return 5;                 // förfallen repetition
+  return 1;                                        // kan och inte förfallen
 }
 
 // ================================================================
@@ -856,7 +922,7 @@ function renderOverview() {
   allQ.forEach(q=>{
     const c=sm2Get(sm2Key(q));
     if(c.correct>0||c.wrong>0) totalDone++;
-    if(c.correct>0&&c.wrong===0) totalOk++;
+    const qs=sm2Status(sm2Key(q)); if(qs==='ok') totalOk++;
   });
   const globalPct = allQ.length ? Math.round(totalOk/allQ.length*100) : 0;
   let html = '';
@@ -870,7 +936,7 @@ function renderOverview() {
   html += '<div class="slabel">Kategorier</div>';
   (mod.categories||[]).forEach(cat => {
     const catQ = allQ.filter(q=>q.c===cat.name);
-    const catOk = catQ.filter(q=>{ const c=sm2Get(sm2Key(q)); return c.correct>0&&c.wrong===0; }).length;
+    const catOk = catQ.filter(q=>sm2Status(sm2Key(q))==='ok').length;
     const catPct = catQ.length ? Math.round(catOk/catQ.length*100) : 0;
     const fc=(mod.flashcards||[]).filter(f=>f.c===cat.name).length;
     html+=`<div class="ccard">
@@ -929,26 +995,46 @@ function shuffleCards(){
 // ================================================================
 // QUIZ + SM-2
 // ================================================================
-let qFilter='Alla',qMode='random',qCount=10,sessionQ=[],qCur=0,qAns=false,qScore=0,qDone=false;
+let qFilter=new Set(['Alla']),qMode='random',qCount=10,sessionQ=[],qCur=0,qAns=false,qScore=0,qDone=false;
 
 function renderQuiz() { buildQzFilters(); buildSession(); renderQuizContent(); updateSRStats(); }
 function buildQzFilters() {
-  let html='<button class="fbtn active" onclick="setQFilter(\'Alla\',this)">Alla</button>';
-  (mod.categories||[]).forEach(c=>{ html+=`<button class="fbtn" onclick="setQFilter('${c.name}',this)">${c.icon||''} ${c.name}</button>`; });
+  let html='<button class="fbtn active" id="qf-Alla" onclick="toggleQFilter(\'Alla\',this)">Alla</button>';
+  (mod.categories||[]).forEach(c=>{ html+=`<button class="fbtn" id="qf-${c.name}" onclick="toggleQFilter('${c.name}',this)">${c.icon||''} ${c.name}</button>`; });
   document.getElementById('qz-filters').innerHTML=html;
 }
-function setQFilter(cat,btn) {
-  qFilter=cat;
+function toggleQFilter(cat, btn) {
+  if(cat==='Alla') {
+    // Alla-knappen: återställ till Alla
+    qFilter=new Set(['Alla']);
+  } else {
+    // Ta bort Alla om det finns
+    qFilter.delete('Alla');
+    // Toggle kategorin
+    if(qFilter.has(cat)) qFilter.delete(cat);
+    else qFilter.add(cat);
+    // Om ingenting är valt, gå tillbaka till Alla
+    if(qFilter.size===0) qFilter=new Set(['Alla']);
+  }
+  // Uppdatera knapparnas visuella state
   document.querySelectorAll('#qz-filters .fbtn').forEach(b=>b.classList.remove('active'));
-  if(btn) btn.classList.add('active');
+  if(qFilter.has('Alla')) {
+    document.getElementById('qf-Alla').classList.add('active');
+  } else {
+    qFilter.forEach(c=>{
+      const el=document.getElementById('qf-'+c);
+      if(el) el.classList.add('active');
+    });
+  }
   buildSession(); renderQuizContent(); updateSRStats();
 }
 function updateSRStats() {
   const all=mod.quiz||[];
   let nw=0,hard=0,ok=0;
-  all.forEach(q=>{const s=sm2Status(sm2Key(q));if(s==='new')nw++;else if(s==='hard')hard++;else ok++;});
+  let learning=0;
+  all.forEach(q=>{const s=sm2Status(sm2Key(q));if(s==='new')nw++;else if(s==='hard')hard++;else if(s==='learning')learning++;else ok++;});
   document.getElementById('sr-stats').innerHTML=
-    `<span class="sm2-badge sm2-new">Nya: ${nw}</span><span class="sm2-badge sm2-hard">Fel: ${hard}</span><span class="sm2-badge sm2-ok">Kan: ${ok}</span>`;
+    `<span class="sm2-badge sm2-new">Nya: ${nw}</span><span class="sm2-badge sm2-hard">Fel: ${hard}</span><span class="sm2-badge sm2-learning">Lär sig: ${learning}</span><span class="sm2-badge sm2-ok">Kan: ${ok}</span>`;
 }
 function shuffle(arr) {
   const a=[...arr];
@@ -957,19 +1043,19 @@ function shuffle(arr) {
 }
 
 function buildSession() {
-  let pool=qFilter==='Alla'?[...(mod.quiz||[])]:(mod.quiz||[]).filter(q=>q.c===qFilter);
+  let pool=qFilter.has('Alla')?[...(mod.quiz||[])]:(mod.quiz||[]).filter(q=>qFilter.has(q.c));
   const n=Math.min(qCount,pool.length);
 
   if(qMode==='spaced') {
     // Viktad dragning — högt sm2Weight prioriteras, men shufflas sen
     pool=shuffle(pool.map(q=>({q,w:sm2Weight(sm2Key(q))})).sort((a,b)=>b.w-a.w).slice(0,n).map(x=>x.q));
   } else if(qMode==='weak') {
-    pool=pool.filter(q=>sm2Status(sm2Key(q))!=='ok');
+    pool=pool.filter(q=>{ const s=sm2Status(sm2Key(q)); return s==='hard'||s==='learning'; });
     if(!pool.length){showToast('Inga frågor med fel! Kör SM-2-läget ett tag först.');pool=[...(mod.quiz||[])];}
     pool=shuffle(pool).slice(0,n);
   } else {
     // Slumpmässigt — vid "Alla" kategorier, ta proportionellt från varje kategori
-    if(qFilter==='Alla' && n<pool.length) {
+    if(qFilter.has('Alla') && n<pool.length) {
       const cats=[...new Set(pool.map(q=>q.c))];
       const perCat=Math.max(1,Math.floor(n/cats.length));
       let selected=[];
@@ -1002,7 +1088,7 @@ function renderQuizContent() {
   const q=sessionQ[qCur];
   const cat=(mod.categories||[]).find(c=>c.name===q.c)||{color:'#666',icon:''};
   const key=sm2Key(q); const st=sm2Status(key);
-  const badge=settings.spacedRep?(st==='new'?'<span class="sm2-badge sm2-new">Ny</span>':st==='hard'?'<span class="sm2-badge sm2-hard">Fel</span>':''):'';
+  const badge=settings.spacedRep?(st==='new'?'<span class="sm2-badge sm2-new">Ny</span>':st==='hard'?'<span class="sm2-badge sm2-hard">Fel</span>':st==='learning'?'<span class="sm2-badge sm2-learning">Lär sig</span>':''):'';
   box.innerHTML=`<div class="qbox">
     <div class="q-meta"><span class="tag" style="background:${cat.color};color:white">${cat.icon} ${q.c}</span>${badge}</div>
     <div class="question">${q.q}</div>
