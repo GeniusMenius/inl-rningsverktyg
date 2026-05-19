@@ -832,11 +832,16 @@ function sm2Get(key) {
   if (!mod.srData[key]) mod.srData[key] = {
     ef:2.5, interval:1, nextDue:0, correct:0, wrong:0, streak:0, lastWrong:null
   };
-  // Migrera gamla poster som saknar streak/nextDue
   const c = mod.srData[key];
-  if (c.streak === undefined) c.streak = 0;
-  if (c.nextDue === undefined) c.nextDue = 0;
-  if (c.lastWrong === undefined) c.lastWrong = null;
+  // Migrera gamla poster som saknar fält från tidigare versioner
+  if (c.streak    === undefined) c.streak    = (c.correct > 0 && c.wrong === 0) ? 2 : 0;
+  if (c.nextDue   === undefined) c.nextDue   = 0;
+  if (c.lastWrong === undefined) {
+    // Försök härleda från gammal data
+    if (c.correct === 0 && c.wrong === 0) c.lastWrong = null;
+    else if (c.wrong > 0)                 c.lastWrong = true;
+    else                                  c.lastWrong = false;
+  }
   return c;
 }
 
@@ -1031,10 +1036,17 @@ function toggleQFilter(cat, btn) {
 function updateSRStats() {
   const all=mod.quiz||[];
   let nw=0,hard=0,ok=0;
-  let learning=0;
-  all.forEach(q=>{const s=sm2Status(sm2Key(q));if(s==='new')nw++;else if(s==='hard')hard++;else if(s==='learning')learning++;else ok++;});
+  let learning=0, due=0;
+  all.forEach(q=>{
+    const key=sm2Key(q); const s=sm2Status(key);
+    if(s==='new') nw++;
+    else if(s==='hard') hard++;
+    else if(s==='learning') learning++;
+    else { if(sm2IsDue(key)) due++; else ok++; }
+  });
+  const dueStr = due>0 ? `<span class="sm2-badge" style="background:#fef3c7;color:#92400e;">📅 Förfallna: ${due}</span>` : '';
   document.getElementById('sr-stats').innerHTML=
-    `<span class="sm2-badge sm2-new">Nya: ${nw}</span><span class="sm2-badge sm2-hard">Fel: ${hard}</span><span class="sm2-badge sm2-learning">Lär sig: ${learning}</span><span class="sm2-badge sm2-ok">Kan: ${ok}</span>`;
+    `<span class="sm2-badge sm2-new">Nya: ${nw}</span><span class="sm2-badge sm2-hard">Fel: ${hard}</span><span class="sm2-badge sm2-learning">Lär sig: ${learning}</span>${dueStr}<span class="sm2-badge sm2-ok">Kan: ${ok}</span>`;
 }
 function shuffle(arr) {
   const a=[...arr];
@@ -1117,8 +1129,9 @@ function setMode(mode,btn){
   btn.classList.add('active');
   const si=document.getElementById('spaced-info');
   si.style.display=mode!=='random'?'block':'none';
-  si.innerHTML=mode==='spaced'?'<strong>SM-2:</strong> Frågor du svarat fel på dyker upp oftare. Algoritmen anpassar sig till dina svagheter.':
-    '<strong>Svaga områden:</strong> Visar frågor SM-2 bedömer att du behöver träna mest på.';
+  si.innerHTML=mode==='spaced'
+    ? '<strong>SM-2 Spaced Repetition:</strong> Algoritmen prioriterar frågor du svarat fel på (vikt 100), frågor du håller på att lära dig (vikt 10/EF), förfallna repetitioner (vikt 5) och sedan övriga. Bäst för daglig träning.'
+    : '<strong>Svaga områden:</strong> Visar <em>bara</em> frågor med status Fel eller Lär sig – hoppar över allt du redan kan. Bäst för att rikta in sig på det svåraste inför prov.';
   buildSession();renderQuizContent();
 }
 
@@ -1126,7 +1139,17 @@ function setMode(mode,btn){
 // JÄMFÖRELSE
 // ================================================================
 function renderComparison() {
-  document.getElementById('cm-content').innerHTML = mod.comparison||'<p style="color:var(--text2);font-size:14px;padding:2rem 0;">Ingen jämförelseinformation i denna modul.</p>';
+  if (mod.comparison && mod.comparison.trim()) {
+    document.getElementById('cm-content').innerHTML = mod.comparison;
+  } else {
+    document.getElementById('cm-content').innerHTML = `
+      <div style="text-align:center;padding:3rem 1rem;color:var(--text3);">
+        <div style="font-size:40px;margin-bottom:1rem;">📋</div>
+        <div style="font-size:15px;font-weight:600;color:var(--text2);margin-bottom:.5rem;">Ingen jämförelsedata i denna modul</div>
+        <div style="font-size:13px;">Modulens <code style="background:var(--surface2);padding:1px 5px;border-radius:4px;">comparison</code>-fält är tomt.<br>
+        Lägg till HTML i det fältet i JSON-filen för att visa tabeller och formler här.</div>
+      </div>`;
+  }
 }
 
 // ================================================================
@@ -1412,8 +1435,10 @@ document.addEventListener('keydown', e => {
 function launchConfetti() {
   const canvas = document.getElementById('confetti-canvas');
   const ctx = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  function resizeCanvas() { canvas.width=window.innerWidth; canvas.height=window.innerHeight; }
+  resizeCanvas();
+  const _resizeHandler = ()=>resizeCanvas();
+  window.addEventListener('resize', _resizeHandler);
   canvas.style.display = 'block';
 
   const colors = ['#6366f1','#10b981','#f59e0b','#ef4444','#3b82f6','#8b5cf6','#ec4899'];
@@ -1445,7 +1470,7 @@ function launchConfetti() {
     });
     frame++;
     if (frame < 200) requestAnimationFrame(draw);
-    else { ctx.clearRect(0,0,canvas.width,canvas.height); canvas.style.display='none'; }
+    else { ctx.clearRect(0,0,canvas.width,canvas.height); canvas.style.display='none'; window.removeEventListener('resize',_resizeHandler); }
   }
   draw();
 }
