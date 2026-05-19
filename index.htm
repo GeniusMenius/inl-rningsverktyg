@@ -133,6 +133,9 @@ button.full{width:100%;justify-content:center;margin-top:8px;}
 .content-type-sel{display:flex;gap:8px;margin-bottom:1rem;}
 .tip-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:1rem 1.25rem;margin-bottom:10px;}
 .tip-card h3{font-size:14px;font-weight:600;margin-bottom:5px;}
+.module-dl-btn{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);text-decoration:none;color:var(--text);font-size:13px;font-weight:500;transition:background .15s,border-color .15s;}
+.module-dl-btn:hover{background:var(--border);border-color:var(--text);}
+.module-dl-meta{font-size:11px;color:var(--text3);margin-left:auto;}
 .tip-card p{font-size:13px;color:var(--text2);line-height:1.65;}
 .export-options{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1rem;}
 .info-box{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:1rem;margin-top:.75rem;font-size:13px;color:var(--text2);}
@@ -262,6 +265,26 @@ input:checked+.slider:before{transform:translateX(18px);}
 <h3>💾 USB-flödet</h3>
 <p>Öppna modul-JSON från USB → plugga → klicka "Spara till USB" → kopiera filen tillbaka. Dina SM-2-framsteg följer med i JSON-filen.</p>
 </div>
+
+<div class="slabel" style="margin-top:1.5rem;">Moduler – ladda ned</div>
+<div style="background:var(--surface);border:2px solid #6366f1;border-radius:var(--rl);padding:1.25rem;margin-bottom:10px;">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:.5rem;">
+    <span style="font-size:18px;">📦</span>
+    <strong style="font-size:14px;">Tillgängliga moduler</strong>
+    <a href="https://github.com/GeniusMenius/inl-rningsverktyg" target="_blank" style="margin-left:auto;font-size:12px;color:#6366f1;text-decoration:none;font-weight:600;border:1px solid #6366f1;padding:3px 10px;border-radius:20px;">GitHub ↗</a>
+  </div>
+  <p style="font-size:13px;color:var(--text2);margin-bottom:.9rem;">Ladda ned en modul och klicka sedan på <strong>📂 Ladda modul</strong> i headern.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;">
+    <a href="https://github.com/GeniusMenius/inl-rningsverktyg/raw/main/moduler/dsc_modul.json" download="dsc_modul.json" class="module-dl-btn">
+      <span>🏭 Distribuerade Styrsystem</span>
+      <span class="module-dl-meta">110 quiz · 118 flashkort</span>
+    </a>
+    <a href="https://github.com/GeniusMenius/inl-rningsverktyg/raw/main/moduler/industriautomation_modul.json" download="industriautomation_modul.json" class="module-dl-btn">
+      <span>⚙️ Industriautomation</span>
+      <span class="module-dl-meta">73 quiz · 54 flashkort</span>
+    </a>
+  </div>
+</div>
 </div></div>
 
 <!-- ADMIN -->
@@ -355,7 +378,8 @@ input:checked+.slider:before{transform:translateX(18px);}
 <div>
 <div class="danger-zone"><h3>⚠️ Farlig zon</h3></div>
 <button class="abtn danger full" onclick="resetSRData()" style="margin-bottom:6px;">🔄 Nollställ SM-2 data</button>
-<button class="abtn danger full" onclick="loadDSCDefault()">🏭 Återställ DSC-modulen</button>
+<button class="abtn danger full" onclick="loadDSCDefault()" style="margin-bottom:6px;">🏭 Återställ DSC-modulen</button>
+<button class="abtn danger full" onclick="totalReset()" style="border-color:#991b1b;background:#fee2e2;color:#7f1d1d;">🗑️ Nollställ helt – tomt verktyg</button>
 </div>
 </div>
 
@@ -1161,6 +1185,16 @@ function dlStr(str,type,name){const a=document.createElement('a');a.href='data:'
 function resetSRData(){
   if(!confirm('Nollställ all SM-2 data?')) return;
   mod.srData={};saveLocal();setUnsaved(true);updateSRStats();showToast('SM-2 nollställd.');
+}
+
+function totalReset(){
+  if(!confirm('Nollställ ALLT?\n\nVerktyget töms helt – inga kategorier, inga frågor, inga flashkort, ingen SM-2 data.\n\nDetta kan inte ångras.')) return;
+  mod = {name:'Mitt inlärningsverktyg', icon:'📚', categories:[], quiz:[], flashcards:[], comparison:'', srData:{}};
+  settings = {darkMode: settings.darkMode, spacedRep: true};
+  localStorage.removeItem(LS_KEY);
+  saveLocal(); setUnsaved(false); renderAll();
+  showToast('Verktyget är nollställt och tomt.');
+  closeAdmin();
 }
 
 // ================================================================
