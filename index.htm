@@ -165,12 +165,38 @@ input:checked+.slider:before{transform:translateX(18px);}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(26,25,23,.3);}50%{box-shadow:0 0 0 6px rgba(26,25,23,0);}}
 .hbtn.usb.unsaved{animation:pulse 2s infinite;}
 #toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1a1917;color:#fff;padding:10px 22px;border-radius:30px;font-size:14px;z-index:99999;transition:opacity .3s;pointer-events:none;opacity:0;}
-@media(max-width:600px){.container{padding:1rem;}.stat-row{grid-template-columns:1fr 1fr;}.comp-grid{grid-template-columns:1fr;}.tab{padding:8px 10px;font-size:12px;}header{padding:.75rem 1rem;}#admin-body{padding:1rem;}.header-center{display:none;}}
+@media(max-width:600px){
+  .container{padding:1rem;}
+  .stat-row{grid-template-columns:1fr 1fr;}
+  .comp-grid{grid-template-columns:1fr;}
+  .tab{padding:8px 10px;font-size:12px;}
+  header{padding:.75rem 1rem;gap:6px;}
+  #admin-body{padding:1rem;}
+  .header-center{display:none;}
+  .hbtn{font-size:11px;padding:5px 8px;}
+  .flash-scene{height:180px;}
+  .flash-term{font-size:16px;}
+  .flash-def{font-size:12px;}
+  .flash-face{padding:1.25rem;}
+  .fc-controls button{font-size:12px;padding:7px 12px;}
+  .opt{padding:10px 12px;font-size:13px;}
+  .question{font-size:14px;}
+  .score-n{font-size:48px;}
+  .qopt-row input[type=text]{font-size:12px;}
+  .aitem{flex-direction:column;}
+  .aitem-actions{display:flex;gap:6px;margin-top:6px;}
+  button.full{font-size:13px;}
+}
+@media(max-width:400px){
+  .tabs{gap:0;}
+  .tab{padding:8px 6px;font-size:11px;}
+  .hbtn{font-size:10px;padding:4px 6px;}
+}
 </style>
 </head>
 <body>
 <header>
-<h1><span id="admin-trigger">🔧</span> Inlärningsverktyg</h1>
+<h1><span id="admin-trigger" title="Klicka för att öppna adminpanelen – lägg till, redigera och ta bort frågor och flashkort">🔧</span> Inlärningsverktyg</h1>
 <span class="header-center" id="mod-name-hdr">Distribuerade Styrsystem</span>
 <div class="header-right">
 <button class="hbtn" onclick="triggerLoadModule()">📂 Ladda modul</button>
@@ -922,15 +948,32 @@ function updateStats() {
 // ================================================================
 function renderOverview() {
   const allQ = mod.quiz||[];
-  // Global SM-2 progress
-  let totalDone=0, totalOk=0;
-  allQ.forEach(q=>{
-    const c=sm2Get(sm2Key(q));
-    if(c.correct>0||c.wrong>0) totalDone++;
-    const qs=sm2Status(sm2Key(q)); if(qs==='ok') totalOk++;
-  });
+  let totalOk=0;
+  allQ.forEach(q=>{ const qs=sm2Status(sm2Key(q)); if(qs==='ok') totalOk++; });
   const globalPct = allQ.length ? Math.round(totalOk/allQ.length*100) : 0;
+
+  // Räkna dagens session — förfallna + fel + lär sig
+  const todayDue = allQ.filter(q=>{
+    const s=sm2Status(sm2Key(q));
+    return s==='hard' || s==='learning' || (s==='ok' && sm2IsDue(sm2Key(q)));
+  });
+
   let html = '';
+
+  // Dagens session-box
+  if(allQ.length>0){
+    const dueCount=todayDue.length;
+    const dueColor=dueCount===0?'#059669':dueCount<10?'#d97706':'#dc2626';
+    html+=`<div style="background:var(--surface);border:2px solid ${dueColor};border-radius:var(--rl);padding:1rem 1.25rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:14px;">
+      <div style="font-size:32px;">${dueCount===0?'✅':'📅'}</div>
+      <div style="flex:1;">
+        <div style="font-size:14px;font-weight:700;margin-bottom:2px;">${dueCount===0?'Allt klart för idag!':'Dagens session'}</div>
+        <div style="font-size:13px;color:var(--text2);">${dueCount===0?'Inga frågor förfallna – kom tillbaka imorgon.':`${dueCount} frågor att repetera – Fel, Lär sig och förfallna.`}</div>
+      </div>
+      ${dueCount>0?`<button class="primary" onclick="startTodaySession()" style="white-space:nowrap;font-size:13px;padding:7px 14px;">Starta →</button>`:''}
+    </div>`;
+  }
+
   // Global progress bar
   if(allQ.length>0){
     html += `<div class="prog-wrap">
@@ -1000,7 +1043,7 @@ function shuffleCards(){
 // ================================================================
 // QUIZ + SM-2
 // ================================================================
-let qFilter=new Set(['Alla']),qMode='random',qCount=10,sessionQ=[],qCur=0,qAns=false,qScore=0,qDone=false;
+let qFilter=new Set(['Alla']),qMode='random',qCount=10,sessionQ=[],qCur=0,qAns=false,qScore=0,qDone=false,sessionResults=[];
 
 function renderQuiz() { buildQzFilters(); buildSession(); renderQuizContent(); updateSRStats(); }
 function buildQzFilters() {
@@ -1084,16 +1127,49 @@ function buildSession() {
       pool=shuffle(pool).slice(0,n);
     }
   }
-  sessionQ=pool;qCur=0;qAns=false;qScore=0;qDone=false;
+  sessionQ=pool;qCur=0;qAns=false;qScore=0;qDone=false;sessionResults=[];
 }
 function renderQuizContent() {
   const box=document.getElementById('quiz-content');
   if(!sessionQ.length){box.innerHTML='<div class="qbox"><p style="color:var(--text2);">Inga frågor matchar filtret.</p></div>';return;}
   if(qDone){
     const pct=Math.round(qScore/sessionQ.length*100);
-    box.innerHTML=`<div class="score-box"><div class="score-n">${qScore}/${sessionQ.length}</div><div class="score-l">${pct}% rätt</div>
-    <div class="score-msg">${pct===100?'🏆 Perfekt! Alla rätt!':pct>=80?'Bra jobbat! 🎉':pct>=60?'Halvvägs – öva mer 📚':'Plugga på och försök igen 😊'}</div>
-    <button class="primary" style="margin-top:1.25rem;" onclick="restartQ()">🔄 Försök igen</button></div>`;
+    // Kategoribreakdown
+    const catMap={};
+    sessionResults.forEach(r=>{
+      if(!catMap[r.q.c]) catMap[r.q.c]={ok:0,total:0};
+      catMap[r.q.c].total++;
+      if(r.ok) catMap[r.q.c].ok++;
+    });
+    const catRows=Object.entries(catMap).map(([name,d])=>{
+      const cat=(mod.categories||[]).find(c=>c.name===name)||{color:'#666',icon:''};
+      const cpct=Math.round(d.ok/d.total*100);
+      return `<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+        <span class="tag" style="background:${cat.color};color:white;min-width:90px;text-align:center;">${cat.icon} ${name}</span>
+        <div style="flex:1;"><div class="prog-track"><div class="prog-fill" style="width:${cpct}%;background:${cpct>=80?'#059669':cpct>=50?'#d97706':'#dc2626'};"></div></div></div>
+        <span style="font-size:13px;color:var(--text2);min-width:50px;text-align:right;">${d.ok}/${d.total}</span>
+      </div>`;
+    }).join('');
+    // Felgenomgång
+    const wrongs=sessionResults.filter(r=>!r.ok);
+    const wrongRows=wrongs.map(r=>`
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:.85rem 1rem;margin-bottom:8px;">
+        <div style="font-size:13px;font-weight:600;margin-bottom:4px;">${r.q.q}</div>
+        <div style="font-size:12px;color:#dc2626;margin-bottom:2px;">❌ Du svarade: ${r.q.o[r.chosen]}</div>
+        <div style="font-size:12px;color:#059669;margin-bottom:4px;">✅ Rätt svar: ${r.q.o[r.q.a]}</div>
+        <div style="font-size:12px;color:var(--text2);">${r.q.e||''}</div>
+      </div>`).join('');
+    box.innerHTML=`
+      <div class="score-box" style="text-align:left;padding:1.5rem;">
+        <div style="text-align:center;margin-bottom:1.25rem;">
+          <div class="score-n">${qScore}/${sessionQ.length}</div>
+          <div class="score-l">${pct}% rätt</div>
+          <div class="score-msg" style="margin-top:.5rem;">${pct===100?'🏆 Perfekt! Alla rätt!':pct>=80?'Bra jobbat! 🎉':pct>=60?'Halvvägs – öva mer 📚':'Plugga på och försök igen 😊'}</div>
+        </div>
+        ${Object.keys(catMap).length>1?`<div class="slabel" style="margin-top:0;">Resultat per kategori</div>${catRows}`:''}
+        ${wrongs.length>0?`<div class="slabel">Felaktiga svar (${wrongs.length} st)</div>${wrongRows}`:'<div style="text-align:center;color:#059669;font-weight:600;margin:.75rem 0;">✅ Inga fel – perfekt genomgång!</div>'}
+        <button class="primary full" style="margin-top:1rem;" onclick="restartQ()">🔄 Försök igen</button>
+      </div>`;
     if(pct===100) launchConfetti();
     return;
   }
@@ -1115,6 +1191,7 @@ function selectQ(i) {
   const q=sessionQ[qCur];
   document.querySelectorAll('.opt').forEach((o,j)=>{o.disabled=true;if(j===q.a)o.classList.add('correct');if(j===i&&i!==q.a)o.classList.add('wrong');});
   const ok=i===q.a; if(ok) qScore++;
+  sessionResults.push({q, chosen:i, ok});
   const fb=document.getElementById('qfb');
   fb.className=ok?'fb c':'fb w'; fb.innerHTML=(ok?'✅ Rätt! ':'❌ Fel. ')+(q.e||''); fb.style.display='block';
   if(settings.spacedRep){sm2Update(sm2Key(q),ok);updateSRStats();}
@@ -1122,6 +1199,25 @@ function selectQ(i) {
 }
 function nextQ(){qCur++;if(qCur>=sessionQ.length)qDone=true;qAns=false;renderQuizContent();}
 function restartQ(){buildSession();renderQuizContent();}
+function startTodaySession(){
+  // Sätt SM-2-läge, Alla kategorier, och byt till quiz-fliken
+  qMode='random'; // override — filtrera manuellt på förfallna
+  qFilter=new Set(['Alla']);
+  // Bygg pool direkt från förfallna frågor
+  const allQ=mod.quiz||[];
+  const pool=allQ.filter(q=>{
+    const s=sm2Status(sm2Key(q));
+    return s==='hard'||s==='learning'||(s==='ok'&&sm2IsDue(sm2Key(q)));
+  });
+  sessionQ=shuffle(pool); qCur=0; qAns=false; qScore=0; qDone=false; sessionResults=[];
+  // Synka UI
+  document.querySelectorAll('#mode-random,#mode-spaced,#mode-weak').forEach(b=>b.classList.remove('active'));
+  document.getElementById('mode-spaced').classList.add('active');
+  document.getElementById('spaced-info').style.display='block';
+  document.getElementById('spaced-info').innerHTML='<strong>Dagens session:</strong> Visar dina förfallna frågor, fel och frågor du håller på att lära dig.';
+  showTab('qz', document.querySelector('.tab:nth-child(3)'));
+  renderQuizContent(); updateSRStats();
+}
 function setQCount(n,btn){qCount=n;document.querySelectorAll('[id^=qn]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');buildSession();renderQuizContent();}
 function setMode(mode,btn){
   qMode=mode;
@@ -1494,6 +1590,13 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
   applySettings();
   renderAll();
+  // Visa onboarding-hint första gången
+  if (!localStorage.getItem('ilt_onboarded')) {
+    setTimeout(()=>{
+      showToast('💡 Tips: Klicka på 🔧 för att redigera frågor och flashkort!');
+      localStorage.setItem('ilt_onboarded','1');
+    }, 1500);
+  }
   document.getElementById('admin-trigger').addEventListener('click', openAdmin);
   document.getElementById('admin-overlay').addEventListener('click', e=>{
     if(e.target===document.getElementById('admin-overlay')) closeAdmin();
