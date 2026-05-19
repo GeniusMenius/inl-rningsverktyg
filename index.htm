@@ -950,15 +950,42 @@ function updateSRStats() {
   document.getElementById('sr-stats').innerHTML=
     `<span class="sm2-badge sm2-new">Nya: ${nw}</span><span class="sm2-badge sm2-hard">Fel: ${hard}</span><span class="sm2-badge sm2-ok">Kan: ${ok}</span>`;
 }
+function shuffle(arr) {
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+
 function buildSession() {
   let pool=qFilter==='Alla'?[...(mod.quiz||[])]:(mod.quiz||[]).filter(q=>q.c===qFilter);
   const n=Math.min(qCount,pool.length);
-  if(qMode==='spaced') pool=pool.map(q=>({q,w:sm2Weight(sm2Key(q))})).sort((a,b)=>b.w-a.w||Math.random()-.5).slice(0,n).map(x=>x.q);
-  else if(qMode==='weak'){
-    pool=pool.filter(q=>sm2Status(sm2Key(q))!=='ok').sort((a,b)=>sm2Weight(sm2Key(b))-sm2Weight(sm2Key(a)));
-    if(!pool.length){showToast('Inga svaga frågor! Kör SM-2-läget ett tag först.');pool=[...(mod.quiz||[])];}
-    pool=pool.slice(0,n);
-  } else pool=pool.sort(()=>Math.random()-.5).slice(0,n);
+
+  if(qMode==='spaced') {
+    // Viktad dragning — högt sm2Weight prioriteras, men shufflas sen
+    pool=shuffle(pool.map(q=>({q,w:sm2Weight(sm2Key(q))})).sort((a,b)=>b.w-a.w).slice(0,n).map(x=>x.q));
+  } else if(qMode==='weak') {
+    pool=pool.filter(q=>sm2Status(sm2Key(q))!=='ok');
+    if(!pool.length){showToast('Inga frågor med fel! Kör SM-2-läget ett tag först.');pool=[...(mod.quiz||[])];}
+    pool=shuffle(pool).slice(0,n);
+  } else {
+    // Slumpmässigt — vid "Alla" kategorier, ta proportionellt från varje kategori
+    if(qFilter==='Alla' && n<pool.length) {
+      const cats=[...new Set(pool.map(q=>q.c))];
+      const perCat=Math.max(1,Math.floor(n/cats.length));
+      let selected=[];
+      cats.forEach(cat=>{
+        selected.push(...shuffle(pool.filter(q=>q.c===cat)).slice(0,perCat));
+      });
+      // Fyll upp till n om det fattas
+      if(selected.length<n) {
+        const used=new Set(selected);
+        selected.push(...shuffle(pool.filter(q=>!used.has(q))).slice(0,n-selected.length));
+      }
+      pool=shuffle(selected).slice(0,n);
+    } else {
+      pool=shuffle(pool).slice(0,n);
+    }
+  }
   sessionQ=pool;qCur=0;qAns=false;qScore=0;qDone=false;
 }
 function renderQuizContent() {
