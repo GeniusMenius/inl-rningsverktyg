@@ -1,1442 +1,1753 @@
-[
-  {
-    "c": "Cylindrar",
-    "q": "En linjärstyrenhet består av en fästplatta och två styrstänger. Vad är styrstängernas primära funktion?",
-    "o": [
-      "Öka cylinderns slaglängd",
-      "Styra kolvstångens rörelse och minska tvärkrafter",
-      "Fördubbla cylinderkraften",
-      "Hålla ändlagesdämpningen på plats"
-    ],
-    "a": 1,
-    "e": "Styrstängerna styr kolvstångens rörelse längs cylinderhuset och motverkar tvärkrafter som annars belastar kolvstången. De lagras med glid- eller kullager i framgavel och kolvstångsände."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Varför är bygggländen hos en skyttelcylinder nästan bara hälften av en vanlig cylinder vid samma slaglängd?",
-    "o": [
-      "Skyttelcylindern saknar ändlagesdämpning",
-      "Kraften överförs via en skyttel i ett slitsat rör, inte via en kolvstång som sticker ut",
-      "Skyttelcylindern arbetar enbart enkelverkande",
-      "Skyttelcylindern använder lägre arbetstryck"
-    ],
-    "a": 1,
-    "e": "Skyttelcylindern saknar kolvstång. Kraften från kolven överförs via en skyttel som löper inuti cylinderröret, vilket gör att hela cylinderlängden utnyttjas som slaglängd utan överhäng."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vilket påstående om kostalocylindern är FELAKTIGT?",
-    "o": [
-      "Den är en kolvstångslös cylinder med utvändig glidstyrning",
-      "Den har hög böj- och torsionshållfasthet via den slutna profilen",
-      "Kraften överförs via ett band från kolven till en slid utanför cylindern",
-      "Tryckytorna är lika stora på båda sidor om kolven, vilket gör att rörelsen inte kan stoppas mitt i slaget"
-    ],
-    "a": 3,
-    "e": "I en skyttelcylinder (som kostalocylindern principiellt liknar) är tryckytorna lika stora på båda sidor, vilket gör att rörelsen KAN stoppas var som helst. Påståendet att rörelsen inte kan stoppas är alltså felaktigt."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vad är syftet med ändlagesdämpning på en cylinder?",
-    "o": [
-      "Öka kolvens maximala hastighet",
-      "Minska friktionskrafterna i packningarna",
-      "Sänka kolvens hastighet innan den slår i gaveln för att minska påfrestningarna",
-      "Förhindra att tryckluften läcker förbi kolven"
-    ],
-    "a": 2,
-    "e": "Ändlagesdämpningen bromsas kolven in innan den slår mot gaveln med full kraft. En felaktig dämpning belastar inte bara cylindern utan också fästena och maskinen."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Med rätt inställd dämpning kan den totala cykeltiden reduceras med hur många procent?",
-    "o": [
-      "5–10 %",
-      "10–15 %",
-      "20–30 %",
-      "40–50 %"
-    ],
-    "a": 2,
-    "e": "Enligt materialet kan den totala cykeltiden ofta reduceras med 20–30 % med rätt dämpning, vilket har stor betydelse för produktionskostnaderna."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "En cylinder monteras i tre standardfall (1, 2, 3 enligt bild 2.4). Vilket fall anges som det idealiska monteringssättet?",
-    "o": [
-      "Fall 1 – fast inspänd cylinder med styrd kolvstång",
-      "Fall 2 – ledbart midjefäste och ledbar infästning i kolvstången",
-      "Fall 3 – ledbar infästning i såväl bakände som kolvstångsände",
-      "Alla fallen är likvärdiga"
-    ],
-    "a": 1,
-    "e": "Fall 2 (ledbart midjefäste med ledbar infästning i kolvstången) anges som den idealiska monteringen eftersom cylindern kan arbeta nästan brytningsfritt och utan skadliga sidokrafter."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vilka tre monteringstyper finns det för skyttelcylinderns fästen?",
-    "o": [
-      "Gavelfäste, fotplatta och rörligt ledfäste",
-      "Klämfäste, svansfäste och pendelfäste",
-      "Direktmontage, centralt montage och distansmontage",
-      "Flansfäste, örat i bakänden och gaffelkoppling"
-    ],
-    "a": 0,
-    "e": "Skyttelcylindern monteras med fotplattor och gavelfästen. Fotplattorna stödjer cylinderröret och ett ledfäste är rörligt i höjd och sidled för att ta upp mått-/vinkelfel."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Linjärmodulen beskrivs som 'kompakt i förhållande till sin storlek'. Vad är den viktigaste konstruktiva anledningen till detta?",
-    "o": [
-      "Den är tillverkad av aluminium",
-      "Den har dubbla kolvar som genererar stor kraft",
-      "Den saknar ändlagesdämpning",
-      "Den använder genomgående kolvstänger för skyttelrörelse"
-    ],
-    "a": 1,
-    "e": "Linjärmodulen består av två sammanbyggda cylindrar med dubbla kolvar, vilket ger stor kraft i en kompakt konstruktion. Dubbla kolvar innebär stor kraft och kompakta konstruktioner i förhållande till storlek."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vridcylindern omvandlar linjär rörelse till vridrörelse via vilket mekaniskt element?",
-    "o": [
-      "En excenteraxel och vippa",
-      "Kolvar med kuggstång och kugghjul med axel",
-      "En spänndonsmekanism med länkarm",
-      "En pneumatisk motor med vinge"
-    ],
-    "a": 1,
-    "e": "Vridcylindern har två kolvar förenade med en kuggstång. Via ett kugghjul och en axeltapp överförs kraft och rörelse till arbetsobjektet. Den maximala vridningsvinkeln är vanligtvis 90°, 180° eller 360°."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vilket påstående om vriddonen (pneumatiska) är FELAKTIGT?",
-    "o": [
-      "Vriddonen är dubbelverkande",
-      "Vridaxeln vrider sig upp till 270° när den påverkas av tryckluften",
-      "Antalet vingar kan fördubblas för att fördubbla momentet",
-      "Vriddonen kan bara användas i horisontellt montage"
-    ],
-    "a": 3,
-    "e": "Materialet anger inget monteringsbegränsning för vriddon. Däremot stämmer de andra påståendena: det är dubbelverkande, vrider upp till 270°, och antalet vingar kan dubbleras för dubbelt moment."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Horisontellt montage med tryckande kolvstång ger störst belastning. Vilket montage är gynnsammast ur belastningssynpunkt?",
-    "o": [
-      "Horisontellt med tryckande kolvstång",
-      "Vertikalt med tryckande kolvstång",
-      "Vertikalt med dragande kolvstång",
-      "Horisontellt med dragande kolvstång"
-    ],
-    "a": 2,
-    "e": "Enligt materialet är gynnsammaste förhållande när kolvstångens dragarbete sker vertikalt, eftersom belastningen på kolvstång och lager då minimeras jämfört med tryckande horisontellt montage."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vilka tre typer av ändlagesdämpning visas i materialet (bild 2.11)?",
-    "o": [
-      "Fjäderdämpning, hydraulisk dämpning och pneumatisk dämpning",
-      "Anslagsdämpning, stötdämpare och pneumatisk ändlagesdämpning",
-      "Gummibuffert, oljebad och magnetisk bromsning",
-      "Mjukstart, hastighetsstrypning och tryckreducering"
-    ],
-    "a": 1,
-    "e": "De tre metoderna som visas är: anslagsdämpning (enklast), extern stötdämpare (rekommenderas att låta den dämpa lasten istället för kolven), och inbyggd pneumatisk ändlagesdämpning."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vad menas med 'snabbmatningsfas' i cylindercykeln?",
-    "o": [
-      "Fas under vilken det utförs arbete med hög kraft",
-      "Fas med relativt hög hastighet från arbetspositionen tillbaka",
-      "Fas med relativt hög hastighet fram till arbetspositionen",
-      "Fas under vilken cylindern hålls stilla vid ett mellanläge"
-    ],
-    "a": 2,
-    "e": "Enligt ordlistan i materialet är snabbmatningsfasen den fas med relativt hög hastighet fram till arbetspositionen, medan snabbreturfasen är den höga hastigheten tillbaka."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "En cylinder med kolvdiameter 80 mm har en kolvyta A₁ på 50 cm² och kolvstångsdiameter 22 mm. Vid 6 bar, vilken är den teoretiska tryckkraften F₊?",
-    "o": [
-      "300 N",
-      "3 000 N",
-      "50 N",
-      "500 N"
-    ],
-    "a": 1,
-    "e": "F₊teor = p × A₁ = 6 bar × 50 cm² = 300 N/bar × ... Kolvkraft per bar för Ø80 = 500 N/bar, vid 6 bar = 3 000 N. Ur tabellen: F₁ = 500 N/bar, vid 6 bar = 6 × 500 = 3 000 N."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Friktionskrafter uppskattas till 5 % av den teoretiska kraften och accelerationskrafter till 25 %. Vad är den verkliga aktionskraften uttryckt som faktor av den teoretiska?",
-    "o": [
-      "F_verk = F_teor × 0,95",
-      "F_verk = F_teor × (1 − 0,3)",
-      "F_verk = F_teor × 0,75",
-      "F_verk = F_teor × 0,8"
-    ],
-    "a": 1,
-    "e": "Formeln i materialet är F_verk = p × A × (1 − 0,3), dvs. 30 % förlust totalt (5 % friktion + 25 % acceleration). Faktorn 0,7 ger den verkliga kraften."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "En cylinder med Ø50 mm, kolvstång Ø18 mm och slaglängd 250 mm används i ett dubbelslag. Vad är slagvolymen i tryckriktningen (VT)?",
-    "o": [
-      "490 cm³",
-      "413 cm³",
-      "250 cm³",
-      "196 cm³"
-    ],
-    "a": 0,
-    "e": "VT = A₁ × s. För Ø50: A₁ = 19,6 cm². VT = 19,6 × 25 cm = 490 cm³. (Slaglängd 250 mm = 25 cm.) Detta bekräftas direkt av exempelet i boken."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "ISO har normerat Normalluft till ett bestämt referensläge. Vilket?",
-    "o": [
-      "Tryck 0 bar, temperatur 0°C, relativ fuktighet 50 %",
-      "Tryck 1 bar, temperatur +20°C, relativ fuktighet 65 %",
-      "Tryck 6 bar, temperatur +20°C, relativ fuktighet 65 %",
-      "Tryck 1 bar, temperatur +15°C, relativ fuktighet 0 %"
-    ],
-    "a": 1,
-    "e": "ISO:s definition för Normalluft (Nl) är: tryck 1 bar, temperatur +20°C och relativ fuktighet 65 %. Detta används som referens vid mätning av luftförbrukning."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Enligt dämpdiagrammen (bild 2.17) gäller de för vilket arbetstryck?",
-    "o": [
-      "5 bar",
-      "6 bar",
-      "6,3 bar",
-      "8 bar"
-    ],
-    "a": 2,
-    "e": "Dämpdiagrammen för horisontellt och vertikalt montage gäller för trycket 6,3 bar. Om man avläser ett fel värde vid ett annat tryck riskerar man att välja fel cylinderdiameter för dämpningen."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "Vridcylindern används vanligen i vilka applikationer?",
-    "o": [
-      "Precisionsmontage där långa slaglängder krävs",
-      "Transporthantering, vridbord och dyl.",
-      "Vertikala lyft av tunga laster",
-      "Pick-and-place med vakuumgripdon"
-    ],
-    "a": 1,
-    "e": "Vridcylindern anges ha vanliga användningsområden som transporthantering, vridbord och dyl. Den är alltså främst för roterande positionering, inte linjär transport eller lyft."
-  },
-  {
-    "c": "Cylindrar",
-    "q": "En cylinder med Ø125 mm vid 6 bar. Hur stor är den teoretiska aktionskraften?",
-    "o": [
-      "1 220 N",
-      "7 000 N",
-      "3 000 N",
-      "7 320 N"
-    ],
-    "a": 1,
-    "e": "Ur tabellen i boken: Ø125 mm, F₁ = 1 220 N/bar. Vid 6 bar: 6 × 1 220 = 7 320 N — men boken ger exempelsvaret 7 000 N (avrundat från diagrammet, exempel 3). Rätt svar per bokens exempel 3 är 7 000 N."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Ventiler reglerar tre saker i en pneumatisk anläggning. Vilka?",
-    "o": [
-      "Tryck, temperatur och flöde",
-      "Riktning, tryck och flöde",
-      "Riktning, hastighet och flöde",
-      "Kraft, riktning och slaglängd"
-    ],
-    "a": 1,
-    "e": "Ventilerna reglerar riktning, tryck och flöde. Fyra ventilgrupper används: riktningsventiler, backventiler, tryckstyrande ventiler och flödesstyrande ventiler."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Vad är skillnaden mellan en effektventil och en signalgivande ventil när det gäller flödeskapacitet?",
-    "o": [
-      "Effektventiler har alltid lägre flödeskapacitet än signalventiler",
-      "Effektventiler hanterar stora flöden; signalgivande ventiler och logikelement alstrar bara mindre tryckpulser",
-      "Signalventiler har större C-värde än effektventiler",
-      "Det finns ingen skillnad, båda är dimensionerade för samma flöde"
-    ],
-    "a": 1,
-    "e": "Effektventiler används för att manövrera arbetselementen där ofta stora flöden passerar. Signalgivande ventiler och logikelement ska bara alstra eller bearbeta mindre tryckpulser, varför behovet av flödeskapacitet är litet."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Det nominella flödet genom en ventil mäts vid vilket referensläge?",
-    "o": [
-      "Ingångstryck 6 bar, tryckskillnad 1 bar över ventilen",
-      "Ingångstryck 6 bar och varierande tryckskillnad",
-      "Ingångstryck 4 bar och fullständigt öppet flöde",
-      "Ingångstryck 10 bar, tryckskillnad 3 bar"
-    ],
-    "a": 1,
-    "e": "Det nominella flödet mäts vid ett ingångstryck på 6 bar och en varierande tryckskillnad över ventilen. Det är störst för effektventilerna. Flödet avläses ur diagram som funktion av trycknedström."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Port nr 1 på en riktningsventil betecknar vad?",
-    "o": [
-      "Utloppsport till ställdonets ena kammare",
-      "Avloppsport för avluftning till atmosfär",
-      "Inloppsport för tryckluften",
-      "Styrport för pilotventil"
-    ],
-    "a": 2,
-    "e": "Portarna märks enligt ISO-standard: 1 = inloppsport för tryckluften. Port 2 och 4 = utloppsportar till ställdonets kammare. Port 3 och 5 = avloppsportar till atmosfär. Port 12 och 14 = styrportar."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Vilken anslutningsplatta byggs genom att två eller flera basplattor sammanfogas?",
-    "o": [
-      "Basplatta",
-      "Multipelplatta",
-      "Kedjeplatta",
-      "Sektionsbyggd ventil"
-    ],
-    "a": 2,
-    "e": "Kedjeplattan byggs genom att två eller flera basplattor sammanfogas till en ventilramp. Basplattan är den enskilda plattan till vilken en singelventil monteras. Multipelplattan är den platta till vilken flera singelventiler monteras."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Enligt ISO 5599/1 finns det plattor för hur många olika dimensioner?",
-    "o": [
-      "Fyra dimensioner (1–4)",
-      "Sex dimensioner (1–6)",
-      "Åtta dimensioner (1–8)",
-      "Tre dimensioner (1–3)"
-    ],
-    "a": 1,
-    "e": "Enligt ISO 5599/1 finns det plattor för sex olika dimensioner (1–6). Standarden omfattar portdimensioner från G1/8\" till G1/2\". Hålbilden är fastställd, vilket gör det möjligt att byta ventiler av olika fabrikat."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Kompaktventiler följer den tyska standarden VDMA 24563. Vad är det karaktäristiska med dem jämfört med ISO-anpassade ventiler?",
-    "o": [
-      "De är större för att klara högre flöden",
-      "De är mindre och kallades kompaktventiler på grund av miniatyrisering",
-      "De har fler portar och fler switchpositioner",
-      "De kräver speciell monteringsplatta som inte är utbytbar"
-    ],
-    "a": 1,
-    "e": "VDMA 24563-ventiler är mindre än de ISO-anpassade. Trenden med miniatyrisering och systembyggande pressade fram dessa mindre elstyrade ventiler med 5/2 och 5/3-funktion. Just kompaktheten gav dem benämningen kompaktventiler."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Vilket C-värde har en 5/2 effektventil med port G1/4\"?",
-    "o": [
-      "0,5 Nl/s·bar",
-      "2,5 Nl/s·bar",
-      "4,0 Nl/s·bar",
-      "11,0 Nl/s·bar"
-    ],
-    "a": 2,
-    "e": "Ur tabellen i boken: 5/2 effektventil med G1/4\" har C-värde 4,0 Nl/s·bar. G1/8\" ger 2,5 och G3/8\" ger 11,0. C-värdet är ett mått på ledningsförmågan i en rörledning eller komponent."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Vilket påstående om tryckfall i en ledning är FELAKTIGT?",
-    "o": [
-      "Ju klenare dimension, desto större tryckfall",
-      "Ett för stort tryckfall kan göra att cylinderdiametern måste ökas",
-      "Ökade tryckfall ger bättre totalekonomi genom energieffektivitet",
-      "Flödet genom en komponent beror av tryckförhållandet före och efter komponenten"
-    ],
-    "a": 2,
-    "e": "Ökade tryckfall GER SÄMRE totalekonomi med ökade drifts- och investeringskostnader — det är tvärtom. Rätt dimensionering ger den bästa totalekonomin, inte medvetet höga tryckfall."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Formeln för tryckfall i en ledning av längd l med ingångstryck pl är: p_LP = Δp · l · 7/pl + l. Vad representerar Δp?",
-    "o": [
-      "Totalt tryckfall vid valfritt ingångstryck",
-      "Tryckfallet per meter ledning avläst från diagram vid ingångstryck 6 bar",
-      "Ingångstrycket i bar",
-      "Säkerhetsfaktorn för tryckvariationer"
-    ],
-    "a": 1,
-    "e": "Δp i formeln är tryckfallet per meter ledning, avläst från diagram för en meter ledning med ingångstrycket 6 bar. Faktorn 7/pl korrigerar för det faktiska ingångstrycket pl."
-  },
-  {
-    "c": "Ventiler",
-    "q": "En ledning med diameter ø 22/19 och ledningslängd 5 m har vilket C-värde?",
-    "o": [
-      "7 Nl/s·bar",
-      "20 Nl/s·bar",
-      "30 Nl/s·bar",
-      "50 Nl/s·bar"
-    ],
-    "a": 2,
-    "e": "Ur diagram 3.8 (exempel 9 i boken): en ledning ø 22/19 med L = 5 m har ett C-värde på 30 Nl/s·bar. C-värdet minskar med längre ledning och klenare dimension."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Maxflödet för en ventil med direkt montage på cylinder är jämfört med ventil på anslutningsplatta:",
-    "o": [
-      "Större, eftersom ledningslängden elimineras",
-      "Lika stort i alla fall",
-      "Något mindre, men det är i de flesta fall försumbart",
-      "Avsevärt lägre, vilket gör direkt montage oanvändbart"
-    ],
-    "a": 2,
-    "e": "Materialet anger att maxflödet för en ventil med direkt montage är något mindre än när ventilen monteras separat på anslutningsplatta. Men detta är i de flesta fall försumbart."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Signalerna 'följetong' och 'följer efter varandra' används som översättning av vilket engelskt ord inom fältbussystemet?",
-    "o": [
-      "Parallel",
-      "Serial",
-      "Digital",
-      "Binary"
-    ],
-    "a": 1,
-    "e": "I materialet förklaras att det engelska ordet 'serial' översätts med 'följetong' eller 'följer efter varandra'. I ett fältbussystem sänds alla signaler seriellt, dvs. i följd, genom kabeln."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Tre monteringssätt för riktningsventiler nämns i materialet. Vilket av dessa är INTE ett av dem?",
-    "o": [
-      "Enblocksventil (singelventil) i ett gemensamt hus",
-      "Plattmonterade ventiler (rampventiler) på en basplatta",
-      "Sektionsbyggda ventiler (sandwichventiler) med gemensamma in- och utloppsportar",
-      "Väggmonterade ventiler med individuella slangkopplingar"
-    ],
-    "a": 3,
-    "e": "Materialet nämner tre monteringssätt: enblocksventil, plattmonterad ventil (rampventil) och sektionsbyggd ventil (sandwichventil). Väggmontage med individuella slangkopplingar nämns inte som ett standardalternativ."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Varför tejpas reflektorn tillfälligt vid inställning av en reflexavkänning enligt materialet?",
-    "o": [
-      "För att skydda reflektorn mot smuts",
-      "För att inställningen av sändaren ska bli optimal när reflektorn är täckt",
-      "För att hindra störande ljus att träffa mottagaren",
-      "Tejpning används inte — det är ett felaktigt påstående"
-    ],
-    "a": 1,
-    "e": "Materialet beskriver reflexavkänning: reflektorn tejpas så att endast centrum är fritt. Sändaren monteras och riktas mot reflektorn. Eftersom reflektorn är tejpad under justeringen blir inställningen av sändaren optimal. Tejpen tas sedan bort."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Vilket C-värde har en 3/2 signalventil med port G1/8\"?",
-    "o": [
-      "2,5 Nl/s·bar",
-      "4,0 Nl/s·bar",
-      "0,5 Nl/s·bar",
-      "11,0 Nl/s·bar"
-    ],
-    "a": 2,
-    "e": "Ur C-värdetabellen: 3/2 signalventil med G1/8\" har C-värde 0,5 Nl/s·bar. Det låga C-värdet speglar att signalventiler bara behöver alstra små tryckpulser och inte hantera stora flöden."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Gripdon kan vara mekaniska, magnetiska eller vakuumdrivna. Vilket påstående om mekaniska gripdon är korrekt?",
-    "o": [
-      "De kan bara ha fasta fingrar utan fjäderbelastning",
-      "De kan ha parallella fingrar eller fjäderbelastade ledande fingrar som klämmer som en tång",
-      "De drivs alltid elektriskt, aldrig pneumatiskt",
-      "De är enbart lämpade för runda föremål"
-    ],
-    "a": 1,
-    "e": "Mekaniska gripdon kan bestå av två parallella fingrar som rör sig mot varandra, eller ha ledande fjäderbelastade fingrar som klämmer som en tång. Drivningen är oftast pneumatisk med en cylinder styrd av en ventil."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vad är ejektorns funktion i ett vakuumgripdon?",
-    "o": [
-      "Att blåsa bort föremålet efter lyft",
-      "Att skapa undertryck genom att ett luftflöde accelereras genom en strypning",
-      "Att mäta sugkoppens hållkraft",
-      "Att reglera kolvhastigheten i gripcylindern"
-    ],
-    "a": 1,
-    "e": "Ejektorn är en vakuumpump som drivs av tryckluften. Vakuum bildas när ett flöde accelereras genom en venturidysa (strypning). Vid 5 bar lufttryck bildas ett vakuum som är 87 % av atmosfärstrycket."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vid vilket lufttryck till ejektorn skapar den en lägre vakuumhalt, och vad är ofta tillräckligt?",
-    "o": [
-      "Vid tryck över 8 bar; 80 % vakuum är tillräckligt",
-      "Vid tryck under 4 bar; ofta är 50 % vakuum tillräckligt",
-      "Vid tryck under 2 bar; 30 % vakuum räcker alltid",
-      "Vid tryck över 6 bar; 90 % vakuum krävs alltid"
-    ],
-    "a": 1,
-    "e": "Vid tryck mindre än 4 bar skapar ejektorn en lägre vakuumhalt. Materialet anger att ofta är 50 % vakuum tillräckligt för att lyfta ett föremål."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vilka tre tidsfaktorer påverkar val av ejektor (cykeltiden)?",
-    "o": [
-      "Acceleration, retardation och vilotid",
-      "Evakueringstiden, lyfttiden och lossningstiden",
-      "Uppbyggnadstiden, hålltiden och frislappningstiden",
-      "Inbläsningstiden, tryckhållningstiden och utblåsningstiden"
-    ],
-    "a": 1,
-    "e": "Cykeltiden påverkas av: evakueringstiden (tid att uppnå 50–60 % vakuum), lyfttiden och lossningstiden (tid att släppa föremålet). Dessa tre avgör vilken ejektor som väljs."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vilket påstående om läckage i vakuumsystem är FELAKTIGT?",
-    "o": [
-      "Läckage kan ske igenom själva föremålet om materialet är poröst",
-      "Ojämn yta, oren yta och sliten sugkopp orsakar läckage mellan objekt och sugkopp",
-      "Glas och stål ger inget läckage, papper och tyg ger visst läckage",
-      "Vid högt läckage väljs en mindre ejektor för att kompensera"
-    ],
-    "a": 3,
-    "e": "Vid högt läckage väljs en STÖRRE ejektor (inte mindre) för att kompensera läckaget. Läckage igenom porösa material och vid sugkoppskanten hanteras alltså med dimensionering av ejektorn."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Sugkoppar finns i fem typer enligt materialet. Vilken typ är INTE med?",
-    "o": [
-      "Plan sugkopp",
-      "Bälgsugkopp",
-      "Magnetisk sugkopp",
-      "Plan och oval sugkopp"
-    ],
-    "a": 2,
-    "e": "De fem typerna som listas är: plan sugkopp, liten sugkopp, bälgsugkopp, plan sugkopp med utbytbar läpp, och plan och oval sugkopp. Magnetisk sugkopp är inte en sugkoppstyp — magneter är ett alternativt gripsystem, inte en sugkopp."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Säkerhetsfaktorn s vid dimensionering av sugkopp ska vara minst 2 vid horisontella lyft och minst 4 vid vertikala lyft. Varför är kravet högre vid vertikalt lyft?",
-    "o": [
-      "Vertikalt lyft kräver mer energi från ejektorn",
-      "Vid vertikalt lyft verkar hela föremålets tyngd direkt utdragande på sugkoppen utan stöd",
-      "Vakuumtrycket är lägre vid vertikalt montage",
-      "Sugkoppen har lägre kontaktyta när föremålet hänger vertikalt"
-    ],
-    "a": 1,
-    "e": "Vid vertikalt lyft bär sugkoppen hela föremålets tyngd rakt utdragande. Vid horisontellt lyft trycker tyngden föremålet MOT sugkoppen (skjuvkraft), vilket är gynnsammare. Därför krävs dubbelt så hög säkerhetsfaktor vid vertikalt lyft."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Ett föremål väger 10 kg och ska lyftas horisontellt med en sugkopp. Beräkna erforderlig hållkraft F.",
-    "o": [
-      "F = 98,1 N",
-      "F = 196,2 N",
-      "F = 49,1 N",
-      "F = 392,4 N"
-    ],
-    "a": 1,
-    "e": "F = (m × g/n) × s = (10 × 9,81/1) × 2 = 196,2 N. Säkerhetsfaktor s = 2 (horisontellt), n = 1 sugkopp, g = 9,81 m/s². Detta är exakt exempel A i boken."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Samma 10 kg föremål ska lyftas vertikalt med fyra sugkoppar. Vilken hållkraft F krävs?",
-    "o": [
-      "F = 196,2 N",
-      "F = 392,4 N",
-      "F = 98,1 N",
-      "F = 49,1 N"
-    ],
-    "a": 2,
-    "e": "F = (m × g/n) × s = (10 × 9,81/4) × 4 = 98,1 N. Säkerhetsfaktor s = 4 (vertikalt), n = 4 sugkoppar. Kraften per kopp beräknas av (10 × 9,81 / 4) × 4, vilket ger samma som om man räknar F_per_kopp = (10 × 9,81 / 4) × 4 = 98,1 N total."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vad är skillnaden mellan direkt montage och centralt montage av ejektor/sugkoppar?",
-    "o": [
-      "Direkt montage är billigare men ger sämre vakuum",
-      "Vid direkt montage är varje ejektor direkt på sugkoppen, vilket ger oberoende sugkoppar och snabba evakueringstider; vid centralt montage styr en ejektor flera sugkoppar",
-      "Centralt montage används bara för vertikala lyft",
-      "Det finns ingen praktisk skillnad, båda ger samma funktion"
-    ],
-    "a": 1,
-    "e": "Vid direkt montage: en ejektor per sugkopp, sugkopparna oberoende av varandra, snabba evakueringstider (minimal volym). Vid centralt montage: en ejektor styr flera sugkoppar, mer ekonomiskt men med längre evakueringstider och ömsesidigt beroende."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vakuum definieras i materialet som ungefär:",
-    "o": [
-      "Ett luftflöde med högt tryck",
-      "Ett lufttomt rum eller en del av rymden utan närvaro av material",
-      "En strypning som skapar övertryck",
-      "En gas vid exakt 0 bar absolutt"
-    ],
-    "a": 1,
-    "e": "Materialet definierar vakuum som ungefär 'ett lufttomt rum eller en del av rymden utan närvaro av material'. Det är undertrycket som gör att atmosfärstrycket trycker sugkoppen mot arbetsstycket."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vilka fördelar med vakuumgripdon listas i materialet?",
-    "o": [
-      "Hög gripkraft, lång livslängd och enkel rengöring",
-      "Billigt gripsystem, hanterar de flesta material, kan hantera ömtåliga material, räcker med ungefärlig positionering",
-      "Hög precision, klarar alla temperaturer och lämpar sig för alla ytor",
-      "Snabbt grepp, enkel montering och hög tryckluftsbesparing"
-    ],
-    "a": 1,
-    "e": "Materialet listar fyra fördelar: billigt gripsystem, hanterar de flesta material, kan hantera ömtåliga material och räcker med ungefärlig positionering. Dessa är alltså de fyra specificerade fördelarna."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Bälgsugkoppar har en speciell egenskap jämfört med plan sugkopp. Vilken?",
-    "o": [
-      "De tål högre vakuum och kan lyfta tyngre",
-      "De har större förmåga att kompensera för nivåskillnader",
-      "De är bättre på porösa material",
-      "De kräver lägre luftförbrukning"
-    ],
-    "a": 1,
-    "e": "Materialet anger explicit att bälgsugkoppar har större förmåga att kompensera för nivåskillnader. Detta gör dem lämpliga för ojämna ytor eller föremål med varierande tjocklek."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Ejektorn innehåller en venturidysa. Var ska ejektorn monteras för bäst funktion?",
-    "o": [
-      "Centralt i maskinrummet nära kompressorn",
-      "Nära sugkoppen, på cylinderkolvstång eller rörlig maskindel",
-      "Alltid på ett fast stativ minst 2 meter från sugkoppen",
-      "Inbyggd i PLC-skåpet tillsammans med ventilerna"
-    ],
-    "a": 1,
-    "e": "Ejektorn monteras nära sugkoppen, på cylinderkolvstången eller på rörlig maskindel. Detta minimerar volymen som ska evakueras och ger snabb evakueringstid, vilket är viktigt för cykeltiden."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Vad är skillnaden mellan en analog och en binär sensor?",
-    "o": [
-      "Analoga sensorer mäter bara position, binära sensorer mäter tryck",
-      "Analoga sensorer ger en utsignal proportionell mot insignalen; binära sensorer rapporterar bara TILL eller FRÅN",
-      "Binära sensorer är dyrare och mer exakta än analoga",
-      "Analoga sensorer används bara i pneumatik, binära i hydraulik"
-    ],
-    "a": 1,
-    "e": "En analog sensor ger en utsignal som är proportionell mot det som mäts. En binär (digital) sensor rapporterar bara två tillstånd: TILL (kolven i avkänningsläge) eller FRÅN (kolven inte där). Binära sensorer ger alltså ett på/av-svar."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Magnetkolvavkännaren använder ett halvledarmaterial med en inlagd slinga vars resistans ändras med magnetfältet. När ökar resistansen?",
-    "o": [
-      "När magnetfältet minskar",
-      "När magnetfältet ökar",
-      "När temperaturen stiger",
-      "När strömmen ökar"
-    ],
-    "a": 1,
-    "e": "Slingan på halvledarplattan är avkännaren — den känner av magnetfältet. När magnetfältet B ökar, ökar slingans resistans R. Strömmen I minskar då. Detta är principen för en magnetoresistiv givare."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Varför krävs transientskydd när sensorns last är induktiv?",
-    "o": [
-      "Induktiva laster drar för lite ström och behöver förstärkning",
-      "När spänningen kopplas bort skapas en hög spänningsspik som kan skada elektroniken",
-      "Induktiva laster kräver växelspänning och sensorn ger likspänning",
-      "Transientskydd är bara nödvändigt vid analoga sensorer"
-    ],
-    "a": 1,
-    "e": "När en induktiv last kopplas bort skapas en hög spänningsspik. För att skydda sensorns elektronik mot denna spik kopplas ett transientskydd in — vid likspänning en släckdiod, vid växelspänning ett RC-filter."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Induktiva sensorer alstrar ett magnetfält och avkänner störningar i det. Vilka reduktionsfaktorer gäller för aluminium och koppar?",
-    "o": [
-      "Aluminium 0,9 × Kn, Koppar 0,5 × Kn",
-      "Aluminium 0,4 × Kn, Koppar 0,4 × Kn",
-      "Aluminium 0,5 × Kn, Koppar 0,9 × Kn",
-      "Aluminium 1,0 × Kn, Koppar 0,4 × Kn"
-    ],
-    "a": 1,
-    "e": "Tabellen i materialet anger: Kromnickel 0,9 × Kn, Mässing 0,5 × Kn, Aluminium 0,4 × Kn, Koppar 0,4 × Kn. Avkänningsavståndet måste reduceras för icke-ferromagnetiska material. Kn är det nominella avkänningsavståndet."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Vilket påstående om induktiva sensorer är FELAKTIGT?",
-    "o": [
-      "De är dyra jämfört med mekaniska sensorer",
-      "De störs av metallföremål i närheten om de monteras för nära varandra",
-      "De påverkas lätt av metallföremål men störs inte av andra material",
-      "De har snabb omkoppling och påtaglig hysteres"
-    ],
-    "a": 2,
-    "e": "Materialet anger att induktiva sensorer påverkas lätt av METALLFÖREMÅL men störs INTE av andra material. Det är alltså korrekt. Det felaktiga påståendet är 'störs inte av metallföremål' — det stämmer inte, de störs just av metall."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Kapacitiva sensorer reagerar starkast för vilka material?",
-    "o": [
-      "Torra och porösa material",
-      "Metaller och fuktigt material",
-      "Glas och keramik",
-      "Plaster och trä"
-    ],
-    "a": 1,
-    "e": "Den kapacitiva sensorn reagerar starkast för metaller och fuktigt material. Ju större massa eller fuktinnehåll, desto längre räckvidd. I våta miljöer kan fukt på sensorns avkännande yta ge felaktiga signaler."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Kapacitiva sensorers avkänningsavstånd Kn brukar vara i vilket intervall?",
-    "o": [
-      "0,1–1,0 mm",
-      "2,5–8 mm",
-      "10–50 mm",
-      "1–2 mm"
-    ],
-    "a": 1,
-    "e": "Kapacitiva sensorers nominella avkänningsavstånd Kn brukar vara mellan 2,5–8 mm. Avkänningen justeras med en potentiometer för att tillgodose säker mätning under rådande driftsvillkor."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Vilken egenskap hos Schmitt-triggern gör den viktig i optiska sensorer?",
-    "o": [
-      "Den förstärker ljussignalen proportionellt",
-      "Den slår om från 1 till 0 vid olika spänningsnivåer, vilket ger en binär utsignal",
-      "Den alstrar det pulserande ljuset i sändaren",
-      "Den mäter exakt avstånd mellan sändare och mottagare"
-    ],
-    "a": 1,
-    "e": "Schmitt-triggern har den speciella egenskapen att den slår om från 1 till 0 vid olika spänningsnivåer, vilket ger en binär (ren TILL/FRÅN) utsignal. Taktgeneratorn alstrar det pulserande ljuset — det är en annan funktion."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Vid envägsavkänning med optisk sensor, vad är sändaren och mottagaren?",
-    "o": [
-      "Sändaren och mottagaren sitter i samma hölje och ljuset studsar mot ett objekt",
-      "Sändare och mottagare är i samma enhet och avkänner föremålets reflektans",
-      "Sändaren och mottagaren är separata enheter; ljusstrålen bryts av föremålet mellan dem",
-      "Sändaren sitter på föremålet och mottagaren monteras fast"
-    ],
-    "a": 2,
-    "e": "Vid envägsavkänning monteras mottagaren på ett ställe och sändaren fixeras så att ljuset riktas exakt mot mottagaren. Indikering sker när ett föremål bryter ljusstrålen. Sändare och mottagare är alltså separata enheter."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Fiberoptik utnyttjar glasfibrer som ljusledare. Vad är viktigt att beakta vid installation för att inte skada fibrerna?",
-    "o": [
-      "Fibrerna ska alltid dras i metallrör",
-      "Angivna värden för böjning och mekanisk belastning måste hållas",
-      "Fibrerna kräver speciell temperaturkompensering vid montage",
-      "Fibrerna ska alltid skärmas mot elektromagnetiska fält"
-    ],
-    "a": 1,
-    "e": "Materialet anger specifikt att för att inte skada glasfibrerna måste angivna värden för böjning och mekanisk belastning hållas. Fibrerna är ömtåliga för hård böjning och mekanisk påfrestning."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Vad är 'arbetsavstånd' (kontra 'avkänningsavstånd') hos en induktiv sensor?",
-    "o": [
-      "Det är identiskt med det nominella avkänningsavståndet",
-      "Det är det maximalt tillgängliga avståndet för avkänning",
-      "Det är det avstånd till metalliskt material som krävs för att sensorn ska arbeta tillförlitligt",
-      "Det är det minsta avstånd som krävs för att kolven inte ska störa sensorn"
-    ],
-    "a": 2,
-    "e": "Arbetsavståndet är det avstånd till metalliskt material som krävs för att sensorn ska vara tillförlitlig. Det kan variera från 0 mm upp till det nominella avkänningsavståndet, och tar hänsyn till material, temperatur, spänning och storlek på mätobjektet."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Vilket åtdragningsmoment gäller för en induktiv sensor M18 × 1?",
-    "o": [
-      "15 Nm",
-      "40 Nm",
-      "70 Nm",
-      "200 Nm"
-    ],
-    "a": 2,
-    "e": "Tabellen i materialet anger: M8×1 = 15 Nm, M12×1 = 40 Nm, M18×1 = 70 Nm, M30×1,5 = 200 Nm. Angivet åtdragningsmoment får inte överskridas — det kan skada sensorn."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Transmitter är ett namn för sensorer som används i vilket sammanhang?",
-    "o": [
-      "Pneumatik för att känna av kolvens läge",
-      "Larmanläggningar för att känna ljus, ljud, rök och rörelser",
-      "Industrin för enheter som lämnar en standardiserad utsignal, t ex 0–5 V eller 4–20 mA",
-      "Driftövervakning vid mätning av temperaturer, tryck och flöden"
-    ],
-    "a": 2,
-    "e": "Materialet definierar: Transmitter används inom industrin för enheter som lämnar en standardiserad utsignal, t ex 0–5 V eller 4–20 mA. Avkännare = pneumatikterm, Detektor = larmanläggningar, Vakt = driftövervakning."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Varför rekommenderas skärmad anslutningsledning för optiska sensorer?",
-    "o": [
-      "Skärmen förstärker ljussignalen från sändaren",
-      "Ledningarna ska inte läggas med ledningar som har höga spänningsstoppar eller störningsfält",
-      "Skärmad ledning tål högre mekanisk belastning",
-      "Skärm krävs enbart vid direktavkänning med bakgrundsdämpning"
-    ],
-    "a": 1,
-    "e": "Materialet anger att ledningar inte ska läggas tillsammans med andra ledningar som har höga spänningsstoppar eller störningsfält. I regel rekommenderas skärmad anslutningsledning för att eliminera störningar."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Styrsystemets utrustning består av tre delar. Vilka?",
-    "o": [
-      "PLC, fältbuss och kraftenhet",
-      "En eller flera sensorer, en enhet för bearbetning av information, samt ett eller flera styrdon",
-      "CPU, minne och I/O-interface",
-      "Ingångssignaler, utgångssignaler och kommunikationsprotokoll"
-    ],
-    "a": 1,
-    "e": "Materialet definierar styrsystemets utrustning som: en eller flera sensorer, en enhet för bearbetning av information samt ett eller flera styrdon. PLC:n är bearbetningsenheten, inte hela systemet."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "I kursen Automationsenheter används PLC med vilken typ av in- och utgångar?",
-    "o": [
-      "Digitala in- och utgångar",
-      "Analoga in- och utgångar",
-      "Binära in- och utgångar",
-      "Kombinerade analoga och binära"
-    ],
-    "a": 2,
-    "e": "Materialet specificerar explicit att i kursen Automationsenheter används PLC med binära in- och utgångar. Binära signaler är antingen TILL eller FRÅN, till skillnad från analoga som varierar proportionellt."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Varför ska man vid val av PLC lägga till 20 % extra I/O-utrymme?",
-    "o": [
-      "För att kompensera för defekta portar från tillverkaren",
-      "Det kan behövas för att lösa problem som uppstår och för framtida behov som inte kalkylerats",
-      "Standard kräver 20 % reservportar för säkerhetsklassning",
-      "För att kommunikationsprotokollet reserverar 20 % av portarna"
-    ],
-    "a": 1,
-    "e": "Materialet anger att man alltid bör ge ett extra utrymme på 20 %, eftersom det kan behövas för att lösa problem som uppstår. En felkalkylering kan göra att portar, processorer, programkapacitet eller hastighet inte räcker."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "En processors kommunikationsförmåga uttrycks som antalet portar den klarar. Vad innebär den cykliska bearbetningen?",
-    "o": [
-      "Alla in- och utgångar kontrolleras samtidigt parallellt",
-      "Processorn kommunicerar med ett begränsat antal portar i turordning och detta styrs av processorn",
-      "Signalerna behandlas slumpmässigt beroende på prioritet",
-      "Bearbetningen sker bara när en sensor aktiveras"
-    ],
-    "a": 1,
-    "e": "Microprocessorn kan bara göra en sak i taget. Den tillämpar cyklisk bearbetning där alla in- och utgångar kontrolleras varje programvarv. PLC:n kommunicerar med ett begränsat antal portar i turordning styrt av processorn."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Vilket utgångsalternativ hos PLC har kortast utgångsfördröjning?",
-    "o": [
-      "Relä (10 ms)",
-      "Transistor (< 0,2 ms)",
-      "Triac (0,2–10 ms)",
-      "Optokopplare (5 ms)"
-    ],
-    "a": 1,
-    "e": "Ur tabellen i materialet: Relä = 10 ms fördröjning, Transistor = < 0,2 ms, Triac = 0,2–10 ms. Transistorutgången är klart snabbast. Notera att reläutgången har högst belastning (2 A/utgång) men störst fördröjning."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Vad är syftet med galvanisk isolering via optokopplare i PLC:ns ingångar?",
-    "o": [
-      "Förstärka insignalen för bättre mätprecision",
-      "Isolera de yttre anslutningarna från den interna logiken",
-      "Konvertera analoga signaler till digitala",
-      "Minska strömförbrukningen i PLC:n"
-    ],
-    "a": 1,
-    "e": "Optokopplarna ger galvanisk isolering, dvs. isolation mellan de yttre anslutningarna (sensorer, fält) och den interna logiken (CPU). Detta skyddar CPU:n mot överspänningar och störningar från fältet."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Flesta industrier använder 24 VDC. Vad gäller för kraftförsörjning av sensorer respektive styrdon?",
-    "o": [
-      "Både sensorer och styrdon matas med intern kraftkälla",
-      "Sensorer kan matas med intern kraftkälla; styrdon ska matas med extern kraftkälla",
-      "Sensorer ska matas med extern kraft, styrdon med intern",
-      "Styrdon och sensorer kräver alltid separata externa kraftkällor"
-    ],
-    "a": 1,
-    "e": "Materialet anger klart: 'Sensorer kan matas med intern kraftkälla. Styrdon ska matas med extern kraftkälla.' PLC:t kan ha inbyggd kraftenhet som drivs med nätspänning och ger 24 VDC för sensorerna."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "RC-filtret på PLC-ingångarna ger en viss fördröjning. Varför är detta nödvändigt?",
-    "o": [
-      "För att PLC:n inte ska reagera för snabbt på korrekta signaler",
-      "För att eliminera kontaktstudsar som annars ger felaktiga kommandon",
-      "RC-filter används för att öka belastningsförmågan per utgång",
-      "Filtret kompenserar för kabellängden mellan sensorn och PLC:n"
-    ],
-    "a": 1,
-    "e": "Kontaktstudsar kan orsaka felaktiga kommandon. RC-filtret eliminerar de negativa effekterna av kontaktstudsar genom att ge en fördröjning av den tid som åtgår för att bearbeta signalen. En del PLC har ställbar filtertid 0–15 ms."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Svarstiden för ett PLC i en liten anläggning med logiska kombinatoriska uppgifter brukar vara:",
-    "o": [
-      "0,1–0,5 ms",
-      "3–5 ms",
-      "15–30 ms",
-      "100–500 ms"
-    ],
-    "a": 1,
-    "e": "Materialet anger att svarstiden för PLC i små anläggningar med logiska kombinatoriska uppgifter brukar vara 3–5 ms. Svarstiden för dataöverföring i samma system är betydligt längre."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Vilka tre PROFIBUS-varianter nämns och vad skiljer PROFIBUS PA från de andra?",
-    "o": [
-      "FMS (stora data), DP (enkla funktioner), PA (explosionssäkert för processindustrin)",
-      "FMS (analog), DP (digital), PA (pneumatisk)",
-      "FMS (trådlöst), DP (trådbundet), PA (optisk fiber)",
-      "FMS (master), DP (slav), PA (blandad)"
-    ],
-    "a": 0,
-    "e": "Materialet nämner: PROFIBUS FMS för stora datamängder och avancerade funktioner, PROFIBUS DP för mindre datamängder och enkla funktioner, PROFIBUS PA för avancerade funktioner i explosionssäkert utförande för processindustrin."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "I fältbussystemet, vad är en 'master' och vad är en 'slav'?",
-    "o": [
-      "Master = PLC, slav = sensor; mastern skickar kommandon och slaven utför dem",
-      "Master = aktiv station som kontrollerar bussen; slav (t ex sensor) = passiv station som bara svarar när den tillfrågas",
-      "Master = hårdvara, slav = mjukvara",
-      "Master styr de analoga signalerna, slaven de binära"
-    ],
-    "a": 1,
-    "e": "En master är en aktiv station som kan kontrollera bussen och överföra meddelanden när den vill. En slav (t ex en sensor) är en passiv station — den kan bara lämna data när den tillfrågas eller ta emot data när det skickas till den."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Vilket fältbussystem av PROFIBUS och InterBus-S tillåter att enheter kopplas in och ur medan systemet är i drift?",
-    "o": [
-      "Bara InterBus-S",
-      "Bara PROFIBUS",
-      "Båda systemen tillåter detta",
-      "Ingendera av systemen tillåter detta"
-    ],
-    "a": 1,
-    "e": "Materialet anger att ingen enhet kan kopplas ur InterBus-S medan systemet är i drift. PROFIBUS däremot är det enda av de nämnda systemen som medgav att enheter kan in- och urkopplas utan att bussystemet stängs av."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "PROFIBUS överföringshastighet är 1,5 Mbit/s och det finns versioner med 12 Mbit/s. Hur ofta kontaktar mastern alla underordnade enheter?",
-    "o": [
-      "En gång per sekund",
-      "100 gånger per sekund",
-      "Kontinuerligt utan uppehåll",
-      "Bara när en sensor aktiveras"
-    ],
-    "a": 1,
-    "e": "Materialet anger att mastern kontaktar alla underordnade enheter 100 gånger i sekunden om överföringshastigheten är 1,5 Mbit/s. Cykeln upprepas alltså 100 gånger per sekund."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Vilket av följande är INTE ett fältbussystem som nämns i materialet?",
-    "o": [
-      "PROFIBUS",
-      "InterBus-S",
-      "CAN (Bosch)",
-      "ETHERNET"
-    ],
-    "a": 3,
-    "e": "Materialet nämner PROFIBUS, InterBus-S, CAN (Bosch) och AS-I (Actuator Sensor Interface). ETHERNET nämns inte som ett fältbussystem i detta material."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "OSI-normen utgiven av ISO anger hur man ska kommunicera mellan olika enheter. Vad betyder förkortningen OSI?",
-    "o": [
-      "Open Systems Integration",
-      "Open Systems Interconnection",
-      "Operational Serial Interface",
-      "Organized Signal Interface"
-    ],
-    "a": 1,
-    "e": "OSI är en internationell norm (Open Systems Interconnection) som anger hur man ska kommunicera mellan olika enheter. OSI har blivit en norm för dataöverföring inom industrin, utgiven av ISO — International Standardization Organisation."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Programmeringshjälpmedel för PLC inkluderar handterminaler och PC-mjukvaror. Vad är det primära syftet med dessa verktyg?",
-    "o": [
-      "Att reglera lufttrycket i pneumatikinstallationen",
-      "Programmering, idrifttagning och felsökning av PLC:n",
-      "Att konfigurera fältbussens mastrar och slavar automatiskt",
-      "Att mäta svarstider och optimera cykeltider"
-    ],
-    "a": 1,
-    "e": "Materialet anger att programmeringshjälpmedel används för programmering, idrifttagning och felsökning. De enklaste är handterminaler medan PC-mjukvaror är mer kraftfulla."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En cylinder med kolvdiameter 32 mm och kolvstångsdiameter 12 mm arbetar vid 6 bar. Kolvkraften per bar i tryckriktningen F₁ = 80,4 N/bar. Vad är den teoretiska tryckkraften vid 6 bar?",
-    "o": [
-      "414,4 N",
-      "482,4 N",
-      "80,4 N",
-      "690 N"
-    ],
-    "a": 1,
-    "e": "F₊teor = F₁ × p = 80,4 N/bar × 6 bar = 482,4 N. Kolvkraften per bar (80,4 N/bar) multipliceras direkt med trycket i bar. Ur tabellen: Ø32 mm har A₁ = 8,04 cm² och F₁ = 80,4 N/bar."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En cylinder Ø50 mm, kolvstång Ø18 mm, slaglängd 300 mm. Beräkna slagvolymen i dragriktningen (VD). A₂ = 16,5 cm².",
-    "o": [
-      "588 cm³",
-      "495 cm³",
-      "413 cm³",
-      "165 cm³"
-    ],
-    "a": 1,
-    "e": "VD = A₂ × s = 16,5 cm² × 30 cm = 495 cm³. (Slaglängd 300 mm = 30 cm.) A₂ är kolvarean i dragriktningen (kolvyta minus kolvstångsarea)."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En cylinder Ø20 mm vid 6 bar. A₁ = 3,14 cm². Vad är den teoretiska tryckkraften F₊teor?",
-    "o": [
-      "31,4 N",
-      "188,4 N",
-      "314 N",
-      "62,8 N"
-    ],
-    "a": 1,
-    "e": "F₊teor = p × A₁ = 6 bar × 3,14 cm² × 10 N/(cm²·bar) = 188,4 N. Alternativt: kolvkraft per bar F₁ = 31,4 N/bar, vid 6 bar → 6 × 31,4 = 188,4 N. Exempelberäkning 1 i boken ger just 188,4 N."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Den verkliga aktionskraften beräknas med faktorn (1 − 0,3). En Ø80 mm cylinder vid 6 bar har F₊teor = 3 000 N. Vad är den verkliga tryckkraften?",
-    "o": [
-      "2 850 N",
-      "2 700 N",
-      "2 100 N",
-      "3 000 N"
-    ],
-    "a": 2,
-    "e": "F₊verk = F₊teor × (1 − 0,3) = 3 000 × 0,7 = 2 100 N. Förlusterna på 30 % representerar 5 % friktion + 25 % acceleration av den teoretiska kraften."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Beräkna luftförbrukningen Q per dubbelslag för en Ø50 mm cylinder, slaglängd 250 mm vid 6 bar. VT = 490 cm³, VD = 413 cm³.",
-    "o": [
-      "903 cm³ = 0,903 Nl",
-      "6 321 cm³ = 6,321 Nl",
-      "5 418 cm³ = 5,418 Nl",
-      "1 806 cm³ = 1,806 Nl"
-    ],
-    "a": 1,
-    "e": "Q = (VT + VD) × (p + Patm)/Patm = (490 + 413) × (6+1)/1 = 903 × 7 = 6 321 cm³ = 6,321 Nl. Vid 5 dubbelslag per minut: 5 × 6,321 = 31,6 Nl/min. Exempelberäkning direkt från boken."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En sugkopp ska lyfta ett 5 kg föremål vertikalt med två sugkoppar. Beräkna erforderlig hållkraft F per sugkopp (s = 4, g = 9,81).",
-    "o": [
-      "F = 98,1 N",
-      "F = 196,2 N",
-      "F = 49,05 N",
-      "F = 39,24 N"
-    ],
-    "a": 0,
-    "e": "F = (m × g/n) × s = (5 × 9,81/2) × 4 = (24,525) × 4 = 98,1 N. Notera att s = 4 och n = 2 ger hållkraft per kopp 98,1 N. (Inte total — formeln ger kraft per sugkopp.)"
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En Ø200 mm cylinder har kolvyta A₁ = 314 cm² och kolvkraft per bar F₁ = 3140 N/bar. Vilken kraft ger den vid 8 bar?",
-    "o": [
-      "3 140 N",
-      "19 652 N",
-      "25 120 N",
-      "22 092 N"
-    ],
-    "a": 2,
-    "e": "F₊teor = 3 140 N/bar × 8 bar = 25 120 N. Observera att frågan avser TEORETISK kraft (ingen förlustkorrektion). Ur tabellen: Ø200 mm, F₁ = 3140 N/bar."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Tryckfallsformeln för ledning är p_LP = Δp × l × 7/pl + l. Beräkna tryckfall vid Q = 40 Nl/s, rördimension ø16/13, l = 5 m, pl = 8 bar och Δp = 0,17 bar/m (ur diagram).",
-    "o": [
-      "0,85 bar",
-      "1,49 bar",
-      "0,66 bar",
-      "1,19 bar"
-    ],
-    "a": 2,
-    "e": "p_LP = Δp × l × 7/pl + l = 0,17 × 5 × 7/8 + 1 = 0,17 × 5 × 0,875 + 1 = 0,74 + ... Rätt beräkning ur boken: p_LP = 0,17 × 5 × 7/8 + 1 = 0,66 bar (bokens exakta svar för detta exempel)."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En cylinder Ø12 mm vid 6 bar. Kolvkraft per bar F₁ = 11,3 N/bar. Vad är den teoretiska aktionskraften?",
-    "o": [
-      "11,3 N",
-      "67,8 N",
-      "70 N",
-      "113 N"
-    ],
-    "a": 1,
-    "e": "F₊teor = 11,3 N/bar × 6 bar = 67,8 N. Ur tabellen: Ø12 mm, kolvyta A₁ = 1,13 cm², F₁ = 11,3 N/bar. Boken anger (exempel 2) att en Ø12 mm cylinder vid 6 bar ger ca 70 N — exakta beräkningen ger 67,8 N."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Tryckfall i ledning: ju klenare dimension, desto större tryckfall. Vilken rördimension ger minst tryckfall vid samma flöde och längd?",
-    "o": [
-      "ø 4/2,5",
-      "ø 8/6",
-      "ø 16/13",
-      "ø 22/19"
-    ],
-    "a": 3,
-    "e": "Tryckfallet minskar med större innerdiameter. ø 22/19 har störst innerdiameter (19 mm) av alternativen och ger därmed minst tryckfall per meter vid samma flöde. Principen är: klenare dimension → mer friktionsförlust → större tryckfall."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Luftförbrukningen för ett dubbelslag med Ø200 mm cylinder, slaglängd 600 mm vid 6 bar, avläst ur diagram till 2,2 × 2 × 60 cm. Vad ger det?",
-    "o": [
-      "132 Nl",
-      "264 Nl",
-      "26,4 Nl",
-      "13,2 Nl"
-    ],
-    "a": 1,
-    "e": "Ur diagrammet avläses luftförbrukning 2,2 Nl/cm för Ø200 mm vid 6 bar. För ett dubbelslag med slaglängd 60 cm: Q = 2 × 2,2 × 60 = 264 Nl. Faktorn 2 är för dubbelslaget (ut + in)."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En sugkopp ska lyfta ett 20 kg föremål horisontellt med en sugkopp (s = 2). Beräkna hållkraften F.",
-    "o": [
-      "98,1 N",
-      "196,2 N",
-      "392,4 N",
-      "49,05 N"
-    ],
-    "a": 2,
-    "e": "F = (m × g/n) × s = (20 × 9,81/1) × 2 = 196,2 × 2 = 392,4 N. Säkerhetsfaktor 2 (horisontellt), 1 sugkopp, m = 20 kg."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En cylinder Ø125 mm ska åstadkomma 1 000 N kraft i tryckriktningen. F₁ = 1220 N/bar. Vilket tryck behövs (avrunda uppåt till närmaste heltal bar)?",
-    "o": [
-      "0,82 bar",
-      "1 bar",
-      "2 bar",
-      "6 bar"
-    ],
-    "a": 1,
-    "e": "p = F / A = 1 000 N / 122 cm² = 8,2 N/cm² = 0,82 bar teoretiskt. Men p = F_behov / (F₁ per bar) = 1 000 / 1 220 = 0,82 bar. Avrundat uppåt till närmaste heltal = 1 bar."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Vilken kolvdiameter ska väljas för en kraft på 200 N vid 5 bar? (Ur snabbvalsdiagrammet i boken)",
-    "o": [
-      "12 mm",
-      "16 mm",
-      "25 mm",
-      "32 mm"
-    ],
-    "a": 2,
-    "e": "Ur bokens snabbvalsdiagram (bild 2.15, exempel 5): en kraft på 200 N vid 5 bar ger cylinderdiameter ca 25 mm. Diagrammet avläses med kraft (N) på Y-axeln och tryck (bar) på X-axeln, med kolvdiameter som parameter."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Beräkna minneskapaciteten (minimum antal bitar) för ett PLC med 20 I/O-portar och ett program där varje in- eller utgång används i genomsnitt 3 gånger per programvarv.",
-    "o": [
-      "400 bitar",
-      "600 bitar",
-      "1 200 bitar",
-      "400 bitar"
-    ],
-    "a": 2,
-    "e": "Tumregeln: antal I/O-portar × antal gånger per varv × 20 = 20 × 3 × 20 = 1 200 bitar minimum. Man bör sedan lägga till 20 % extra för framtida behov: 1 200 × 1,2 = 1 440 bitar."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En cylinder Ø80 mm, slaglängd 200 mm, gör 10 dubbelslag per minut vid 6 bar. VT = A₁ × s = 50 cm² × 20 cm = 1 000 cm³, VD = 45,4 cm² × 20 = 908 cm³. Hur stor är luftförbrukningen per minut (Nl/min)?",
-    "o": [
-      "10 × 1 908 = 19 080 cm³ = 19,08 Nl/min",
-      "10 × (1 000 + 908) × 7 = 133 560 cm³ = 133,56 Nl/min",
-      "10 × 7 = 70 Nl/min",
-      "10 × 1908 × 7 = 133 560 Nl/min"
-    ],
-    "a": 1,
-    "e": "Q per slag = (VT + VD) × (p + Patm)/Patm = (1 000 + 908) × (6+1)/1 = 1 908 × 7 = 13 356 cm³ = 13,356 Nl per dubbelslag. Per minut: 10 × 13,356 = 133,56 Nl/min."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En Ø32 mm cylinder har A₂ = 6,9 cm² (dragriktning). Vad är den teoretiska dragkraften vid 6 bar?",
-    "o": [
-      "414 N",
-      "69 N",
-      "276 N",
-      "138 N"
-    ],
-    "a": 0,
-    "e": "F₋teor = p × A₂ = 6 × 6,9 cm² × 10 N/(cm²·bar) = 414 N. Alternativt: F₂ = 69,1 N/bar (ur tabellen), vid 6 bar = 6 × 69 = 414 N. Observera att dragkraften alltid är lägre än tryckkraften p.g.a. kolvstången."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "Ideal dämpning gäller för trycket 6,3 bar. En cylinder Ø32 mm förflyttar 10 kg vertikalt vid 0,85 m/s. Är cylindern lämplig för ideal dämpning?",
-    "o": [
-      "Ja, punkten ligger på eller strax under kurvan för Ø32",
-      "Nej, 10 kg och 0,85 m/s ligger över kurvan för Ø32 vid vertikalt montage",
-      "Ja, alla cylindrar under Ø50 mm klarar alltid ideal dämpning vid 0,85 m/s",
-      "Det går inte att avgöra utan att känna till slaglängden"
-    ],
-    "a": 0,
-    "e": "Materialet ger direkt exemplet: en 2A-cylinder Ø32 mm, 10 kg vertikalt. Cylindern är lämplig om hastigheten är 0,85 m/s eller strax under. Punkten ligger på eller strax under gränskurvan — cylindern är alltså lämplig."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En kraft på 1 000 N ska utvecklas vid 8 bar. Ur diagrammet väljs kolvdiameter 40 mm. Stämmer det med tabelldata (F₁ = 80,4 N/bar för Ø32 → F₁ = ? för Ø40)?",
-    "o": [
-      "Ja, Ø40 mm ger ca 1 000 N vid 8 bar",
-      "Nej, Ø32 mm räcker redan vid 8 bar",
-      "Nej, det krävs minst Ø50 mm",
-      "Det stämmer inte, Ø40 mm är inte en standardstorlek"
-    ],
-    "a": 0,
-    "e": "Boken anger direkt i exempel 4: en kraft på 1 000 N vid 8 bar ger ur diagrammet kolvdiametern 40 mm. (Ø40 mm är en standardstorlek; Ø32 mm ger vid 8 bar ca 643 N — inte tillräckligt.)"
-  },
-  {
-    "c": "Ventiler",
-    "q": "Varför är det viktigt att kontrollera om PLC-ingångarna har RC-filter med ställbar filtertid?",
-    "o": [
-      "Filtertiden bestämmer utgångens belastningsförmåga",
-      "En del PLC har ställbar filtertid 0–15 ms vilket påverkar hur snabbt kontaktstudsar elimineras",
-      "RC-filtret bestämmer vilket tryck ventilerna öppnar vid",
-      "Filtertiden styr kommunikationshastigheten i fältbussen"
-    ],
-    "a": 1,
-    "e": "Materialet anger att RC-filtret eliminerar kontaktstudsar och ger fördröjning. En del PLC har ställbar filtertid från 0 till 15 ms. Valet av filtertid påverkar hur snabbt PLC:n reagerar på insignaler — för lång filter missar snabba signaler."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Vilket påstående om anslutningsplattor är FELAKTIGT?",
-    "o": [
-      "Basplattan är den platta till vilken en singelventil monteras",
-      "Kedjeplattan byggs av två eller flera sammanfogade basplattor",
-      "Multipelplattan rymmer flera singelventiler",
-      "Anslutningsplattor kan bara ha portarna tillgängliga på undersidan"
-    ],
-    "a": 3,
-    "e": "Anslutningsplattor finns i utföranden med portarna tillgängliga på långsida, kortsida ELLER på undersidan — inte bara undersidan. De övriga påståendena stämmer enligt materialet."
-  },
-  {
-    "c": "Ventiler",
-    "q": "Det nominella flödet är störst för vilken ventiltyp?",
-    "o": [
-      "Signalgivande ventiler",
-      "Logikelement",
-      "Effektventiler",
-      "Backventiler"
-    ],
-    "a": 2,
-    "e": "Effektventiler används för att manövrera arbetselementen och det är ofta stora flöden som ska passera. Därför är det nominella flödet störst för effektventilerna. Signalventiler och logikelement behöver bara alstra mindre tryckpulser."
-  },
-  {
-    "c": "Ventiler",
-    "q": "En riktningsventil konstrueras som sätes- eller slidventil. Vad avgör ventilstorleken?",
-    "o": [
-      "Antalet styrportar",
-      "Det flöde som ska passera genom ventilen och ledningen fram till ställdonet",
-      "Cylinderns kolvdiameter direkt",
-      "Arbetstrycket i systemet"
-    ],
-    "a": 1,
-    "e": "Ventilernas storlek väljs efter det flöde som ska passera genom ventilen och ledningen fram till ställdonet. Det nominella flödet är störst för effektventilerna. Kolvdiametern bestämmer behovet indirekt, men det är flödet som är avgörande."
-  },
-  {
-    "c": "Gripdon",
-    "q": "I den pneumatiska kretsen för ett mekaniskt gripdon används tryckregulator. Vad är dess funktion i sammanhanget?",
-    "o": [
-      "Att styra ventilens switchfrekvens",
-      "Att ställa in gripkraften",
-      "Att reglera evakueringstiden hos ejektorn",
-      "Att kompensera för läckage i gripcylindern"
-    ],
-    "a": 1,
-    "e": "I det pneumatiska mekaniska gripdonet används tryckregulator för att ställa in gripkraften. Dessutom finns kolvdämpningar och variabla strypbackventiler för att ställa fingrarnas hastighet."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vilket material ur läckageexemplet i boken (bild 4.8) ger INGET läckage?",
-    "o": [
-      "Papper",
-      "Tyg",
-      "Glas",
-      "Kork"
-    ],
-    "a": 2,
-    "e": "Ur bild 4.8 i boken: Stål = inget läckage, Papper = visst läckage, Glas = inget läckage, Tyg = visst läckage. Glas är kompakt och ger inget läckage precis som stål. Porösa material som kork och tyg ger läckage."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vakuum bildas i ejektorn på vilket sätt?",
-    "o": [
-      "En kolvpump komprimerar luft i en kammare",
-      "Luftflödet accelereras ut genom utblåsningsporten via venturidysa och drar med sig luften från sugkoppen",
-      "En elektrisk motor skapar undertryck i en sluten behållare",
-      "Tryckluften stängs av och undertrycket uppstår spontant i sugkoppen"
-    ],
-    "a": 1,
-    "e": "I ejektorn strypas luftflödet (venturidysa) som accelererar luften ut genom utblåsningsporten. Luftflödet för med sig luften från sugkoppen via Bernoulli-principen, och därigenom bildas undertrycket (vakuumet)."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Vilka tre steg observeras vid val av sugkopp enligt materialet?",
-    "o": [
-      "Val av tryck, val av ledningsdimension och val av ejektor",
-      "Typ av sugkopp, val av material och dimensionering",
-      "Beräkna hållkraft, välj C-värde och kontrollera läckage",
-      "Val av vakuumnivå, val av ejektorstorlek och val av sugkoppsmaterial"
-    ],
-    "a": 1,
-    "e": "Materialet anger tre steg vid val av sugkopp: (1) Typ av sugkopp, (2) Val av material (oljebeständighet, slitstyrka, väder, temperatur, miljö) och (3) Dimensionering (horisontell eller vertikal lyft)."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Evakueringstiden definieras som den tid det tar att uppnå vakuum på 50–60 %. Vad händer vid den nivån?",
-    "o": [
-      "Ejektorn stänger av automatiskt",
-      "Vakuumet är tillräckligt för att lyfta föremålet",
-      "Sugkoppen lossnar från föremålet",
-      "Läckaget är som störst"
-    ],
-    "a": 1,
-    "e": "Materialet definierar evakueringstiden som den tid det tar att uppnå ett vakuum på 50–60 % som är tillräckligt för att lyfta föremålet. Det är alltså den praktiska gränsen för när lyftet kan påbörjas."
-  },
-  {
-    "c": "Gripdon",
-    "q": "Centralt montage av ejektor är mer ekonomiskt än direkt montage. Vad är nackdelen?",
-    "o": [
-      "Centralt montage kräver starkare ledningar",
-      "Vid läckage i en sugkopp påverkas hela systemet och evakueringstiderna är längre",
-      "Centralt montage kan inte kombineras med objektvakter",
-      "Det går inte att använda centralt montage vid vertikala lyft"
-    ],
-    "a": 1,
-    "e": "Vid centralt montage styr en ejektor flera sugkoppar, vilket är ekonomiskt. Nackdelen är att sugkopparna inte är oberoende av varandra — läckage i en påverkar övriga — och volymen som ska evakueras är större, vilket ger längre evakueringstider."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Induktiva sensorer ska monteras i ett ogängat hål med hjälp av två muttrar. Var placeras muttrarna?",
-    "o": [
-      "Båda muttrarna på framsidan av fästplåten",
-      "Båda muttrarna på baksidan av fästplåten",
-      "En muttar på varsin sida om fästplåten",
-      "Muttrarna träs på sensorn och fästs i cylinderröret direkt"
-    ],
-    "a": 2,
-    "e": "Sensorn monteras i ett ogängat hål med hjälp av två muttrar som placeras på varsin sida om fästplåten. Dessa dras fast med det angivna åtdragningsmomentet — som inte får överskridas."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Varför är det en fördel om PLC-ingångarna har lysdioder för indikering?",
-    "o": [
-      "Lysdioderna förstärker insignalen",
-      "De indikerar insignalernas signalnivå (TILL eller FRÅN) och underlättar felsökning",
-      "Lysdioderna skyddar mot överspänning",
-      "De visar hur mycket ström varje sensor förbrukar"
-    ],
-    "a": 1,
-    "e": "Materialet anger att det är en fördel om ingångarna är försedda med lysdioder för indikering av insignalernas signalnivå — TILL eller FRÅN. Det underlättar felsökning vid driftstörningar."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Vakt är ett sensornamn. I vilket sammanhang används det?",
-    "o": [
-      "Inom pneumatiken för att känna av kolvens läge",
-      "I larmanläggningar för ljus, ljud och rörelse",
-      "Vid driftövervakning för mätning av temperaturer, tryck och flöden",
-      "Inom industrin för standardiserade utsignaler"
-    ],
-    "a": 2,
-    "e": "Materialet definierar fyra sensorbegrepp: Avkännare (pneumatik/lägesavkänning), Transmitter (industri/standardutsignal), Detektor (larmanläggningar) och Vakt (driftövervakning vid mätning av temperaturer, tryck, flöden)."
-  },
-  {
-    "c": "Sensorer",
-    "q": "En sensor kan i svåra miljöer skyddas genom att byggas in i cylinderröret. Vilken fördel ger det?",
-    "o": [
-      "Sensorn kan känna av längre slaglängder",
-      "Sensorn ligger helt inbyggd och skyddad från omgivningen",
-      "Inbyggda sensorer behöver inget transientskydd",
-      "Inbyggda sensorer kan avkänna utan magnet i kolven"
-    ],
-    "a": 1,
-    "e": "Materialet anger att i svåra miljöer utnyttjar man genomgående hål i cylinderröret och skjuter in sensorerna där. De kommer då att ligga helt inbyggda och skyddade från omgivningen."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Fiberoptikens inställning sker på vilket sätt?",
-    "o": [
-      "Alltid med envägsavkänning och fast mottagare",
-      "Huvudsakligen på samma sätt som direktavkänning med bakgrundsdämpning",
-      "Via en potentiometer inbyggd i glasfibern",
-      "Automatiskt via det digitala styrsystemet"
-    ],
-    "a": 1,
-    "e": "Materialet anger att inställningen av fiberoptiken sker i huvudsak på samma sätt som vid direktavkänning med bakgrundsdämpning — man ställer in minimiavstånd, gränsvärde för bakgrunden och ett medelvärde däremellan."
-  },
-  {
-    "c": "Sensorer",
-    "q": "Kapacitiva sensorer bör användas med försiktighet i våta miljöer. Varför?",
-    "o": [
-      "Vatten förstör sensorns spole permanent",
-      "Fukt på sensorns avkännande yta kan ge felaktiga signaler",
-      "Kapacitiva sensorer kortsluts vid kontakt med vatten",
-      "Vakuumet i sensorn påverkas av fuktighet"
-    ],
-    "a": 1,
-    "e": "Materialet varnar för att i våta miljöer kan fukt på sensorns avkännande yta lätt ge felaktiga signaler. I sådana fall är optiska sensorer ofta ett bättre alternativ. Kapacitiva sensorer reagerar starkt på fuktigt material — vilket ger felindikering om sensorn själv är fuktig."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "AS-I (Actuator Sensor Interface) är ett fältbussystem. Vem utvecklade det?",
-    "o": [
-      "Phoenix Contact ensamt",
-      "Bosch",
-      "Ett antal tyska företag med Siemens i spetsen",
-      "ISO och Profibus-konsortiet gemensamt"
-    ],
-    "a": 2,
-    "e": "Materialet anger att AS-I (Actuator Sensor Interface) utvecklades av ett antal tyska företag med Siemens i spetsen. InterBus-S utvecklades av Phoenix Contact. CAN utvecklades av Bosch."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Vad innebär det att fältbussen använder tvåtrådsteknik?",
-    "o": [
-      "Att det krävs exakt två kablar för matningsspänning",
-      "Att ett minimum av ledare används — i regel bara två i en partvinnad skärmad kabel eller en optisk fiberledare",
-      "Att signalerna skickas parallellt på två separata trådar",
-      "Att systemet kräver två separata bussystem för redundans"
-    ],
-    "a": 1,
-    "e": "Fältbussystemet använder ett minimum av ledare, i regel bara två i en partvinnad gärna skärmad kabel eller en optisk fiberledare. Alla signaler sänds seriellt genom denna kabel — det är tvåtrådstekniken."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "InterBus-S är avsett för vilken typ av data?",
-    "o": [
-      "Avancerade processfunktioner och stora datamängder",
-      "Explosionssäkra miljöer i processindustrin",
-      "Mindre datamängder och enkla funktioner",
-      "Trådlös kommunikation i fabriksmiljö"
-    ],
-    "a": 2,
-    "e": "Materialet anger att InterBus-S är avsett för mindre datamängder och enkla funktioner. Fordonsindustrin är en stor användare. PROFIBUS FMS hanterar stora datamängder och avancerade funktioner."
-  },
-  {
-    "c": "Styrsystem",
-    "q": "Reläutgång och transistorutgång på PLC skiljer sig i belastning. Hur mycket ström klarar varje utgångstyp?",
-    "o": [
-      "Relä 0,5 A, transistor 2 A",
-      "Relä 2 A, transistor 0,5 A",
-      "Relä 5 A, transistor 1 A",
-      "Relä och transistor klarar båda 2 A"
-    ],
-    "a": 1,
-    "e": "Ur tabellen: Relä = 2 A per utgång (men 10 ms fördröjning), Transistor = 0,5 A per utgång (men < 0,2 ms fördröjning), Triac = 0,3 A per utgång (0,2–10 ms). Reläet klarar mest ström men är långsammast."
-  },
-  {
-    "c": "Beräkningar",
-    "q": "En Ø50 mm cylinder gör 5 dubbelslag per minut vid 6 bar. VT = 490 cm³, VD = 413 cm³. Hur stor är luftförbrukningen per minut (Nl/min)?",
-    "o": [
-      "31,6 Nl/min",
-      "63,2 Nl/min",
-      "6,321 Nl/min",
-      "45,2 Nl/min"
-    ],
-    "a": 0,
-    "e": "Q per dubbelslag = (490 + 413) × (6+1)/1 = 903 × 7 = 6 321 cm³ = 6,321 Nl. Per minut vid 5 dubbelslag: 5 × 6,321 = 31,6 Nl/min. Detta är exakta exemplet ur boken."
-  }
-]
+{
+  "name": "Industriautomation",
+  "icon": "⚙️",
+  "version": "2.0",
+  "categories": [
+    {
+      "name": "Cylindrar",
+      "color": "#2563eb",
+      "icon": "🔩"
+    },
+    {
+      "name": "Ventiler",
+      "color": "#7c3aed",
+      "icon": "🔧"
+    },
+    {
+      "name": "Gripdon",
+      "color": "#059669",
+      "icon": "🦾"
+    },
+    {
+      "name": "Sensorer",
+      "color": "#d97706",
+      "icon": "📡"
+    },
+    {
+      "name": "Styrsystem",
+      "color": "#dc2626",
+      "icon": "🖥️"
+    },
+    {
+      "name": "Beräkningar",
+      "color": "#0891b2",
+      "icon": "🧮"
+    }
+  ],
+  "quiz": [
+    {
+      "c": "Cylindrar",
+      "q": "En linjärstyrenhet består av en fästplatta och två styrstänger. Vad är styrstängernas primära funktion?",
+      "o": [
+        "Öka cylinderns slaglängd",
+        "Styra kolvstångens rörelse och minska tvärkrafter",
+        "Fördubbla cylinderkraften",
+        "Hålla ändlagesdämpningen på plats"
+      ],
+      "a": 1,
+      "e": "Styrstängerna styr kolvstångens rörelse längs cylinderhuset och motverkar tvärkrafter som annars belastar kolvstången. De lagras med glid- eller kullager i framgavel och kolvstångsände."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Varför är bygggländen hos en skyttelcylinder nästan bara hälften av en vanlig cylinder vid samma slaglängd?",
+      "o": [
+        "Skyttelcylindern saknar ändlagesdämpning",
+        "Kraften överförs via en skyttel i ett slitsat rör, inte via en kolvstång som sticker ut",
+        "Skyttelcylindern arbetar enbart enkelverkande",
+        "Skyttelcylindern använder lägre arbetstryck"
+      ],
+      "a": 1,
+      "e": "Skyttelcylindern saknar kolvstång. Kraften från kolven överförs via en skyttel som löper inuti cylinderröret, vilket gör att hela cylinderlängden utnyttjas som slaglängd utan överhäng."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vilket påstående om kostalocylindern är FELAKTIGT?",
+      "o": [
+        "Den är en kolvstångslös cylinder med utvändig glidstyrning",
+        "Den har hög böj- och torsionshållfasthet via den slutna profilen",
+        "Kraften överförs via ett band från kolven till en slid utanför cylindern",
+        "Tryckytorna är lika stora på båda sidor om kolven, vilket gör att rörelsen inte kan stoppas mitt i slaget"
+      ],
+      "a": 3,
+      "e": "I en skyttelcylinder (som kostalocylindern principiellt liknar) är tryckytorna lika stora på båda sidor, vilket gör att rörelsen KAN stoppas var som helst. Påståendet att rörelsen inte kan stoppas är alltså felaktigt."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vad är syftet med ändlagesdämpning på en cylinder?",
+      "o": [
+        "Öka kolvens maximala hastighet",
+        "Minska friktionskrafterna i packningarna",
+        "Sänka kolvens hastighet innan den slår i gaveln för att minska påfrestningarna",
+        "Förhindra att tryckluften läcker förbi kolven"
+      ],
+      "a": 2,
+      "e": "Ändlagesdämpningen bromsas kolven in innan den slår mot gaveln med full kraft. En felaktig dämpning belastar inte bara cylindern utan också fästena och maskinen."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Med rätt inställd dämpning kan den totala cykeltiden reduceras med hur många procent?",
+      "o": [
+        "5–10 %",
+        "10–15 %",
+        "20–30 %",
+        "40–50 %"
+      ],
+      "a": 2,
+      "e": "Enligt materialet kan den totala cykeltiden ofta reduceras med 20–30 % med rätt dämpning, vilket har stor betydelse för produktionskostnaderna."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "En cylinder monteras i tre standardfall (1, 2, 3 enligt bild 2.4). Vilket fall anges som det idealiska monteringssättet?",
+      "o": [
+        "Fall 1 – fast inspänd cylinder med styrd kolvstång",
+        "Fall 2 – ledbart midjefäste och ledbar infästning i kolvstången",
+        "Fall 3 – ledbar infästning i såväl bakände som kolvstångsände",
+        "Alla fallen är likvärdiga"
+      ],
+      "a": 1,
+      "e": "Fall 2 (ledbart midjefäste med ledbar infästning i kolvstången) anges som den idealiska monteringen eftersom cylindern kan arbeta nästan brytningsfritt och utan skadliga sidokrafter."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vilka tre monteringstyper finns det för skyttelcylinderns fästen?",
+      "o": [
+        "Gavelfäste, fotplatta och rörligt ledfäste",
+        "Klämfäste, svansfäste och pendelfäste",
+        "Direktmontage, centralt montage och distansmontage",
+        "Flansfäste, örat i bakänden och gaffelkoppling"
+      ],
+      "a": 0,
+      "e": "Skyttelcylindern monteras med fotplattor och gavelfästen. Fotplattorna stödjer cylinderröret och ett ledfäste är rörligt i höjd och sidled för att ta upp mått-/vinkelfel."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Linjärmodulen beskrivs som 'kompakt i förhållande till sin storlek'. Vad är den viktigaste konstruktiva anledningen till detta?",
+      "o": [
+        "Den är tillverkad av aluminium",
+        "Den har dubbla kolvar som genererar stor kraft",
+        "Den saknar ändlagesdämpning",
+        "Den använder genomgående kolvstänger för skyttelrörelse"
+      ],
+      "a": 1,
+      "e": "Linjärmodulen består av två sammanbyggda cylindrar med dubbla kolvar, vilket ger stor kraft i en kompakt konstruktion. Dubbla kolvar innebär stor kraft och kompakta konstruktioner i förhållande till storlek."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vridcylindern omvandlar linjär rörelse till vridrörelse via vilket mekaniskt element?",
+      "o": [
+        "En excenteraxel och vippa",
+        "Kolvar med kuggstång och kugghjul med axel",
+        "En spänndonsmekanism med länkarm",
+        "En pneumatisk motor med vinge"
+      ],
+      "a": 1,
+      "e": "Vridcylindern har två kolvar förenade med en kuggstång. Via ett kugghjul och en axeltapp överförs kraft och rörelse till arbetsobjektet. Den maximala vridningsvinkeln är vanligtvis 90°, 180° eller 360°."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vilket påstående om vriddonen (pneumatiska) är FELAKTIGT?",
+      "o": [
+        "Vriddonen är dubbelverkande",
+        "Vridaxeln vrider sig upp till 270° när den påverkas av tryckluften",
+        "Antalet vingar kan fördubblas för att fördubbla momentet",
+        "Vriddonen kan bara användas i horisontellt montage"
+      ],
+      "a": 3,
+      "e": "Materialet anger inget monteringsbegränsning för vriddon. Däremot stämmer de andra påståendena: det är dubbelverkande, vrider upp till 270°, och antalet vingar kan dubbleras för dubbelt moment."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Horisontellt montage med tryckande kolvstång ger störst belastning. Vilket montage är gynnsammast ur belastningssynpunkt?",
+      "o": [
+        "Horisontellt med tryckande kolvstång",
+        "Vertikalt med tryckande kolvstång",
+        "Vertikalt med dragande kolvstång",
+        "Horisontellt med dragande kolvstång"
+      ],
+      "a": 2,
+      "e": "Enligt materialet är gynnsammaste förhållande när kolvstångens dragarbete sker vertikalt, eftersom belastningen på kolvstång och lager då minimeras jämfört med tryckande horisontellt montage."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vilka tre typer av ändlagesdämpning visas i materialet (bild 2.11)?",
+      "o": [
+        "Fjäderdämpning, hydraulisk dämpning och pneumatisk dämpning",
+        "Anslagsdämpning, stötdämpare och pneumatisk ändlagesdämpning",
+        "Gummibuffert, oljebad och magnetisk bromsning",
+        "Mjukstart, hastighetsstrypning och tryckreducering"
+      ],
+      "a": 1,
+      "e": "De tre metoderna som visas är: anslagsdämpning (enklast), extern stötdämpare (rekommenderas att låta den dämpa lasten istället för kolven), och inbyggd pneumatisk ändlagesdämpning."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vad menas med 'snabbmatningsfas' i cylindercykeln?",
+      "o": [
+        "Fas under vilken det utförs arbete med hög kraft",
+        "Fas med relativt hög hastighet från arbetspositionen tillbaka",
+        "Fas med relativt hög hastighet fram till arbetspositionen",
+        "Fas under vilken cylindern hålls stilla vid ett mellanläge"
+      ],
+      "a": 2,
+      "e": "Enligt ordlistan i materialet är snabbmatningsfasen den fas med relativt hög hastighet fram till arbetspositionen, medan snabbreturfasen är den höga hastigheten tillbaka."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "En cylinder med kolvdiameter 80 mm har kolvyta A₁ på 50 cm². Vid 6 bar, vilken är den teoretiska tryckkraften F₊?",
+      "o": [
+        "300 N",
+        "3 000 N",
+        "50 N",
+        "500 N"
+      ],
+      "a": 1,
+      "e": "Kolvkraft per bar för Ø80 = 500 N/bar, vid 6 bar = 6 × 500 = 3 000 N. Ur tabellen: F₁ = 500 N/bar, vid 6 bar = 6 × 500 = 3 000 N."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Friktionskrafter uppskattas till 5 % av den teoretiska kraften och accelerationskrafter till 25 %. Vad är den verkliga aktionskraften uttryckt som faktor av den teoretiska?",
+      "o": [
+        "F_verk = F_teor × 0,95",
+        "F_verk = F_teor × (1 − 0,3)",
+        "F_verk = F_teor × 0,75",
+        "F_verk = F_teor × 0,8"
+      ],
+      "a": 1,
+      "e": "Formeln i materialet är F_verk = p × A × (1 − 0,3), dvs. 30 % förlust totalt (5 % friktion + 25 % acceleration). Faktorn 0,7 ger den verkliga kraften."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "En cylinder med Ø50 mm, kolvstång Ø18 mm och slaglängd 250 mm. Vad är slagvolymen i tryckriktningen (VT)?",
+      "o": [
+        "490 cm³",
+        "413 cm³",
+        "250 cm³",
+        "196 cm³"
+      ],
+      "a": 0,
+      "e": "VT = A₁ × s. För Ø50: A₁ = 19,6 cm². VT = 19,6 × 25 cm = 490 cm³. (Slaglängd 250 mm = 25 cm.)"
+    },
+    {
+      "c": "Cylindrar",
+      "q": "ISO har normerat Normalluft till ett bestämt referensläge. Vilket?",
+      "o": [
+        "Tryck 0 bar, temperatur 0°C, relativ fuktighet 50 %",
+        "Tryck 1 bar, temperatur +20°C, relativ fuktighet 65 %",
+        "Tryck 6 bar, temperatur +20°C, relativ fuktighet 65 %",
+        "Tryck 1 bar, temperatur +15°C, relativ fuktighet 0 %"
+      ],
+      "a": 1,
+      "e": "ISO:s definition för Normalluft (Nl) är: tryck 1 bar, temperatur +20°C och relativ fuktighet 65 %. Detta används som referens vid mätning av luftförbrukning."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Enligt dämpdiagrammen gäller de för vilket arbetstryck?",
+      "o": [
+        "5 bar",
+        "6 bar",
+        "6,3 bar",
+        "8 bar"
+      ],
+      "a": 2,
+      "e": "Dämpdiagrammen för horisontellt och vertikalt montage gäller för trycket 6,3 bar. Om man avläser ett fel värde vid ett annat tryck riskerar man att välja fel cylinderdiameter för dämpningen."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "Vridcylindern används vanligen i vilka applikationer?",
+      "o": [
+        "Precisionsmontage där långa slaglängder krävs",
+        "Transporthantering, vridbord och dyl.",
+        "Vertikala lyft av tunga laster",
+        "Pick-and-place med vakuumgripdon"
+      ],
+      "a": 1,
+      "e": "Vridcylindern anges ha vanliga användningsområden som transporthantering, vridbord och dyl. Den är alltså främst för roterande positionering, inte linjär transport eller lyft."
+    },
+    {
+      "c": "Cylindrar",
+      "q": "En cylinder med Ø125 mm vid 6 bar. Hur stor är den teoretiska aktionskraften?",
+      "o": [
+        "1 220 N",
+        "7 000 N",
+        "3 000 N",
+        "7 320 N"
+      ],
+      "a": 1,
+      "e": "Ur bokens exempel: Ø125 mm vid 6 bar ger ca 7 000 N (avrundat från diagrammet). Exakt tabellvärde: F₁ = 1 220 N/bar × 6 bar = 7 320 N."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Ventiler reglerar tre saker i en pneumatisk anläggning. Vilka?",
+      "o": [
+        "Tryck, temperatur och flöde",
+        "Riktning, tryck och flöde",
+        "Riktning, hastighet och flöde",
+        "Kraft, riktning och slaglängd"
+      ],
+      "a": 1,
+      "e": "Ventilerna reglerar riktning, tryck och flöde. Fyra ventilgrupper används: riktningsventiler, backventiler, tryckstyrande ventiler och flödesstyrande ventiler."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Vad är skillnaden mellan en effektventil och en signalgivande ventil när det gäller flödeskapacitet?",
+      "o": [
+        "Effektventiler har alltid lägre flödeskapacitet än signalventiler",
+        "Effektventiler hanterar stora flöden; signalgivande ventiler och logikelement alstrar bara mindre tryckpulser",
+        "Signalventiler har större C-värde än effektventiler",
+        "Det finns ingen skillnad, båda är dimensionerade för samma flöde"
+      ],
+      "a": 1,
+      "e": "Effektventiler används för att manövrera arbetselementen där ofta stora flöden passerar. Signalgivande ventiler och logikelement ska bara alstra eller bearbeta mindre tryckpulser, varför behovet av flödeskapacitet är litet."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Det nominella flödet genom en ventil mäts vid vilket referensläge?",
+      "o": [
+        "Ingångstryck 6 bar, tryckskillnad 1 bar över ventilen",
+        "Ingångstryck 6 bar och varierande tryckskillnad",
+        "Ingångstryck 4 bar och fullständigt öppet flöde",
+        "Ingångstryck 10 bar, tryckskillnad 3 bar"
+      ],
+      "a": 1,
+      "e": "Det nominella flödet mäts vid ett ingångstryck på 6 bar och en varierande tryckskillnad över ventilen. Det är störst för effektventilerna."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Port nr 1 på en riktningsventil betecknar vad?",
+      "o": [
+        "Utloppsport till ställdonets ena kammare",
+        "Avloppsport för avluftning till atmosfär",
+        "Inloppsport för tryckluften",
+        "Styrport för pilotventil"
+      ],
+      "a": 2,
+      "e": "Portarna märks enligt ISO-standard: 1 = inloppsport för tryckluften. Port 2 och 4 = utloppsportar till ställdonets kammare. Port 3 och 5 = avloppsportar till atmosfär. Port 12 och 14 = styrportar."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Vilken anslutningsplatta byggs genom att två eller flera basplattor sammanfogas?",
+      "o": [
+        "Basplatta",
+        "Multipelplatta",
+        "Kedjeplatta",
+        "Sektionsbyggd ventil"
+      ],
+      "a": 2,
+      "e": "Kedjeplattan byggs genom att två eller flera basplattor sammanfogas till en ventilramp. Basplattan är den enskilda plattan till en singelventil. Multipelplattan är den platta till vilken flera singelventiler monteras."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Enligt ISO 5599/1 finns det plattor för hur många olika dimensioner?",
+      "o": [
+        "Fyra dimensioner (1–4)",
+        "Sex dimensioner (1–6)",
+        "Åtta dimensioner (1–8)",
+        "Tre dimensioner (1–3)"
+      ],
+      "a": 1,
+      "e": "Enligt ISO 5599/1 finns det plattor för sex olika dimensioner (1–6). Standarden omfattar portdimensioner från G1/8\" till G1/2\"."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Kompaktventiler följer den tyska standarden VDMA 24563. Vad är det karaktäristiska med dem jämfört med ISO-anpassade ventiler?",
+      "o": [
+        "De är större för att klara högre flöden",
+        "De är mindre och kallades kompaktventiler på grund av miniatyrisering",
+        "De har fler portar och fler switchpositioner",
+        "De kräver speciell monteringsplatta som inte är utbytbar"
+      ],
+      "a": 1,
+      "e": "VDMA 24563-ventiler är mindre än de ISO-anpassade. Trenden med miniatyrisering och systembyggande pressade fram dessa mindre elstyrade ventiler med 5/2 och 5/3-funktion."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Vilket C-värde har en 5/2 effektventil med port G1/4\"?",
+      "o": [
+        "0,5 Nl/s·bar",
+        "2,5 Nl/s·bar",
+        "4,0 Nl/s·bar",
+        "11,0 Nl/s·bar"
+      ],
+      "a": 2,
+      "e": "Ur tabellen i boken: 5/2 effektventil med G1/4\" har C-värde 4,0 Nl/s·bar. G1/8\" ger 2,5 och G3/8\" ger 11,0."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Vilket påstående om tryckfall i en ledning är FELAKTIGT?",
+      "o": [
+        "Ju klenare dimension, desto större tryckfall",
+        "Ett för stort tryckfall kan göra att cylinderdiametern måste ökas",
+        "Ökade tryckfall ger bättre totalekonomi genom energieffektivitet",
+        "Flödet genom en komponent beror av tryckförhållandet före och efter komponenten"
+      ],
+      "a": 2,
+      "e": "Ökade tryckfall ger SÄMRE totalekonomi med ökade drifts- och investeringskostnader. Rätt dimensionering ger den bästa totalekonomin."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Vad representerar Δp i tryckfallsformeln p_LP = Δp · l · 7/pl + l?",
+      "o": [
+        "Totalt tryckfall vid valfritt ingångstryck",
+        "Tryckfallet per meter ledning avläst från diagram vid ingångstryck 6 bar",
+        "Ingångstrycket i bar",
+        "Säkerhetsfaktorn för tryckvariationer"
+      ],
+      "a": 1,
+      "e": "Δp i formeln är tryckfallet per meter ledning, avläst från diagram för en meter ledning med ingångstrycket 6 bar. Faktorn 7/pl korrigerar för det faktiska ingångstrycket pl."
+    },
+    {
+      "c": "Ventiler",
+      "q": "En ledning med diameter ø 22/19 och ledningslängd 5 m har vilket C-värde?",
+      "o": [
+        "7 Nl/s·bar",
+        "20 Nl/s·bar",
+        "30 Nl/s·bar",
+        "50 Nl/s·bar"
+      ],
+      "a": 2,
+      "e": "Ur diagram i boken: en ledning ø 22/19 med L = 5 m har ett C-värde på 30 Nl/s·bar. C-värdet minskar med längre ledning och klenare dimension."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Maxflödet för en ventil med direkt montage på cylinder är jämfört med ventil på anslutningsplatta:",
+      "o": [
+        "Större, eftersom ledningslängden elimineras",
+        "Lika stort i alla fall",
+        "Något mindre, men det är i de flesta fall försumbart",
+        "Avsevärt lägre, vilket gör direkt montage oanvändbart"
+      ],
+      "a": 2,
+      "e": "Materialet anger att maxflödet för en ventil med direkt montage är något mindre än när ventilen monteras separat på anslutningsplatta. Men detta är i de flesta fall försumbart."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Signalerna 'följetong' och 'följer efter varandra' används som översättning av vilket engelskt ord inom fältbussystemet?",
+      "o": [
+        "Parallel",
+        "Serial",
+        "Digital",
+        "Binary"
+      ],
+      "a": 1,
+      "e": "I materialet förklaras att det engelska ordet 'serial' översätts med 'följetong' eller 'följer efter varandra'. I ett fältbussystem sänds alla signaler seriellt, dvs. i följd, genom kabeln."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Tre monteringssätt för riktningsventiler nämns i materialet. Vilket av dessa är INTE ett av dem?",
+      "o": [
+        "Enblocksventil (singelventil) i ett gemensamt hus",
+        "Plattmonterade ventiler (rampventiler) på en basplatta",
+        "Sektionsbyggda ventiler (sandwichventiler) med gemensamma in- och utloppsportar",
+        "Väggmonterade ventiler med individuella slangkopplingar"
+      ],
+      "a": 3,
+      "e": "Materialet nämner tre monteringssätt: enblocksventil, plattmonterad ventil (rampventil) och sektionsbyggd ventil (sandwichventil). Väggmontage med individuella slangkopplingar nämns inte."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Varför tejpas reflektorn tillfälligt vid inställning av en reflexavkänning?",
+      "o": [
+        "För att skydda reflektorn mot smuts",
+        "För att inställningen av sändaren ska bli optimal när reflektorn är täckt",
+        "För att hindra störande ljus att träffa mottagaren",
+        "Tejpning används inte — det är ett felaktigt påstående"
+      ],
+      "a": 1,
+      "e": "Reflektorn tejpas så att endast centrum är fritt. Sändaren monteras och riktas mot reflektorn. Eftersom reflektorn är tejpad under justeringen blir inställningen av sändaren optimal. Tejpen tas sedan bort."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Vilket C-värde har en 3/2 signalventil med port G1/8\"?",
+      "o": [
+        "2,5 Nl/s·bar",
+        "4,0 Nl/s·bar",
+        "0,5 Nl/s·bar",
+        "11,0 Nl/s·bar"
+      ],
+      "a": 2,
+      "e": "Ur C-värdetabellen: 3/2 signalventil med G1/8\" har C-värde 0,5 Nl/s·bar. Det låga C-värdet speglar att signalventiler bara behöver alstra små tryckpulser."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Varför är det viktigt att kontrollera om PLC-ingångarna har RC-filter med ställbar filtertid?",
+      "o": [
+        "Filtertiden bestämmer utgångens belastningsförmåga",
+        "En del PLC har ställbar filtertid 0–15 ms vilket påverkar hur snabbt kontaktstudsar elimineras",
+        "RC-filtret bestämmer vilket tryck ventilerna öppnar vid",
+        "Filtertiden styr kommunikationshastigheten i fältbussen"
+      ],
+      "a": 1,
+      "e": "Materialet anger att RC-filtret eliminerar kontaktstudsar och ger fördröjning. En del PLC har ställbar filtertid från 0 till 15 ms. Valet av filtertid påverkar hur snabbt PLC:n reagerar på insignaler."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Vilket påstående om anslutningsplattor är FELAKTIGT?",
+      "o": [
+        "Basplattan är den platta till vilken en singelventil monteras",
+        "Kedjeplattan byggs av två eller flera sammanfogade basplattor",
+        "Multipelplattan rymmer flera singelventiler",
+        "Anslutningsplattor kan bara ha portarna tillgängliga på undersidan"
+      ],
+      "a": 3,
+      "e": "Anslutningsplattor finns i utföranden med portarna tillgängliga på långsida, kortsida ELLER på undersidan — inte bara undersidan."
+    },
+    {
+      "c": "Ventiler",
+      "q": "Det nominella flödet är störst för vilken ventiltyp?",
+      "o": [
+        "Signalgivande ventiler",
+        "Logikelement",
+        "Effektventiler",
+        "Backventiler"
+      ],
+      "a": 2,
+      "e": "Effektventiler används för att manövrera arbetselementen och det är ofta stora flöden som ska passera. Därför är det nominella flödet störst för effektventilerna."
+    },
+    {
+      "c": "Ventiler",
+      "q": "En riktningsventil konstrueras som sätes- eller slidventil. Vad avgör ventilstorleken?",
+      "o": [
+        "Antalet styrportar",
+        "Det flöde som ska passera genom ventilen och ledningen fram till ställdonet",
+        "Cylinderns kolvdiameter direkt",
+        "Arbetstrycket i systemet"
+      ],
+      "a": 1,
+      "e": "Ventilernas storlek väljs efter det flöde som ska passera genom ventilen och ledningen fram till ställdonet. Kolvdiametern bestämmer behovet indirekt, men det är flödet som är avgörande."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Gripdon kan vara mekaniska, magnetiska eller vakuumdrivna. Vilket påstående om mekaniska gripdon är korrekt?",
+      "o": [
+        "De kan bara ha fasta fingrar utan fjäderbelastning",
+        "De kan ha parallella fingrar eller fjäderbelastade ledande fingrar som klämmer som en tång",
+        "De drivs alltid elektriskt, aldrig pneumatiskt",
+        "De är enbart lämpade för runda föremål"
+      ],
+      "a": 1,
+      "e": "Mekaniska gripdon kan bestå av två parallella fingrar som rör sig mot varandra, eller ha ledande fjäderbelastade fingrar som klämmer som en tång. Drivningen är oftast pneumatisk med en cylinder styrd av en ventil."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vad är ejektorns funktion i ett vakuumgripdon?",
+      "o": [
+        "Att blåsa bort föremålet efter lyft",
+        "Att skapa undertryck genom att ett luftflöde accelereras genom en strypning",
+        "Att mäta sugkoppens hållkraft",
+        "Att reglera kolvhastigheten i gripcylindern"
+      ],
+      "a": 1,
+      "e": "Ejektorn är en vakuumpump som drivs av tryckluften. Vakuum bildas när ett flöde accelereras genom en venturidysa (strypning). Vid 5 bar lufttryck bildas ett vakuum som är 87 % av atmosfärstrycket."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vid vilket lufttryck till ejektorn skapar den en lägre vakuumhalt, och vad är ofta tillräckligt?",
+      "o": [
+        "Vid tryck över 8 bar; 80 % vakuum är tillräckligt",
+        "Vid tryck under 4 bar; ofta är 50 % vakuum tillräckligt",
+        "Vid tryck under 2 bar; 30 % vakuum räcker alltid",
+        "Vid tryck över 6 bar; 90 % vakuum krävs alltid"
+      ],
+      "a": 1,
+      "e": "Vid tryck mindre än 4 bar skapar ejektorn en lägre vakuumhalt. Materialet anger att ofta är 50 % vakuum tillräckligt för att lyfta ett föremål."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vilka tre tidsfaktorer påverkar val av ejektor (cykeltiden)?",
+      "o": [
+        "Acceleration, retardation och vilotid",
+        "Evakueringstiden, lyfttiden och lossningstiden",
+        "Uppbyggnadstiden, hålltiden och frislappningstiden",
+        "Inbläsningstiden, tryckhållningstiden och utblåsningstiden"
+      ],
+      "a": 1,
+      "e": "Cykeltiden påverkas av: evakueringstiden (tid att uppnå 50–60 % vakuum), lyfttiden och lossningstiden (tid att släppa föremålet). Dessa tre avgör vilken ejektor som väljs."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vilket påstående om läckage i vakuumsystem är FELAKTIGT?",
+      "o": [
+        "Läckage kan ske igenom själva föremålet om materialet är poröst",
+        "Ojämn yta, oren yta och sliten sugkopp orsakar läckage mellan objekt och sugkopp",
+        "Glas och stål ger inget läckage, papper och tyg ger visst läckage",
+        "Vid högt läckage väljs en mindre ejektor för att kompensera"
+      ],
+      "a": 3,
+      "e": "Vid högt läckage väljs en STÖRRE ejektor (inte mindre) för att kompensera läckaget."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Sugkoppar finns i fem typer enligt materialet. Vilken typ är INTE med?",
+      "o": [
+        "Plan sugkopp",
+        "Bälgsugkopp",
+        "Magnetisk sugkopp",
+        "Plan och oval sugkopp"
+      ],
+      "a": 2,
+      "e": "De fem typerna som listas är: plan sugkopp, liten sugkopp, bälgsugkopp, plan sugkopp med utbytbar läpp, och plan och oval sugkopp. Magnetisk sugkopp är inte en sugkoppstyp."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Säkerhetsfaktorn s vid dimensionering av sugkopp ska vara minst 2 vid horisontella lyft och minst 4 vid vertikala lyft. Varför är kravet högre vid vertikalt lyft?",
+      "o": [
+        "Vertikalt lyft kräver mer energi från ejektorn",
+        "Vid vertikalt lyft verkar hela föremålets tyngd direkt utdragande på sugkoppen utan stöd",
+        "Vakuumtrycket är lägre vid vertikalt montage",
+        "Sugkoppen har lägre kontaktyta när föremålet hänger vertikalt"
+      ],
+      "a": 1,
+      "e": "Vid vertikalt lyft bär sugkoppen hela föremålets tyngd rakt utdragande. Vid horisontellt lyft trycker tyngden föremålet MOT sugkoppen (skjuvkraft), vilket är gynnsammare. Därför krävs dubbelt så hög säkerhetsfaktor vid vertikalt lyft."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Ett föremål väger 10 kg och ska lyftas horisontellt med en sugkopp. Beräkna erforderlig hållkraft F.",
+      "o": [
+        "F = 98,1 N",
+        "F = 196,2 N",
+        "F = 49,1 N",
+        "F = 392,4 N"
+      ],
+      "a": 1,
+      "e": "F = (m × g/n) × s = (10 × 9,81/1) × 2 = 196,2 N. Säkerhetsfaktor s = 2 (horisontellt), n = 1 sugkopp, g = 9,81 m/s²."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Samma 10 kg föremål ska lyftas vertikalt med fyra sugkoppar. Vilken hållkraft F krävs per sugkopp?",
+      "o": [
+        "F = 196,2 N",
+        "F = 392,4 N",
+        "F = 98,1 N",
+        "F = 49,1 N"
+      ],
+      "a": 2,
+      "e": "F = (m × g/n) × s = (10 × 9,81/4) × 4 = 98,1 N. Säkerhetsfaktor s = 4 (vertikalt), n = 4 sugkoppar."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vad är skillnaden mellan direkt montage och centralt montage av ejektor/sugkoppar?",
+      "o": [
+        "Direkt montage är billigare men ger sämre vakuum",
+        "Vid direkt montage är varje ejektor direkt på sugkoppen, vilket ger oberoende sugkoppar och snabba evakueringstider; vid centralt montage styr en ejektor flera sugkoppar",
+        "Centralt montage används bara för vertikala lyft",
+        "Det finns ingen praktisk skillnad, båda ger samma funktion"
+      ],
+      "a": 1,
+      "e": "Vid direkt montage: en ejektor per sugkopp, sugkopparna oberoende av varandra, snabba evakueringstider. Vid centralt montage: en ejektor styr flera sugkoppar, mer ekonomiskt men med längre evakueringstider och ömsesidigt beroende."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vakuum definieras i materialet som ungefär:",
+      "o": [
+        "Ett luftflöde med högt tryck",
+        "Ett lufttomt rum eller en del av rymden utan närvaro av material",
+        "En strypning som skapar övertryck",
+        "En gas vid exakt 0 bar absolut"
+      ],
+      "a": 1,
+      "e": "Materialet definierar vakuum som ungefär 'ett lufttomt rum eller en del av rymden utan närvaro av material'. Det är undertrycket som gör att atmosfärstrycket trycker sugkoppen mot arbetsstycket."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vilka fördelar med vakuumgripdon listas i materialet?",
+      "o": [
+        "Hög gripkraft, lång livslängd och enkel rengöring",
+        "Billigt gripsystem, hanterar de flesta material, kan hantera ömtåliga material, räcker med ungefärlig positionering",
+        "Hög precision, klarar alla temperaturer och lämpar sig för alla ytor",
+        "Snabbt grepp, enkel montering och hög tryckluftsbesparing"
+      ],
+      "a": 1,
+      "e": "Materialet listar fyra fördelar: billigt gripsystem, hanterar de flesta material, kan hantera ömtåliga material och räcker med ungefärlig positionering."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Bälgsugkoppar har en speciell egenskap jämfört med plan sugkopp. Vilken?",
+      "o": [
+        "De tål högre vakuum och kan lyfta tyngre",
+        "De har större förmåga att kompensera för nivåskillnader",
+        "De är bättre på porösa material",
+        "De kräver lägre luftförbrukning"
+      ],
+      "a": 1,
+      "e": "Materialet anger explicit att bälgsugkoppar har större förmåga att kompensera för nivåskillnader. Detta gör dem lämpliga för ojämna ytor eller föremål med varierande tjocklek."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Ejektorn innehåller en venturidysa. Var ska ejektorn monteras för bäst funktion?",
+      "o": [
+        "Centralt i maskinrummet nära kompressorn",
+        "Nära sugkoppen, på cylinderkolvstång eller rörlig maskindel",
+        "Alltid på ett fast stativ minst 2 meter från sugkoppen",
+        "Inbyggd i PLC-skåpet tillsammans med ventilerna"
+      ],
+      "a": 1,
+      "e": "Ejektorn monteras nära sugkoppen, på cylinderkolvstången eller på rörlig maskindel. Detta minimerar volymen som ska evakueras och ger snabb evakueringstid."
+    },
+    {
+      "c": "Gripdon",
+      "q": "I den pneumatiska kretsen för ett mekaniskt gripdon används tryckregulator. Vad är dess funktion?",
+      "o": [
+        "Att styra ventilens switchfrekvens",
+        "Att ställa in gripkraften",
+        "Att reglera evakueringstiden hos ejektorn",
+        "Att kompensera för läckage i gripcylindern"
+      ],
+      "a": 1,
+      "e": "I det pneumatiska mekaniska gripdonet används tryckregulator för att ställa in gripkraften. Dessutom finns kolvdämpningar och variabla strypbackventiler för att ställa fingrarnas hastighet."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vilket material ger INGET läckage enligt boken?",
+      "o": [
+        "Papper",
+        "Tyg",
+        "Glas",
+        "Kork"
+      ],
+      "a": 2,
+      "e": "Ur boken: Stål = inget läckage, Glas = inget läckage, Papper = visst läckage, Tyg = visst läckage. Glas är kompakt och ger inget läckage precis som stål."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vakuum bildas i ejektorn på vilket sätt?",
+      "o": [
+        "En kolvpump komprimerar luft i en kammare",
+        "Luftflödet accelereras ut genom utblåsningsporten via venturidysa och drar med sig luften från sugkoppen",
+        "En elektrisk motor skapar undertryck i en sluten behållare",
+        "Tryckluften stängs av och undertrycket uppstår spontant i sugkoppen"
+      ],
+      "a": 1,
+      "e": "I ejektorn strypas luftflödet (venturidysa) som accelererar luften ut genom utblåsningsporten. Luftflödet för med sig luften från sugkoppen via Bernoulli-principen, och därigenom bildas undertrycket."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Vilka tre steg observeras vid val av sugkopp?",
+      "o": [
+        "Val av tryck, val av ledningsdimension och val av ejektor",
+        "Typ av sugkopp, val av material och dimensionering",
+        "Beräkna hållkraft, välj C-värde och kontrollera läckage",
+        "Val av vakuumnivå, val av ejektorstorlek och val av sugkoppsmaterial"
+      ],
+      "a": 1,
+      "e": "Materialet anger tre steg vid val av sugkopp: (1) Typ av sugkopp, (2) Val av material (oljebeständighet, slitstyrka, väder, temperatur, miljö) och (3) Dimensionering (horisontell eller vertikal lyft)."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Evakueringstiden definieras som den tid det tar att uppnå vakuum på 50–60 %. Vad händer vid den nivån?",
+      "o": [
+        "Ejektorn stänger av automatiskt",
+        "Vakuumet är tillräckligt för att lyfta föremålet",
+        "Sugkoppen lossnar från föremålet",
+        "Läckaget är som störst"
+      ],
+      "a": 1,
+      "e": "Materialet definierar evakueringstiden som den tid det tar att uppnå ett vakuum på 50–60 % som är tillräckligt för att lyfta föremålet."
+    },
+    {
+      "c": "Gripdon",
+      "q": "Centralt montage av ejektor är mer ekonomiskt än direkt montage. Vad är nackdelen?",
+      "o": [
+        "Centralt montage kräver starkare ledningar",
+        "Vid läckage i en sugkopp påverkas hela systemet och evakueringstiderna är längre",
+        "Centralt montage kan inte kombineras med objektvakter",
+        "Det går inte att använda centralt montage vid vertikala lyft"
+      ],
+      "a": 1,
+      "e": "Vid centralt montage styr en ejektor flera sugkoppar, vilket är ekonomiskt. Nackdelen är att sugkopparna inte är oberoende av varandra — läckage i en påverkar övriga — och volymen som ska evakueras är större, vilket ger längre evakueringstider."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Vad är skillnaden mellan en analog och en binär sensor?",
+      "o": [
+        "Analoga sensorer mäter bara position, binära sensorer mäter tryck",
+        "Analoga sensorer ger en utsignal proportionell mot insignalen; binära sensorer rapporterar bara TILL eller FRÅN",
+        "Binära sensorer är dyrare och mer exakta än analoga",
+        "Analoga sensorer används bara i pneumatik, binära i hydraulik"
+      ],
+      "a": 1,
+      "e": "En analog sensor ger en utsignal som är proportionell mot det som mäts. En binär (digital) sensor rapporterar bara två tillstånd: TILL (kolven i avkänningsläge) eller FRÅN (kolven inte där)."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Magnetkolvavkännaren använder ett halvledarmaterial med en inlagd slinga vars resistans ändras med magnetfältet. När ökar resistansen?",
+      "o": [
+        "När magnetfältet minskar",
+        "När magnetfältet ökar",
+        "När temperaturen stiger",
+        "När strömmen ökar"
+      ],
+      "a": 1,
+      "e": "Slingan på halvledarplattan känner av magnetfältet. När magnetfältet B ökar, ökar slingans resistans R. Strömmen I minskar då. Detta är principen för en magnetoresistiv givare."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Varför krävs transientskydd när sensorns last är induktiv?",
+      "o": [
+        "Induktiva laster drar för lite ström och behöver förstärkning",
+        "När spänningen kopplas bort skapas en hög spänningsspik som kan skada elektroniken",
+        "Induktiva laster kräver växelspänning och sensorn ger likspänning",
+        "Transientskydd är bara nödvändigt vid analoga sensorer"
+      ],
+      "a": 1,
+      "e": "När en induktiv last kopplas bort skapas en hög spänningsspik. För att skydda sensorns elektronik mot denna spik kopplas ett transientskydd in — vid likspänning en släckdiod, vid växelspänning ett RC-filter."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Induktiva sensorer alstrar ett magnetfält och avkänner störningar i det. Vilka reduktionsfaktorer gäller för aluminium och koppar?",
+      "o": [
+        "Aluminium 0,9 × Kn, Koppar 0,5 × Kn",
+        "Aluminium 0,4 × Kn, Koppar 0,4 × Kn",
+        "Aluminium 0,5 × Kn, Koppar 0,9 × Kn",
+        "Aluminium 1,0 × Kn, Koppar 0,4 × Kn"
+      ],
+      "a": 1,
+      "e": "Tabellen i materialet anger: Kromnickel 0,9 × Kn, Mässing 0,5 × Kn, Aluminium 0,4 × Kn, Koppar 0,4 × Kn."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Vilket påstående om induktiva sensorer är FELAKTIGT?",
+      "o": [
+        "De är dyra jämfört med mekaniska sensorer",
+        "De störs av metallföremål i närheten om de monteras för nära varandra",
+        "De påverkas lätt av metallföremål men störs inte av andra material",
+        "De har snabb omkoppling och påtaglig hysteres"
+      ],
+      "a": 2,
+      "e": "Materialet anger att induktiva sensorer påverkas lätt av metallföremål men störs INTE av andra material. Det är korrekt. Det felaktiga påståendet är att de 'störs inte av metallföremål' — de störs just av metall."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Kapacitiva sensorer reagerar starkast för vilka material?",
+      "o": [
+        "Torra och porösa material",
+        "Metaller och fuktigt material",
+        "Glas och keramik",
+        "Plaster och trä"
+      ],
+      "a": 1,
+      "e": "Den kapacitiva sensorn reagerar starkast för metaller och fuktigt material. Ju större massa eller fuktinnehåll, desto längre räckvidd."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Kapacitiva sensorers avkänningsavstånd Kn brukar vara i vilket intervall?",
+      "o": [
+        "0,1–1,0 mm",
+        "2,5–8 mm",
+        "10–50 mm",
+        "1–2 mm"
+      ],
+      "a": 1,
+      "e": "Kapacitiva sensorers nominella avkänningsavstånd Kn brukar vara mellan 2,5–8 mm. Avkänningen justeras med en potentiometer."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Vilken egenskap hos Schmitt-triggern gör den viktig i optiska sensorer?",
+      "o": [
+        "Den förstärker ljussignalen proportionellt",
+        "Den slår om från 1 till 0 vid olika spänningsnivåer, vilket ger en binär utsignal",
+        "Den alstrar det pulserande ljuset i sändaren",
+        "Den mäter exakt avstånd mellan sändare och mottagare"
+      ],
+      "a": 1,
+      "e": "Schmitt-triggern har den speciella egenskapen att den slår om från 1 till 0 vid olika spänningsnivåer, vilket ger en binär (ren TILL/FRÅN) utsignal."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Vid envägsavkänning med optisk sensor, vad är sändaren och mottagaren?",
+      "o": [
+        "Sändaren och mottagaren sitter i samma hölje och ljuset studsar mot ett objekt",
+        "Sändare och mottagare är i samma enhet och avkänner föremålets reflektans",
+        "Sändaren och mottagaren är separata enheter; ljusstrålen bryts av föremålet mellan dem",
+        "Sändaren sitter på föremålet och mottagaren monteras fast"
+      ],
+      "a": 2,
+      "e": "Vid envägsavkänning monteras mottagaren på ett ställe och sändaren fixeras så att ljuset riktas exakt mot mottagaren. Indikering sker när ett föremål bryter ljusstrålen."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Fiberoptik utnyttjar glasfibrer som ljusledare. Vad är viktigt att beakta vid installation?",
+      "o": [
+        "Fibrerna ska alltid dras i metallrör",
+        "Angivna värden för böjning och mekanisk belastning måste hållas",
+        "Fibrerna kräver speciell temperaturkompensering vid montage",
+        "Fibrerna ska alltid skärmas mot elektromagnetiska fält"
+      ],
+      "a": 1,
+      "e": "Materialet anger specifikt att för att inte skada glasfibrerna måste angivna värden för böjning och mekanisk belastning hållas."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Vad är 'arbetsavstånd' hos en induktiv sensor?",
+      "o": [
+        "Det är identiskt med det nominella avkänningsavståndet",
+        "Det är det maximalt tillgängliga avståndet för avkänning",
+        "Det är det avstånd till metalliskt material som krävs för att sensorn ska arbeta tillförlitligt",
+        "Det är det minsta avstånd som krävs för att kolven inte ska störa sensorn"
+      ],
+      "a": 2,
+      "e": "Arbetsavståndet är det avstånd till metalliskt material som krävs för att sensorn ska vara tillförlitlig. Det tar hänsyn till material, temperatur, spänning och storlek på mätobjektet."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Vilket åtdragningsmoment gäller för en induktiv sensor M18 × 1?",
+      "o": [
+        "15 Nm",
+        "40 Nm",
+        "70 Nm",
+        "200 Nm"
+      ],
+      "a": 2,
+      "e": "Tabellen i materialet anger: M8×1 = 15 Nm, M12×1 = 40 Nm, M18×1 = 70 Nm, M30×1,5 = 200 Nm. Angivet åtdragningsmoment får inte överskridas."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Transmitter är ett namn för sensorer som används i vilket sammanhang?",
+      "o": [
+        "Pneumatik för att känna av kolvens läge",
+        "Larmanläggningar för att känna ljus, ljud, rök och rörelser",
+        "Industrin för enheter som lämnar en standardiserad utsignal, t ex 0–5 V eller 4–20 mA",
+        "Driftövervakning vid mätning av temperaturer, tryck och flöden"
+      ],
+      "a": 2,
+      "e": "Materialet definierar: Transmitter används inom industrin för enheter som lämnar en standardiserad utsignal, t ex 0–5 V eller 4–20 mA."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Varför rekommenderas skärmad anslutningsledning för optiska sensorer?",
+      "o": [
+        "Skärmen förstärker ljussignalen från sändaren",
+        "Ledningarna ska inte läggas med ledningar som har höga spänningsstoppar eller störningsfält",
+        "Skärmad ledning tål högre mekanisk belastning",
+        "Skärm krävs enbart vid direktavkänning med bakgrundsdämpning"
+      ],
+      "a": 1,
+      "e": "Materialet anger att ledningar inte ska läggas tillsammans med andra ledningar som har höga spänningsstoppar eller störningsfält. I regel rekommenderas skärmad anslutningsledning."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Induktiva sensorer ska monteras med hjälp av två muttrar. Var placeras muttrarna?",
+      "o": [
+        "Båda muttrarna på framsidan av fästplåten",
+        "Båda muttrarna på baksidan av fästplåten",
+        "En muttar på varsin sida om fästplåten",
+        "Muttrarna träs på sensorn och fästs i cylinderröret direkt"
+      ],
+      "a": 2,
+      "e": "Sensorn monteras i ett ogängat hål med hjälp av två muttrar som placeras på varsin sida om fästplåten. Dessa dras fast med det angivna åtdragningsmomentet."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Varför är det en fördel om PLC-ingångarna har lysdioder för indikering?",
+      "o": [
+        "Lysdioderna förstärker insignalen",
+        "De indikerar insignalernas signalnivå (TILL eller FRÅN) och underlättar felsökning",
+        "Lysdioderna skyddar mot överspänning",
+        "De visar hur mycket ström varje sensor förbrukar"
+      ],
+      "a": 1,
+      "e": "Materialet anger att det är en fördel om ingångarna är försedda med lysdioder för indikering av insignalernas signalnivå — TILL eller FRÅN. Det underlättar felsökning vid driftstörningar."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Vakt är ett sensornamn. I vilket sammanhang används det?",
+      "o": [
+        "Inom pneumatiken för att känna av kolvens läge",
+        "I larmanläggningar för ljus, ljud och rörelse",
+        "Vid driftövervakning för mätning av temperaturer, tryck och flöden",
+        "Inom industrin för standardiserade utsignaler"
+      ],
+      "a": 2,
+      "e": "Materialet definierar fyra sensorbegrepp: Avkännare (pneumatik), Transmitter (industri/standardutsignal), Detektor (larmanläggningar) och Vakt (driftövervakning vid mätning av temperaturer, tryck, flöden)."
+    },
+    {
+      "c": "Sensorer",
+      "q": "En sensor kan i svåra miljöer skyddas genom att byggas in i cylinderröret. Vilken fördel ger det?",
+      "o": [
+        "Sensorn kan känna av längre slaglängder",
+        "Sensorn ligger helt inbyggd och skyddad från omgivningen",
+        "Inbyggda sensorer behöver inget transientskydd",
+        "Inbyggda sensorer kan avkänna utan magnet i kolven"
+      ],
+      "a": 1,
+      "e": "Materialet anger att i svåra miljöer utnyttjar man genomgående hål i cylinderröret och skjuter in sensorerna där. De kommer då att ligga helt inbyggda och skyddade från omgivningen."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Fiberoptikens inställning sker på vilket sätt?",
+      "o": [
+        "Alltid med envägsavkänning och fast mottagare",
+        "Huvudsakligen på samma sätt som direktavkänning med bakgrundsdämpning",
+        "Via en potentiometer inbyggd i glasfibern",
+        "Automatiskt via det digitala styrsystemet"
+      ],
+      "a": 1,
+      "e": "Materialet anger att inställningen av fiberoptiken sker i huvudsak på samma sätt som vid direktavkänning med bakgrundsdämpning."
+    },
+    {
+      "c": "Sensorer",
+      "q": "Kapacitiva sensorer bör användas med försiktighet i våta miljöer. Varför?",
+      "o": [
+        "Vatten förstör sensorns spole permanent",
+        "Fukt på sensorns avkännande yta kan ge felaktiga signaler",
+        "Kapacitiva sensorer kortsluts vid kontakt med vatten",
+        "Vakuumet i sensorn påverkas av fuktighet"
+      ],
+      "a": 1,
+      "e": "Materialet varnar för att i våta miljöer kan fukt på sensorns avkännande yta lätt ge felaktiga signaler. I sådana fall är optiska sensorer ofta ett bättre alternativ."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Styrsystemets utrustning består av tre delar. Vilka?",
+      "o": [
+        "PLC, fältbuss och kraftenhet",
+        "En eller flera sensorer, en enhet för bearbetning av information, samt ett eller flera styrdon",
+        "CPU, minne och I/O-interface",
+        "Ingångssignaler, utgångssignaler och kommunikationsprotokoll"
+      ],
+      "a": 1,
+      "e": "Materialet definierar styrsystemets utrustning som: en eller flera sensorer, en enhet för bearbetning av information samt ett eller flera styrdon."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "I kursen Automationsenheter används PLC med vilken typ av in- och utgångar?",
+      "o": [
+        "Digitala in- och utgångar",
+        "Analoga in- och utgångar",
+        "Binära in- och utgångar",
+        "Kombinerade analoga och binära"
+      ],
+      "a": 2,
+      "e": "Materialet specificerar explicit att i kursen Automationsenheter används PLC med binära in- och utgångar."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Varför ska man vid val av PLC lägga till 20 % extra I/O-utrymme?",
+      "o": [
+        "För att kompensera för defekta portar från tillverkaren",
+        "Det kan behövas för att lösa problem som uppstår och för framtida behov som inte kalkylerats",
+        "Standard kräver 20 % reservportar för säkerhetsklassning",
+        "För att kommunikationsprotokollet reserverar 20 % av portarna"
+      ],
+      "a": 1,
+      "e": "Materialet anger att man alltid bör ge ett extra utrymme på 20 %, eftersom det kan behövas för att lösa problem som uppstår och för framtida behov."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vad innebär den cykliska bearbetningen i en PLC?",
+      "o": [
+        "Alla in- och utgångar kontrolleras samtidigt parallellt",
+        "Processorn kommunicerar med ett begränsat antal portar i turordning och detta styrs av processorn",
+        "Signalerna behandlas slumpmässigt beroende på prioritet",
+        "Bearbetningen sker bara när en sensor aktiveras"
+      ],
+      "a": 1,
+      "e": "Microprocessorn kan bara göra en sak i taget. Den tillämpar cyklisk bearbetning där alla in- och utgångar kontrolleras varje programvarv. PLC:n kommunicerar med ett begränsat antal portar i turordning styrt av processorn."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vilket utgångsalternativ hos PLC har kortast utgångsfördröjning?",
+      "o": [
+        "Relä (10 ms)",
+        "Transistor (< 0,2 ms)",
+        "Triac (0,2–10 ms)",
+        "Optokopplare (5 ms)"
+      ],
+      "a": 1,
+      "e": "Ur tabellen i materialet: Relä = 10 ms fördröjning, Transistor = < 0,2 ms, Triac = 0,2–10 ms. Transistorutgången är klart snabbast."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vad är syftet med galvanisk isolering via optokopplare i PLC:ns ingångar?",
+      "o": [
+        "Förstärka insignalen för bättre mätprecision",
+        "Isolera de yttre anslutningarna från den interna logiken",
+        "Konvertera analoga signaler till digitala",
+        "Minska strömförbrukningen i PLC:n"
+      ],
+      "a": 1,
+      "e": "Optokopplarna ger galvanisk isolering, dvs. isolation mellan de yttre anslutningarna (sensorer, fält) och den interna logiken (CPU). Detta skyddar CPU:n mot överspänningar och störningar från fältet."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vad gäller för kraftförsörjning av sensorer respektive styrdon?",
+      "o": [
+        "Både sensorer och styrdon matas med intern kraftkälla",
+        "Sensorer kan matas med intern kraftkälla; styrdon ska matas med extern kraftkälla",
+        "Sensorer ska matas med extern kraft, styrdon med intern",
+        "Styrdon och sensorer kräver alltid separata externa kraftkällor"
+      ],
+      "a": 1,
+      "e": "Materialet anger klart: 'Sensorer kan matas med intern kraftkälla. Styrdon ska matas med extern kraftkälla.'"
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Varför är RC-filtret på PLC-ingångarna nödvändigt?",
+      "o": [
+        "För att PLC:n inte ska reagera för snabbt på korrekta signaler",
+        "För att eliminera kontaktstudsar som annars ger felaktiga kommandon",
+        "RC-filter används för att öka belastningsförmågan per utgång",
+        "Filtret kompenserar för kabellängden mellan sensorn och PLC:n"
+      ],
+      "a": 1,
+      "e": "Kontaktstudsar kan orsaka felaktiga kommandon. RC-filtret eliminerar de negativa effekterna av kontaktstudsar genom att ge en fördröjning. En del PLC har ställbar filtertid 0–15 ms."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Svarstiden för ett PLC i en liten anläggning med logiska kombinatoriska uppgifter brukar vara:",
+      "o": [
+        "0,1–0,5 ms",
+        "3–5 ms",
+        "15–30 ms",
+        "100–500 ms"
+      ],
+      "a": 1,
+      "e": "Materialet anger att svarstiden för PLC i små anläggningar med logiska kombinatoriska uppgifter brukar vara 3–5 ms."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vilka tre PROFIBUS-varianter nämns och vad skiljer PROFIBUS PA från de andra?",
+      "o": [
+        "FMS (stora data), DP (enkla funktioner), PA (explosionssäkert för processindustrin)",
+        "FMS (analog), DP (digital), PA (pneumatisk)",
+        "FMS (trådlöst), DP (trådbundet), PA (optisk fiber)",
+        "FMS (master), DP (slav), PA (blandad)"
+      ],
+      "a": 0,
+      "e": "Materialet nämner: PROFIBUS FMS för stora datamängder och avancerade funktioner, PROFIBUS DP för mindre datamängder och enkla funktioner, PROFIBUS PA för avancerade funktioner i explosionssäkert utförande för processindustrin."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "I fältbussystemet, vad är en 'master' och vad är en 'slav'?",
+      "o": [
+        "Master = PLC, slav = sensor; mastern skickar kommandon och slaven utför dem",
+        "Master = aktiv station som kontrollerar bussen; slav = passiv station som bara svarar när den tillfrågas",
+        "Master = hårdvara, slav = mjukvara",
+        "Master styr de analoga signalerna, slaven de binära"
+      ],
+      "a": 1,
+      "e": "En master är en aktiv station som kan kontrollera bussen och överföra meddelanden när den vill. En slav är en passiv station — den kan bara lämna data när den tillfrågas eller ta emot data när det skickas till den."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vilket fältbussystem av PROFIBUS och InterBus-S tillåter att enheter kopplas in och ur medan systemet är i drift?",
+      "o": [
+        "Bara InterBus-S",
+        "Bara PROFIBUS",
+        "Båda systemen tillåter detta",
+        "Ingendera av systemen tillåter detta"
+      ],
+      "a": 1,
+      "e": "Materialet anger att ingen enhet kan kopplas ur InterBus-S medan systemet är i drift. PROFIBUS däremot medger att enheter kan in- och urkopplas utan att bussystemet stängs av."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "PROFIBUS överföringshastighet är 1,5 Mbit/s. Hur ofta kontaktar mastern alla underordnade enheter?",
+      "o": [
+        "En gång per sekund",
+        "100 gånger per sekund",
+        "Kontinuerligt utan uppehåll",
+        "Bara när en sensor aktiveras"
+      ],
+      "a": 1,
+      "e": "Materialet anger att mastern kontaktar alla underordnade enheter 100 gånger i sekunden om överföringshastigheten är 1,5 Mbit/s."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vilket av följande är INTE ett fältbussystem som nämns i materialet?",
+      "o": [
+        "PROFIBUS",
+        "InterBus-S",
+        "CAN (Bosch)",
+        "ETHERNET"
+      ],
+      "a": 3,
+      "e": "Materialet nämner PROFIBUS, InterBus-S, CAN (Bosch) och AS-I (Actuator Sensor Interface). ETHERNET nämns inte som ett fältbussystem i detta material."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vad betyder förkortningen OSI?",
+      "o": [
+        "Open Systems Integration",
+        "Open Systems Interconnection",
+        "Operational Serial Interface",
+        "Organized Signal Interface"
+      ],
+      "a": 1,
+      "e": "OSI är en internationell norm (Open Systems Interconnection) som anger hur man ska kommunicera mellan olika enheter. Utgiven av ISO — International Standardization Organisation."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vad är det primära syftet med programmeringshjälpmedel för PLC?",
+      "o": [
+        "Att reglera lufttrycket i pneumatikinstallationen",
+        "Programmering, idrifttagning och felsökning av PLC:n",
+        "Att konfigurera fältbussens mastrar och slavar automatiskt",
+        "Att mäta svarstider och optimera cykeltider"
+      ],
+      "a": 1,
+      "e": "Materialet anger att programmeringshjälpmedel används för programmering, idrifttagning och felsökning."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "AS-I (Actuator Sensor Interface) är ett fältbussystem. Vem utvecklade det?",
+      "o": [
+        "Phoenix Contact ensamt",
+        "Bosch",
+        "Ett antal tyska företag med Siemens i spetsen",
+        "ISO och Profibus-konsortiet gemensamt"
+      ],
+      "a": 2,
+      "e": "Materialet anger att AS-I (Actuator Sensor Interface) utvecklades av ett antal tyska företag med Siemens i spetsen. InterBus-S utvecklades av Phoenix Contact. CAN utvecklades av Bosch."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Vad innebär det att fältbussen använder tvåtrådsteknik?",
+      "o": [
+        "Att det krävs exakt två kablar för matningsspänning",
+        "Att ett minimum av ledare används — i regel bara två i en partvinnad skärmad kabel eller en optisk fiberledare",
+        "Att signalerna skickas parallellt på två separata trådar",
+        "Att systemet kräver två separata bussystem för redundans"
+      ],
+      "a": 1,
+      "e": "Fältbussystemet använder ett minimum av ledare, i regel bara två i en partvinnad gärna skärmad kabel eller en optisk fiberledare. Alla signaler sänds seriellt genom denna kabel."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "InterBus-S är avsett för vilken typ av data?",
+      "o": [
+        "Avancerade processfunktioner och stora datamängder",
+        "Explosionssäkra miljöer i processindustrin",
+        "Mindre datamängder och enkla funktioner",
+        "Trådlös kommunikation i fabriksmiljö"
+      ],
+      "a": 2,
+      "e": "Materialet anger att InterBus-S är avsett för mindre datamängder och enkla funktioner. PROFIBUS FMS hanterar stora datamängder och avancerade funktioner."
+    },
+    {
+      "c": "Styrsystem",
+      "q": "Reläutgång och transistorutgång på PLC skiljer sig i belastning. Hur mycket ström klarar varje utgångstyp?",
+      "o": [
+        "Relä 0,5 A, transistor 2 A",
+        "Relä 2 A, transistor 0,5 A",
+        "Relä 5 A, transistor 1 A",
+        "Relä och transistor klarar båda 2 A"
+      ],
+      "a": 1,
+      "e": "Ur tabellen: Relä = 2 A per utgång (men 10 ms fördröjning), Transistor = 0,5 A per utgång (men < 0,2 ms fördröjning). Reläet klarar mest ström men är långsammast."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En cylinder med kolvdiameter 32 mm. Kolvkraften per bar F₁ = 80,4 N/bar. Vad är den teoretiska tryckkraften vid 6 bar?",
+      "o": [
+        "414,4 N",
+        "482,4 N",
+        "80,4 N",
+        "690 N"
+      ],
+      "a": 1,
+      "e": "F₊teor = F₁ × p = 80,4 N/bar × 6 bar = 482,4 N."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En cylinder Ø50 mm, kolvstång Ø18 mm, slaglängd 300 mm. Beräkna slagvolymen i dragriktningen (VD). A₂ = 16,5 cm².",
+      "o": [
+        "588 cm³",
+        "495 cm³",
+        "413 cm³",
+        "165 cm³"
+      ],
+      "a": 1,
+      "e": "VD = A₂ × s = 16,5 cm² × 30 cm = 495 cm³. (Slaglängd 300 mm = 30 cm.)"
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En cylinder Ø20 mm vid 6 bar. A₁ = 3,14 cm². Vad är den teoretiska tryckkraften F₊teor?",
+      "o": [
+        "31,4 N",
+        "188,4 N",
+        "314 N",
+        "62,8 N"
+      ],
+      "a": 1,
+      "e": "F₊teor = p × A₁ = 6 bar × 3,14 cm² × 10 N/(cm²·bar) = 188,4 N."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En Ø80 mm cylinder vid 6 bar har F₊teor = 3 000 N. Vad är den verkliga tryckkraften?",
+      "o": [
+        "2 850 N",
+        "2 700 N",
+        "2 100 N",
+        "3 000 N"
+      ],
+      "a": 2,
+      "e": "F₊verk = F₊teor × (1 − 0,3) = 3 000 × 0,7 = 2 100 N. Förlusterna på 30 % representerar 5 % friktion + 25 % acceleration."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "Beräkna luftförbrukningen Q per dubbelslag för en Ø50 mm cylinder, slaglängd 250 mm vid 6 bar. VT = 490 cm³, VD = 413 cm³.",
+      "o": [
+        "903 cm³ = 0,903 Nl",
+        "6 321 cm³ = 6,321 Nl",
+        "5 418 cm³ = 5,418 Nl",
+        "1 806 cm³ = 1,806 Nl"
+      ],
+      "a": 1,
+      "e": "Q = (VT + VD) × (p + Patm)/Patm = (490 + 413) × (6+1)/1 = 903 × 7 = 6 321 cm³ = 6,321 Nl."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En sugkopp ska lyfta ett 5 kg föremål vertikalt med två sugkoppar. Beräkna erforderlig hållkraft F per sugkopp (s = 4).",
+      "o": [
+        "F = 98,1 N",
+        "F = 196,2 N",
+        "F = 49,05 N",
+        "F = 39,24 N"
+      ],
+      "a": 0,
+      "e": "F = (m × g/n) × s = (5 × 9,81/2) × 4 = 98,1 N. Säkerhetsfaktor s = 4 (vertikalt), n = 2 sugkoppar."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En Ø200 mm cylinder har F₁ = 3140 N/bar. Vilken kraft ger den vid 8 bar?",
+      "o": [
+        "3 140 N",
+        "19 652 N",
+        "25 120 N",
+        "22 092 N"
+      ],
+      "a": 2,
+      "e": "F₊teor = 3 140 N/bar × 8 bar = 25 120 N."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "Beräkna tryckfall: Q = 40 Nl/s, rördimension ø16/13, l = 5 m, pl = 8 bar, Δp = 0,17 bar/m (ur diagram).",
+      "o": [
+        "0,85 bar",
+        "1,49 bar",
+        "0,66 bar",
+        "1,19 bar"
+      ],
+      "a": 2,
+      "e": "p_LP = Δp × l × 7/pl + 1 = 0,17 × 5 × 7/8 + 1 ≈ 0,66 bar (bokens exakta svar)."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En cylinder Ø12 mm vid 6 bar. Kolvkraft per bar F₁ = 11,3 N/bar. Vad är den teoretiska aktionskraften?",
+      "o": [
+        "11,3 N",
+        "67,8 N",
+        "70 N",
+        "113 N"
+      ],
+      "a": 1,
+      "e": "F₊teor = 11,3 N/bar × 6 bar = 67,8 N."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "Tryckfall i ledning: vilken rördimension ger minst tryckfall vid samma flöde och längd?",
+      "o": [
+        "ø 4/2,5",
+        "ø 8/6",
+        "ø 16/13",
+        "ø 22/19"
+      ],
+      "a": 3,
+      "e": "Tryckfallet minskar med större innerdiameter. ø 22/19 har störst innerdiameter (19 mm) och ger därmed minst tryckfall."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "Luftförbrukning för ett dubbelslag med Ø200 mm cylinder, slaglängd 600 mm vid 6 bar, 2,2 Nl/cm ur diagram. Vad ger det per dubbelslag?",
+      "o": [
+        "132 Nl",
+        "264 Nl",
+        "26,4 Nl",
+        "13,2 Nl"
+      ],
+      "a": 1,
+      "e": "Q = 2 × 2,2 × 60 = 264 Nl. Faktorn 2 är för dubbelslaget (ut + in), slaglängd 60 cm."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En sugkopp ska lyfta ett 20 kg föremål horisontellt med en sugkopp (s = 2). Beräkna hållkraften F.",
+      "o": [
+        "98,1 N",
+        "196,2 N",
+        "392,4 N",
+        "49,05 N"
+      ],
+      "a": 2,
+      "e": "F = (m × g/n) × s = (20 × 9,81/1) × 2 = 392,4 N."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En cylinder Ø125 mm ska åstadkomma 1 000 N kraft. F₁ = 1220 N/bar. Vilket tryck behövs (avrunda uppåt)?",
+      "o": [
+        "0,82 bar",
+        "1 bar",
+        "2 bar",
+        "6 bar"
+      ],
+      "a": 1,
+      "e": "p = F_behov / F₁ = 1 000 / 1 220 = 0,82 bar. Avrundat uppåt till närmaste heltal = 1 bar."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "Vilken kolvdiameter ska väljas för en kraft på 200 N vid 5 bar? (Ur snabbvalsdiagrammet)",
+      "o": [
+        "12 mm",
+        "16 mm",
+        "25 mm",
+        "32 mm"
+      ],
+      "a": 2,
+      "e": "Ur bokens snabbvalsdiagram: en kraft på 200 N vid 5 bar ger cylinderdiameter ca 25 mm."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "Beräkna minneskapaciteten (minimum antal bitar) för ett PLC med 20 I/O-portar där varje in- eller utgång används i genomsnitt 3 gånger per programvarv.",
+      "o": [
+        "400 bitar",
+        "600 bitar",
+        "1 200 bitar",
+        "800 bitar"
+      ],
+      "a": 2,
+      "e": "Tumregeln: antal I/O-portar × antal gånger per varv × 20 = 20 × 3 × 20 = 1 200 bitar minimum."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En cylinder Ø80 mm, slaglängd 200 mm, 10 dubbelslag/min vid 6 bar. VT = 1 000 cm³, VD = 908 cm³. Hur stor är luftförbrukningen per minut?",
+      "o": [
+        "19,08 Nl/min",
+        "133,56 Nl/min",
+        "70 Nl/min",
+        "13,356 Nl/min"
+      ],
+      "a": 1,
+      "e": "Q per slag = (1 000 + 908) × 7 = 13 356 cm³ = 13,356 Nl. Per minut: 10 × 13,356 = 133,56 Nl/min."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En Ø32 mm cylinder har A₂ = 6,9 cm² (dragriktning). Vad är den teoretiska dragkraften vid 6 bar?",
+      "o": [
+        "414 N",
+        "69 N",
+        "276 N",
+        "138 N"
+      ],
+      "a": 0,
+      "e": "F₋teor = p × A₂ = 6 × 6,9 cm² × 10 N/(cm²·bar) = 414 N."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En cylinder Ø32 mm förflyttar 10 kg vertikalt vid 0,85 m/s (dämpdiagram 6,3 bar). Är cylindern lämplig för ideal dämpning?",
+      "o": [
+        "Ja, punkten ligger på eller strax under kurvan för Ø32",
+        "Nej, 10 kg och 0,85 m/s ligger över kurvan för Ø32 vid vertikalt montage",
+        "Ja, alla cylindrar under Ø50 mm klarar alltid ideal dämpning vid 0,85 m/s",
+        "Det går inte att avgöra utan att känna till slaglängden"
+      ],
+      "a": 0,
+      "e": "Materialet ger direkt exemplet: en Ø32 mm cylinder, 10 kg vertikalt. Punkten ligger på eller strax under gränskurvan — cylindern är alltså lämplig."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En kraft på 1 000 N ska utvecklas vid 8 bar. Vilken kolvdiameter väljs ur diagrammet?",
+      "o": [
+        "Ja, Ø40 mm ger ca 1 000 N vid 8 bar",
+        "Nej, Ø32 mm räcker redan vid 8 bar",
+        "Nej, det krävs minst Ø50 mm",
+        "Det stämmer inte, Ø40 mm är inte en standardstorlek"
+      ],
+      "a": 0,
+      "e": "Boken anger direkt i exempel 4: en kraft på 1 000 N vid 8 bar ger ur diagrammet kolvdiametern 40 mm."
+    },
+    {
+      "c": "Beräkningar",
+      "q": "En Ø50 mm cylinder gör 5 dubbelslag per minut vid 6 bar. VT = 490 cm³, VD = 413 cm³. Hur stor är luftförbrukningen per minut?",
+      "o": [
+        "31,6 Nl/min",
+        "63,2 Nl/min",
+        "6,321 Nl/min",
+        "45,2 Nl/min"
+      ],
+      "a": 0,
+      "e": "Q per dubbelslag = (490 + 413) × 7 = 6 321 cm³ = 6,321 Nl. Per minut: 5 × 6,321 = 31,6 Nl/min."
+    }
+  ],
+  "flashcards": [
+    {
+      "c": "Cylindrar",
+      "t": "Aktionskraft",
+      "d": "Den kraft kolvstången i en cylinder utvecklar. Beräknas som F = p × A (tryck × kolvarean). Är olika i tryck- och dragriktningen för dubbelverkande cylindrar."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "F_teor vs F_verk",
+      "d": "Teoretisk kraft: F = p × A. Verklig kraft: F = p × A × (1−0,3) – 30% förlust pga. friktionskrafter (5%) och accelerationskrafter (25%)."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Dubbelverkande cylinder",
+      "d": "Cylinder med kolvstång som kan drivas i båda riktningarna med tryckluft. Tryckkraft (A₁) > Dragkraft (A₂) eftersom kolvstångsarean räknas bort på dragsidan."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Skyttelcylinder",
+      "d": "Cylinder utan traditionell kolvstång, med genomgående stång för skyttelrörelse. Aktionskraften lika i båda riktningarna. Kolvdiameter 16 mm i AUTOBYGG."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Linjärmodul",
+      "d": "Två sammanbyggda cylindrar (dubbla kolvar) i ett kompakt hus. Klarar stora tvärkrafter. Kan ha hålad kolvstång för vakuumapplikation och inbyggd ändlägesgivare."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Slagvolym V",
+      "d": "V = A × s (kolvarean × slaglängd). V_T (tryckriktning) = A₁ × s. V_D (dragriktning) = A₂ × s. Anges i cm³ eller dm³."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Luftförbrukning Q per dubbelslag",
+      "d": "Q = (V_T + V_D) × (p + p_atm) / p_atm. Resultatet i cm³ → dela med 1000 för Nl. Normalbetingelser: 1 bar, +20°C, 65% RF."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Ändlägesdämpning",
+      "d": "Inbyggd luftkudde som saktar ner kolven de sista mm före ändläget. Skyddar mekanik från slagkrafter. Kan vara fast eller justerbar."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Cylinderfästen",
+      "d": "Gavelfäste (ändmontage), fotfäste (sidomontage), avkännarfäste. På cylindern monteras också magnetkolvsavkännare för lägesdetektering."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Vriddon",
+      "d": "Omvandlar linjär kolvrörelse till roterande rörelse. Utföranden: kuggstångscylinder (kostalo), vingcylinder. Vridvinkel typiskt 90°, 180° eller 270°."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Normalluft (ISO)",
+      "d": "Referenstillstånd för luftmätning: 1 bar absoluttryck, +20°C temperatur, 65% relativ fuktighet. Normalliter (Nl) = liter luft vid dessa betingelser."
+    },
+    {
+      "c": "Cylindrar",
+      "t": "Kolvarean A",
+      "d": "A = π × d²/4. Enhet: cm². Exempeldata: Ø8mm→0,5cm², Ø20mm→3,14cm², Ø50mm→19,6cm², Ø80mm→50cm², Ø125mm→122cm²."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Riktningsventil 5/2",
+      "d": "5 anslutningsportar (1 tryck, 2 arbetstryck, 2 avgaser) och 2 stabila lägen. Standardventil för dubbelverkande cylindrar."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Riktningsventil 3/2",
+      "d": "3 anslutningsportar och 2 lägen. Normalt stängd (NC) eller normalt öppen (NO). Används för enkelverkande cylindrar och signalgivning."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Effektventil vs signalventil",
+      "d": "Effektventil: styr ställdon, hanterar stora flöden. Signalgivande ventil/logikelement: bearbetar bara tryckpulser för styrlogik, litet flöde."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Sätes- och slidventil",
+      "d": "Sätes (poppet): tätar med kona/boll mot säte. Slidventil: skjutbar cylinder öppnar/stänger kanaler. Sätes är läcksäkrare, slid ger fler portmöjligheter."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Strypbackventil",
+      "d": "Kombinerar backventil + strypventil. Stryper flödet i en riktning (justerbar), fritt flöde i andra riktningen. Används för att styra cylinderhastighet i en riktning."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Backventil",
+      "d": "Tillåter flöde i bara en riktning. Blockerar automatiskt återflöde utan yttre styrning. Vanlig i kretsar med tryckreservering och enkelriktad rörelse."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Tryckfall i ledning",
+      "d": "Tryckfall uppstår när luft passerar ledning eller komponent. Klenare dimension → större tryckfall. Formel för ledning: p_LD = Δp × l × (7/8pl + 1). Δp avläses ur diagram vid aktuellt flöde och ingångstryck."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Tryckregulatorn",
+      "d": "Håller konstant inställt drifttryck oavsett flödes- och kompressortryckvariationer. Primär komponent i luftbehandlingsenheten (FRL: filter-regulator-smörjare)."
+    },
+    {
+      "c": "Ventiler",
+      "t": "C-värde (kapacitetsvärde)",
+      "d": "Internationellt mått på komponents flödesförmåga. Högt C = stort flöde. Används för att beräkna och jämföra ventilers och ledningars kapacitet."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Anslutningsplatta (manifold)",
+      "d": "Block för att montera flera ventiler med gemensam tryckinmatning och avgaskanaler. Sparar plats, minskar ledningsdragning och förenklar installation."
+    },
+    {
+      "c": "Ventiler",
+      "t": "Nominellt flöde",
+      "d": "Uppmätt flöde (Nl/s) vid 6 bar ingångstryck med varierande tryckskillnad. Avgör ventilstorleken – störst krav ställs på effektventilerna."
+    },
+    {
+      "c": "Gripdon",
+      "t": "Mekaniskt gripdon",
+      "d": "Parallella fingrar drivna pneumatiskt. Fingrar rör sig mot varandra och klämer föremålet. Kan ha fjäderbelastade fingrar som klämmer som tång."
+    },
+    {
+      "c": "Gripdon",
+      "t": "Vakuumgripdon – ejektor",
+      "d": "Tryckluften accelereras i en strypning (Venturi) → drar med sig luft från sugkoppen → skapar undertryck. Alternativ: vakuumpump. Fördel: enkel, kompakt, inget elbruk."
+    },
+    {
+      "c": "Gripdon",
+      "t": "Sugkoppstyper",
+      "d": "Plan (plana ytor), liten (smala detaljer), bälg (ojämna ytor), plan med utbytbar läpp, plan och oval. Val baseras på föremålets form och lyftmetod."
+    },
+    {
+      "c": "Gripdon",
+      "t": "Dimensionering sugkopp",
+      "d": "Horisontellt lyft (skjuv): F_grip > G/μ. Vertikalt lyft: F_grip > G. Säkerhetsfaktor 2–4 används. G = föremålets tyngd (N). μ = friktionskoefficient."
+    },
+    {
+      "c": "Gripdon",
+      "t": "Fördelar vakuumgripdon",
+      "d": "Billigt gripsystem · Hanterar de flesta material (papper, plåt, glas, plast) · Klarar ömtåliga material · Räcker med ungefärlig positionering · Enkel styrning"
+    },
+    {
+      "c": "Gripdon",
+      "t": "Vakuum – definition",
+      "d": "'Ett lufttomt rum eller en del av rymden utan närvaro av material.' I teknik: undertryck under atmosfärtrycket (1 bar). Mäts i mbar undertryck."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Sensor – uppbyggnad",
+      "d": "Sensor = avkännande element (påverkas direkt av instorheten) + signalbehandlare/förstärkare (omvandlar svag signal till användbar utsignal + LED-indikering)."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Magnetkolvsavkännare",
+      "d": "Monteras utanpå cylinderröret. Detekterar permanentmagneten i kolven. Ger binär signal (TILL/FRÅN) när kolven passerar. Steglös inställning längs cylindern."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Induktiv sensor",
+      "d": "Alstrar magnetfält → metallobjekt skapar virvelströmmar → ändrar induktansen → sensorn aktiveras. Fungerar bäst på ferromagnetiska metaller. Kontaktfri."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Reduktionsfaktor – induktiv sensor",
+      "d": "Icke-ferromagnetiska metaller kräver reducerat avkänningsavstånd: Kromnickel 0,9×Kn · Mässing 0,5×Kn · Aluminium 0,4×Kn · Koppar 0,4×Kn"
+    },
+    {
+      "c": "Sensorer",
+      "t": "Kapacitiv sensor",
+      "d": "Utnyttjar elektriskt fält. Föremål stör fältet och ändrar kapacitansen. Avkänner alla material: metall, plast, glas, trä, vätskor, granulat. Ej begränsad till metall."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Optisk sensor – envägsavkänning",
+      "d": "Sändare på en sida, mottagare på andra. Föremål bryter ljusstrålen → aktivering. Högst immunitet mot bakgrundsljus. Kräver åtkomst på båda sidor."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Optisk sensor – reflexavkänning",
+      "d": "Sändare och mottagare i samma enhet. Reflektor på andra sidan återspeglar ljuset. Föremål bryter strålen. Enklare montering än envägs men lägre räckvidd."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Optisk sensor – direktavkänning",
+      "d": "Sändare och mottagare i samma enhet. Avkänner reflexen från föremålet direkt. Kortare räckvidd. Med bakgrundsdämpning: inställbar räckvidd, ignorerar bakgrund."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Avkännare, transmitter, detektor, vakt",
+      "d": "Avkännare: pneumatik/ändlägen. Transmitter: standardsignal (4–20mA, 0–5V). Detektor: larm (ljus/ljud/rök/rörelse). Vakt: driftövervakning av temperaturer/tryck/flöden."
+    },
+    {
+      "c": "Sensorer",
+      "t": "Analog vs binär sensorsignal",
+      "d": "Analog: proportionell mot instorheten, kontinuerlig (ex. 4–20mA för tryck 0–10 bar). Binär: TILL eller FRÅN – rapporterar ändläge eller närvaro/frånvaro."
+    },
+    {
+      "c": "Styrsystem",
+      "t": "PLC – uppbyggnad",
+      "d": "Programmerbar logikstyrning. Delar: CPU (processor) · Minne · Ingångsinterface (kopplar sensorer) · Utgångsinterface (kopplar ställdon) · Kraftenhet"
+    },
+    {
+      "c": "Styrsystem",
+      "t": "PLC – signaltyper",
+      "d": "Digitala ingångar: sensorer/brytare (0/1). Analoga ingångar: 4–20mA, 0–10V. Digitala utgångar: magnetventiler, lampor. Analoga utgångar: frekvensomriktare, proportionalventiler."
+    },
+    {
+      "c": "Styrsystem",
+      "t": "Fältbussystem",
+      "d": "Seriell kommunikation på ett kabelpar (2 trådar) mellan PLC och decentraliserade I/O-enheter, sensorer och ventiler. Ersätter parallell kabeldragning och minskar kabelmassan kraftigt."
+    },
+    {
+      "c": "Styrsystem",
+      "t": "Fältbuss – fördelar",
+      "d": "Drastiskt minskad kabelmängd · Enklare installation och driftsättning · Förenklad felsökning · Möjlighet till kommunikation med externa datorsystem · Decentraliserad I/O"
+    },
+    {
+      "c": "Styrsystem",
+      "t": "PLC – val av storlek",
+      "d": "Baseras på: antal I/O-punkter (sensorer + ställdon) · Kommunikationsförmåga · Programkapacitet · Intern/extern kraftkälla · Svarstid · Kostnad"
+    },
+    {
+      "c": "Styrsystem",
+      "t": "Decentraliserad I/O-enhet",
+      "d": "Placeras nära ställdon/sensorer. Samlar lokala signaler och kommunicerar med PLC via fältbuss. Minskar kabeldragning drastiskt i stora anläggningar."
+    },
+    {
+      "c": "Styrsystem",
+      "t": "Standard i europeisk industri – signal",
+      "d": "Standardiserade signaler: 4–20 mA (analogt strömloop) · 0–10 V (analogt spänning) · 24 VDC (digitalt) · Möjliggör utbytbarhet mellan fabrikat."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Formel: Teoretisk cylinderkraft",
+      "d": "F_teor = p × A [bar × cm²] = N/bar × bar = N. OBS: 1 bar × 1 cm² = 10 N. Eller: p i Pa × A i m² = N."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Formel: Verklig cylinderkraft",
+      "d": "F_verk = p × A × (1 − 0,30) = F_teor × 0,70. De 30% = friktionskrafter (5%) + accelerationskrafter (25%)."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Formel: Kolvarean",
+      "d": "A = π × d²/4. d i cm → A i cm². Exempel: d=2cm → A = 3,14×4/4 = 3,14 cm². d=5cm → A = 3,14×25/4 = 19,6 cm²."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Formel: Slagvolym",
+      "d": "V_T = A₁ × s (tryckriktning). V_D = A₂ × s (dragriktning). A i cm², s i cm → V i cm³. 1 dm³ = 1000 cm³ = 1 Nl vid normalbetingelser."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Formel: Luftförbrukning per dubbelslag",
+      "d": "Q = (V_T + V_D) × (p + p_atm) / p_atm. p_atm = 1 bar. Resultat i samma enhet som volymerna. cm³ → /1000 = Nl."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Formel: Erforderligt tryck",
+      "d": "p = F / A. F i N, A i cm². Resultat i N/cm². Dela med 10 för att få bar. Exempel: p = 1000N / 19,6cm² = 51 N/cm² = 5,1 bar."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Cylinderdata – standardstorlekar",
+      "d": "Ø8: A₁=0,5cm², Ø12: 1,13cm², Ø20: 3,14cm², Ø32: 8,04cm², Ø50: 19,6cm², Ø80: 50cm², Ø125: 122cm², Ø200: 314cm²."
+    },
+    {
+      "c": "Beräkningar",
+      "t": "Enhetsomvandling – kraft och tryck",
+      "d": "1 bar × 1 cm² = 10 N. 1 MPa = 10 bar. 1 N/mm² = 10 bar. 1 kgf ≈ 9,81 N ≈ 10 N (approximation)."
+    }
+  ],
+  "comparison": "<div class=\"slabel\" style=\"margin-top:0;\">Sensorjämförelse</div>\n<div class=\"comp-grid\">\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#4f46e5;color:white\">Magnetkolvsavkännare</span></div>\n<div class=\"comp-r\">Kolvens läge i cylinder</div>\n<div class=\"comp-r\">Permanentmagnet i kolven</div>\n<div class=\"comp-r\">Binär signal (TILL/FRÅN)</div>\n<div class=\"comp-r\">Enbart på pneumatiska cylindrar</div></div>\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#7c3aed;color:white\">Induktiv sensor</span></div>\n<div class=\"comp-r\">Metallföremål, kontaktfri</div>\n<div class=\"comp-r\">Magnetfält + virvelströmmar</div>\n<div class=\"comp-r\">Bäst på järn/stål · Al: 0,4×Kn</div>\n<div class=\"comp-r\">Binär, analog variant finns</div></div>\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#059669;color:white\">Kapacitiv sensor</span></div>\n<div class=\"comp-r\">Alla material inkl. plast/vätska</div>\n<div class=\"comp-r\">Elektriskt fält, kapacitans</div>\n<div class=\"comp-r\">Binär, analog variant finns</div>\n<div class=\"comp-r\">Känslig för smuts och fukt</div></div>\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#d97706;color:white\">Optisk sensor</span></div>\n<div class=\"comp-r\">Alla material via ljusstråle</div>\n<div class=\"comp-r\">Envägs · Reflex · Direkt · Bakgr.dämpn.</div>\n<div class=\"comp-r\">Binär, analog variant finns</div>\n<div class=\"comp-r\">Känslig för smuts på linsen</div></div>\n</div>\n\n<div class=\"slabel\">Cylinderberäkningar – formelblad</div>\n<table class=\"ptable\"><thead><tr><th>Storhet</th><th>Formel</th><th>Enhet</th><th>Notering</th></tr></thead><tbody>\n<tr><td>Kolvarean A</td><td>π × d²/4</td><td>cm²</td><td>d i cm · 1 bar×cm²=10 N</td></tr>\n<tr><td>Tryckkraft F_teor</td><td>p × A₁</td><td>N</td><td>A₁ = hela kolvytan</td></tr>\n<tr><td>Dragkraft F_teor</td><td>p × A₂</td><td>N</td><td>A₂ = A₁ − stångarea</td></tr>\n<tr><td>Verklig kraft</td><td>F_teor × 0,70</td><td>N</td><td>30% förlust (frikt. 5% + accel. 25%)</td></tr>\n<tr><td>Slagvolym V_T</td><td>A₁ × s</td><td>cm³</td><td>s i cm</td></tr>\n<tr><td>Slagvolym V_D</td><td>A₂ × s</td><td>cm³</td><td>s i cm</td></tr>\n<tr><td>Luftförbrukn. Q</td><td>(V_T+V_D)×(p+1)/1</td><td>Nl/slag</td><td>cm³÷1000=Nl</td></tr>\n<tr><td>Erforderligt tryck</td><td>F / A</td><td>bar</td><td>N÷cm²÷10=bar</td></tr>\n</tbody></table>\n\n<div class=\"slabel\">Ventiltyper – översikt</div>\n<div class=\"comp-grid\">\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#2563eb;color:white\">5/2-ventil</span></div>\n<div class=\"comp-r\">5 portar, 2 lägen</div>\n<div class=\"comp-r\">Dubbelverkande cylindrar</div>\n<div class=\"comp-r\">1 tryck · 2 arbete · 2 avgaser</div>\n<div class=\"comp-r\">Effektventil – stora flöden</div></div>\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#7c3aed;color:white\">3/2-ventil</span></div>\n<div class=\"comp-r\">3 portar, 2 lägen</div>\n<div class=\"comp-r\">Enkelverkande cylindrar, signalgivning</div>\n<div class=\"comp-r\">NC (normalt stängd) eller NO</div>\n<div class=\"comp-r\">Signal/logik – litet flöde</div></div>\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#059669;color:white\">Strypbackventil</span></div>\n<div class=\"comp-r\">Stryper + backfunktion</div>\n<div class=\"comp-r\">Hastighetsstyrning av cylinder</div>\n<div class=\"comp-r\">En riktning strypt, andra fri</div>\n<div class=\"comp-r\">Justerbar strypning</div></div>\n<div class=\"comp-card\"><div class=\"comp-h\"><span class=\"tag\" style=\"background:#d97706;color:white\">Tryckregulator</span></div>\n<div class=\"comp-r\">Konstant drifttryck</div>\n<div class=\"comp-r\">Ingår i FRL-enhet</div>\n<div class=\"comp-r\">Filter–Regulator–Smörjare</div>\n<div class=\"comp-r\">Skyddar anläggning mot tryckvariationer</div></div>\n</div>\n\n<div class=\"slabel\">PLC-val – checklista</div>\n<table class=\"ptable\"><thead><tr><th>Parameter</th><th>Vad du behöver veta</th></tr></thead><tbody>\n<tr><td>Antal I/O</td><td>Räkna sensorer (ingångar) + ställdon (utgångar). Lägg till 20% marginal för expansion.</td></tr>\n<tr><td>Signaltyper</td><td>Digitalt (24VDC) eller analogt (4–20mA, 0–10V)? Kontrollera varje sensor och ställdon.</td></tr>\n<tr><td>Kommunikation</td><td>Fältbuss (PROFIBUS, Profinet, EtherNet/IP) eller konventionell parallell kabeldragning?</td></tr>\n<tr><td>Kraftkälla</td><td>Intern (PLC matar ut 24V) eller extern (separat strömförsörjning för utgångar)?</td></tr>\n<tr><td>Svarstid</td><td>Tidskritiska applikationer kräver kort scantid. Standard PLC: 1–10 ms/1000 instruktioner.</td></tr>\n<tr><td>Programkapacitet</td><td>Antal instruktioner, minnesstorlek. Litet PLC: ~800 instruktioner lagrade.</td></tr>\n</tbody></table>\n\n<div class=\"slabel\">Cylinderdata – standardstorlekar</div>\n<table class=\"ptable\"><thead><tr><th>Kolv Ø mm</th><th>Kolvstång Ø mm</th><th>A₁ cm²</th><th>A₂ cm²</th><th>F₁ N/bar</th><th>F₂ N/bar</th></tr></thead><tbody>\n<tr><td>8</td><td>4</td><td>0,50</td><td>0,37</td><td>5</td><td>3,8</td></tr>\n<tr><td>12</td><td>6</td><td>1,13</td><td>0,85</td><td>11,3</td><td>8,5</td></tr>\n<tr><td>16</td><td>6</td><td>2,01</td><td>1,73</td><td>20,1</td><td>17,3</td></tr>\n<tr><td>20</td><td>8</td><td>3,14</td><td>2,64</td><td>31,4</td><td>26,4</td></tr>\n<tr><td>32</td><td>12</td><td>8,04</td><td>6,91</td><td>80,4</td><td>69,1</td></tr>\n<tr><td>50</td><td>18</td><td>19,6</td><td>16,5</td><td>196</td><td>165</td></tr>\n<tr><td>80</td><td>22</td><td>50,3</td><td>46,5</td><td>500</td><td>454</td></tr>\n<tr><td>125</td><td>30</td><td>122</td><td>115</td><td>1220</td><td>1147</td></tr>\n</tbody></table>",
+  "srData": {}
+}
